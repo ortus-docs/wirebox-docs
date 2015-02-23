@@ -13,5 +13,8 @@
 * [Dependency Injection Explained](dependency_injection_explained/README.md)
    * [Advantages of a DI Framework](dependency_injection_explained/advantages_of_a_di_framework.md)
 * [Getting Jiggy Wit It!](getting_jiggy_wit_it/README.md)
-* [Instance Creations](instance_creations/README.md)
+   * [Instance Creations](getting_jiggy_wit_it/instance_creations.md)
+   * [Binder Introduction](getting_jiggy_wit_it/binder_introduction.md)
+   * [Scoping](getting_jiggy_wit_it/scoping.md)
+   * [Eager Init](getting_jiggy_wit_it/eager_init.md)
 
