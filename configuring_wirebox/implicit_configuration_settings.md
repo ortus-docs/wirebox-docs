@@ -119,7 +119,8 @@ Please refer to the Custom scopes section to find out more about custom scopes, 
 wirebox.customScopes = {
     // The value of the instantiation path of the custom scope 
     // that implements coldbox.system.ioc.scopes.IScope. 
-    // The name of the scope will be used when registered the scope annotation.
+    // The name of the scope will be used when registered 
+    // the scope annotation.
 	CoolSingletons = "my.path.SingletonScope",
 	FunkyTransaction = "my.funky.Transaction"
 };
