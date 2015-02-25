@@ -130,11 +130,13 @@ wirebox.customScopes = {
 
 The instantiation paths that this Injector will have registered to do object locations in order. So if you request an object called `Service` and no mapping has been configured for it, then WireBox will search all these scan locations for a `Service.cfc` in the specified order. The last lookup is the no namespace lookup which basically represents a `createObject("component","Service")` call. If you are using WireBox within a ColdBox application, ColdBox will register the `models` convention folder for you.
 
-> ** Note** Please note that order of declaration is the same as order of lookup, so it really matters. Also note that this setting only makes sense if you do not like to create mappings for objects and you just want WireBox to discover them for you. 
-
 ```javascript
 wirebox.scanLocations = ["model","transfer.com","org.majano"];
 ```
+
+> ** Note** Please note that order of declaration is the same as order of lookup, so it really matters. Also note that this setting only makes sense if you do not like to create mappings for objects and you just want WireBox to discover them for you. 
+
+
 ## stopRecursions
 This is an array of class path's that WireBox will use to stop recursion on any object graph that has inheritance when looking for dependencies. For example, let's say your object inherits from transfer.com.TransferDecorator, but you don't want WireBox to go past that inheritance class when looking for DI data, then you would add transfer.com.TransferDecorator to this setting.
 
