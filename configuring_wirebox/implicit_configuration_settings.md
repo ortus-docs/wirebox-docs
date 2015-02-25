@@ -138,7 +138,8 @@ wirebox.scanLocations = ["models","com","org.majano"];
 
 
 ## stopRecursions
-This is an array of class path's that WireBox will use to stop recursion on any object graph that has inheritance when looking for dependencies. For example, let's say your object inherits from transfer.com.TransferDecorator, but you don't want WireBox to go past that inheritance class when looking for DI data, then you would add transfer.com.TransferDecorator to this setting.
+
+This is an array of class path's that WireBox will use to stop recursion on any object graph that has inheritance when looking for dependencies.
 
 ```javascript
 wirebox.stopRecursions = ["transfer.com.TransferDecorator","coldbox.system.EventHandler"];
