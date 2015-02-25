@@ -1,6 +1,6 @@
 # Implicit Configuration Settings
 
-In this `configure()` method you can create a structure called wirebox in the variables scope that will hold the configuration data for WireBox. The following are the keys you can create in this structure:
+In the `configure()` method you can create a structure called `wirebox` in the `variables` scope that will hold the configuration data for WireBox. The following are the keys you can create in this structure:
 
 <table>
     <tr>
@@ -75,11 +75,7 @@ In this `configure()` method you can create a structure called wirebox in the va
     <tr>
 </table>
 
-<div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="12%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Please note that it is completely optional to use the implicit structure configuration. You can use the programmatic methods instead. Each configuration key has the same method in the binder for programmatic configuration. </b></p>
-<div style="clear:both"></div>
-</div>
+> **Info** Please note that it is completely optional to use the implicit structure configuration. You can use the programmatic methods instead. Each configuration key has the same method in the binder for programmatic configuration.
 
 <h4 style="color:blue">logBoxConfig</h4>
 
