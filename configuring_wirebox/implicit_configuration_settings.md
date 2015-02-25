@@ -154,21 +154,7 @@ wirebox.parentInjector = application.coolInjector;
 wirebox.parentInjector = new coldbox.system.ioc.Injector( "old.legacy.binder" );
 ```
 ## listeners
-This section only shows you how to register WireBox listeners, so please refer to the object life cycle events section for more information. This setting is an array of listener structure definitions that WireBox's event manager will use when broadcasting object life cycle events. Each interceptor structure definition has the following keys:
-
-| Key | Type | Required | Default | Description |
-| -- | -- | -- | -- | -- |
-| class | class path  | true  | --- | The instantiation class path of the listener |
-| name | string | false | Name of the CFC  | The unique name of this listener when registered in our event manager. We recommend setting one up as best practice, else the name of the CFC file will be used instead. This setting is great for registering the same class with different configurations. |
-| properties | struct | false | {} | A structure of configuration data for this listener |
-
-<br>
-<div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="13%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Important: Please note that order of declaration is the same as order of execution, so it really matters, just like ColdBox Interceptors. Please note that if you are using WireBox within a ColdBox application, you can also register listeners as [interceptors](http://wiki.coldbox.org/wiki/Interceptors.cfm) in your ColdBox configuration file.  </b></p>
-<div style="clear:both"></div>
-</div>
-<br>
+This section only shows you how to register WireBox listeners, so please refer to the object life cycle events section for more information. This setting is an array of listener structure definitions that WireBox's event manager will use when broadcasting object life cycle events. 
 
 ```javascript
 wirebox.listeners = [
@@ -177,5 +163,7 @@ wirebox.listeners = [
 	{class="Timer", name="CoolTimer"}
 ];
 ```
+
+> **Important** Please note that order of declaration is the same as order of execution, so it really matters, just like ColdBox Interceptors. Please note that if you are using WireBox within a ColdBox application, you can also register listeners as interceptors in your ColdBox configuration file.
 
 
