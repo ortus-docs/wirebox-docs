@@ -30,9 +30,5 @@ Now that we have constructed our injector let's discuss a little about injection
 </table>
 
 These are the three injection styles that WireBox supports and which style you choose depends on your requirements and also your personal taste. The setter method approach is linked to the way Spring and ColdSpring approach it which is the traditional JavaBean style of setXXX where XXX is the name of the mapping or object to pass into the setter method for injection.
-<div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="12%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Note: Whichever injection style you use with WireBox, the target's visibility does not matter. This means that you can create private or package methods and WireBox will still inject them for you. This is absolutely great when you are an encapsulation freak and you do not want to expose public setter methods.</b></p>
-<div style="clear:both"></div>
-</div>
-<br>
+
+> **Note** Whichever injection style you use with WireBox, the target's visibility does not matter. This means that you can create private or package methods and WireBox will still inject them for you. This is absolutely great when you are an encapsulation freak and you do not want to expose public setter methods.
