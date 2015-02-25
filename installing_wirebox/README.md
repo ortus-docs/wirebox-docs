@@ -1,6 +1,10 @@
 # Installing WireBox
 
-WireBox can be [downloaded](download.md) as a separate framework or it is included with the latest ColdBox Platform release. The main difference between both versions is the instantiation and usage namespace, the rest is the same.
+WireBox can be downloaded as a separate framework or it is included with the latest ColdBox Platform release. The main difference between both versions is the instantiation and usage namespace, the rest is the same.
+
+* [Download WireBox](http://www.coldbox.org/download)
+* [Download API Docs](http://www.coldbox.org/api)
+
 
 ## Standalone
 
