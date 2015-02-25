@@ -8,7 +8,6 @@
    * [WireBox RefCard](overview/wirebox_refcard.md)
    * [Useful Resources](overview/useful_resources.md)
    * [Features at a Glance](overview/features_at_a_glance.md)
-   * [Features at a Glance](overview/features_at_a_glance.md)
 * [Installing WireBox](installing_wirebox/README.md)
    * [Download](installing_wirebox/download.md)
    * [System Requirements](installing_wirebox/system_requirements.md)
