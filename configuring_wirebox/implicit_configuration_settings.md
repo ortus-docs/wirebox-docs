@@ -1,6 +1,6 @@
 # Implicit Configuration Settings
 
-In this configure() method you can create a structure called wirebox in the variables scope that will hold the configuration data for WireBox. The following are the keys you can create in this structure:
+In this `configure()` method you can create a structure called wirebox in the variables scope that will hold the configuration data for WireBox. The following are the keys you can create in this structure:
 
 <table>
     <tr>
