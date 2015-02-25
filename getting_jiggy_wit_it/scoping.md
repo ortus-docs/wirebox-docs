@@ -43,47 +43,15 @@ Here are the internal scopes that ship with WireBox:
 
 | Scope | Description |
 | -- | -- |
-| 0:2 | 1:2 |
+| NOSCOPE | A prototype object that gets created every time it is requested. |
+| PROTOTYPE  | A prototype object that gets created every time it is requested. |
+| SINGLETON  | Only one instance of the object exists |
+| SESSION | The object will exist in the session scope |
+| APPLICATION  | The object will exist in the application scope |
+| REQUEST  | The object will exist in the request scope |
+| SERVER  | The object will exist in the server scope |
+| CACHEBOX | A object will be time persisted in any [CacheBox](http://cachebox.ortusbooks.com) cache provider |
 
-
-<table>
-    <tr>
-        <th>Scope</th>
-        <th>Description</th>
-    <tr>
-    <tr>
-        <td>NOSCOPE</td>
-        <td>A prototype object that gets created every time it is requested.</td>
-    </tr>
-    <tr>
-        <td>PROTOTYPE </td>
-        <td>A prototype object that gets created every time it is requested.</td>
-    </tr>
-    <tr>
-        <td>SINGLETON </td>
-        <td>Only one instance of the object exists</td>
-    </tr>
-    <tr>
-        <td>SESSION</td>
-        <td>The object will exist in the session scope</td>
-    </tr>
-    <tr>
-        <td>APPLICATION </td>
-        <td>The object will exist in the application scope</td>
-    </tr>
-    <tr>
-        <td>REQUEST </td>
-        <td>The object will exist in the request scope</td>
-    </tr>
-    <tr>
-        <td>SERVER </td>
-        <td>The object will exist in the server scope</td>
-    </tr>
-    <tr>
-        <td>CACHEBOX</td>
-        <td>A object will be time persisted in any [CacheBox](http://cachebox.ortusbooks.com) cache provider</td>
-    </tr>
-</table>
 
 This is cool! We can now have full control of how objects are persisted via the WireBox injector, we are not constricted to one type of persistence anymore.
 <br>
