@@ -59,7 +59,7 @@ function configure(){
 
 ## logBoxConfig
 
-The path to the LogBox Configuration object to use.  By default it uses the one displayed below:
+The path to the LogBox Configuration object to use.  By default it uses the one displayed below.  If you are using WireBox within a ColdBox application, the LogBox configuration is taken from the ColdBox application.
 
 ```javascript
 wirebox.logBoxConfig = "wirebox.system.ioc.config.LogBox";
