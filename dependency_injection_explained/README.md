@@ -6,7 +6,7 @@ If you require any training please <a href="http://www.ortussolutions.com/#conta
 
 ## Advantages of a DI Framework
 
-Compared to manual DI, using WireBox can lead to the following advantages:
+Compared to manual Dependency Injection (DI), using WireBox can lead to the following advantages:
 
 * You will write less boilerplate code.
 * By giving WireBox DI responsibilities, you will stop creating objects manually or using custom object factories.
