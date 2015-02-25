@@ -4,7 +4,7 @@
 * [Download API Docs](http://www.coldbox.org/api)
 
 # CommandBox
-You can leverage CommandBox to install the standalone version of WireBox
+You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) to install the standalone version of WireBox
 
 ```bash
 box install wirebox
