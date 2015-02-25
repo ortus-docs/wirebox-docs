@@ -16,7 +16,7 @@ wirebox.system.aop
 
 ## Requirements
 
-* ColdFusion 8 and above
-* Railo 3.1 and above
-* Lucee 4.5 and above
+* ColdFusion 9+
+* Railo 4.1+
+* Lucee 4.5+
 * Disk/Memory Generation
