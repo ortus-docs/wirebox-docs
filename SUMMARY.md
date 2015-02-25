@@ -25,7 +25,7 @@
 * [Configuring WireBox](configuring_wirebox/README.md)
    * [Binder Configuration Properties](configuring_wirebox/binder_configuration_properties.md)
    * [ColdBox Enhanced Binder](configuring_wirebox/coldbox_enhanced_binder.md)
-   * [Types of Scopes](configuring_wirebox/types_of_scopes.md)
+   * [Types & Scopes](configuring_wirebox/types_of_scopes.md)
    * [Implicit Configuration Settings](configuring_wirebox/implicit_configuration_settings.md)
 * [Mapping DSL](mapping_dsl/README.md)
    * [WireBox Configuration](mapping_dsl/wirebox_configuration.md)
