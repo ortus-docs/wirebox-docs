@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
    * [What's New With 2.0.0](introduction/whats_new_with_200.md)
+   * About This Book
 * [Overview](overview/README.md)
    * [WireBox RefCard](overview/wirebox_refcard.md)
    * [Useful Resources](overview/useful_resources.md)
