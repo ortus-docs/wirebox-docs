@@ -1,6 +1,6 @@
 # How WireBox Resolves Dependencies
 
-Most of the time we believe our DI engines should be black boxes, but we try to think otherwise. We encourage developers to know what is going on so they can debug easily and not hit their foreheads against their keyboards. Believe me, I have done so before. That is why WireBox is tightly integrated with [LogBox](http://wiki.coldbox.org/wiki/LogBox.cfm) to provide incredible debugging information to ANY appender you desire so you can know what is going on. Another aspect of knowing what the DI engine does is how dependencies are resolved. Here is a typical flow of injection:
+Most of the time we believe our DI engines should be black boxes, but we try to think otherwise. We encourage developers to know what is going on so they can debug easily and not hit their foreheads against their keyboards. Believe me, I have done so before. That is why WireBox is tightly integrated with [LogBox](http://logbox.ortusbooks.com) to provide incredible debugging information to ANY appender you desire so you can know what is going on. Another aspect of knowing what the DI engine does is how dependencies are resolved. Here is a typical flow of injection:
 
 #### Instance Creation
 
