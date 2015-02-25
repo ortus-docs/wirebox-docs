@@ -32,4 +32,5 @@ The injector can be constructed with three optional arguments:
         <td>A reference to the ColdBox application context you will be linking the Injector to.</td>
     </tr>
 </table>
+
 If you are using WireBox within a ColdBox application, you don't even need to do any of this, we do it for you by using some configuration data in your ColdBox configuration file or conventions. Please see the ColdBox application section for more information.
