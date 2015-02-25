@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * What's New With 2.0.0
 * [Overview](overview/README.md)
    * [WireBox RefCard](overview/wirebox_refcard.md)
    * [Useful Resources](overview/useful_resources.md)
