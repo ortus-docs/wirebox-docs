@@ -18,7 +18,7 @@ We have now coded our classes and unit tests with some cool annotations in recor
         <td>Refactoring is very hard as code is plagued with instantiation paths everywhere. Not DRY.</td>
     </tr>
         <td>Explicit Mappings</td>
-        <td>To replace createObject() calls with named keys </td>
+        <td>To replace <code>createObject()</code> calls with named keys </td>
         <td>DRY, you can create multiple named mappings that point to the same blueprint of a class. Create multiple iterations of the same class. Very nice decoupling.</td>
         <td>Not as fast to prototype as we need to define our mappings before hand in our configuration binder.</td>
     </tr>
