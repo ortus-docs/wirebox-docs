@@ -100,7 +100,7 @@ wirebox.scopeRegistration = {
 
 ## customDSL
 
-Please refer to the Custom DSL section to find out more about custom DSLs, the following are just the way you declare them:
+Please refer to the [Custom DSL](../custom_dsl_builder/README.md) section to find out more about custom DSLs, the following are just the way you declare them:
 
 
 ```javascript
