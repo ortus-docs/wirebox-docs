@@ -13,6 +13,11 @@ If you are using WireBox within a ColdBox application context, then WireBox is p
 <div style="clear:both"></div>
 </div>
 <br>
-## WireBox Installation and Introduction
 
-<a href="http://f.vimeocdn.com/p/flash/moogaloop/6.0.37/moogaloop.swf?clip_id=20937470&z=1424726458076"><img src="../images/installing_VideoThumbnail.png" width="80%"></a>
+
+# CommandBox
+You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) to install the standalone version of WireBox
+
+```bash
+box install wirebox
+```
