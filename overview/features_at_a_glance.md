@@ -22,7 +22,7 @@ Here are a simple listing of features WireBox brings to the table:
  * Application Scoped
  * Server Scoped
  * CacheBox Scoped
-* Integrated logging via [LogBox](http://wiki.coldbox.org/wiki/LogBox.cfm), never try to figure out what in the world the DI engine is doing
+* Integrated logging via [LogBox](http://logbox.ortusbooks.com), never try to figure out what in the world the DI engine is doing
 * Parent Factories
 * Factory Method Object Creations
 * Object life cycle events via WireBox Listeners/Interceptors
