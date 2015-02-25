@@ -4,7 +4,8 @@ WireBox fully supports aspect-oriented programming (AOP) for ColdFusion and any 
 ## WireBox AOP RefCard
 
 Our WireBox AOP RefCard will get you up and running in no time.
-Namespaces
+
+## Code Namespaces
 
 ```
 // ColdBox
