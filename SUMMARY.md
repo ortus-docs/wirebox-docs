@@ -37,6 +37,7 @@
    * [Persistence DSL](mapping_dsl/persistence_dsl.md)
    * [Dependencies DSL](mapping_dsl/dependencies_dsl.md)
        * [Mapping Extra Attributes](mapping_dsl/mapping_extra_attributes.md)
+* [Mapping DSL Examples](mapping_dsl_examples/README.md)
 * [Componets Annotations](componets_annotations/README.md)
    * [Scope Persistence Annotations](componets_annotations/scope_persistence_annotations.md)
    * [CachoeBox Integration](componets_annotations/cachoebox_integration.md)
@@ -83,7 +84,6 @@
    * [populateFromStruct](wirebox_object_populator/populatefromstruct.md)
    * [populateFromQueryWithPreix](wirebox_object_populator/populatefromquerywithpreix.md)
    * [populateFromJSON](wirebox_object_populator/populatefromjson.md)
-* [Mapping DSL Examples](mapping_dsl_examples/README.md)
 * [Aspect Oriented Programming](aop/index.md)
    * Overview
 
