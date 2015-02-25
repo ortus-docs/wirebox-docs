@@ -4,9 +4,9 @@ We touched briefly on singleton and no scope objects in this section, so let's d
 
 ## Scope Annotations
 
-* You can tag a cfcomponent tag or component declaration with a scope={named scope} annotation that tells WireBox what scope to use
-* You can have nothing on the cfcomponent tag or component declaration which denotes the NO SCOPE
-* You can tag a cfcomponent tag or component declaration with a singleton annotation
+* You can tag a `cfcomponent` tag or component declaration with a `scope={named scope}` annotation that tells WireBox what scope to use
+* You can have nothing on the `cfcomponent` tag or component declaration which denotes the NO SCOPE
+* You can tag a `cfcomponent` tag or component declaration with a singleton annotation
 
 
 ## Scope Configuration Binder
