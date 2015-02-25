@@ -57,13 +57,13 @@ function configure(){
 
 > **Info** Please note that it is completely optional to use the implicit structure configuration. You can use the programmatic methods instead. Each configuration key has the same method in the binder for programmatic configuration.
 
-<h4 style="color:blue">logBoxConfig</h4>
+## logBoxConfig
 
 ```javascript
 wirebox.logBoxConfig = "coldbox.system.ioc.config.LogBox";
 ```
 
-<h4 style="color:blue">cachebox</h4>
+## cachebox
 
 If you are using WireBox within a ColdBox application this setting is ignored. The following are the keys for this configuration structure:
 
@@ -83,7 +83,7 @@ wirebox.cacheBox = {
 };
 ```
 
-<h4 style="color:blue">scopeRegistration</h4>
+## scopeRegistration
 This structure tells WireBox how to leach itself into any ColdFusion scope when initialized.
 
 <table class="tablelisting" cellpadding="5">
@@ -122,7 +122,7 @@ wirebox.scopeRegistration = {
 ```
 
 <br>
-<h4 style="color:blue">customDSL</h4>
+## customDSL
 
 Please refer to the Custom DSL section to find out more about custom DSLs, the following are just the way you declare them:
 
@@ -150,7 +150,7 @@ wirebox.customDSL = {
 };
 ```
 
-<h4 style="color:blue">customScopes</h4>
+## customScopes
 Please refer to the Custom scopes section to find out more about custom scopes, the following are just the way you declare them:
 
 <table>
@@ -176,7 +176,7 @@ wirebox.customScopes = {
 };
 ```
 
-<h4 style="color:blue">scanLocations</h4>
+## scanLocations
 The instantiation paths that this Injector will have registered to do object locations in order. So if you request an object called Service and no mapping has been configured for it, then WireBox will search all these scan locations for a Service.cfc in the specified order. The last lookup is the no namespace lookup which basically represents a createObject("component","Service") call. If you are using WireBox within a ColdBox application, ColdBox will register the models convention folder for you and also whenever a ColdBox module is activated, that module's model convention folder will be added here too.
 <br>
 <br>
@@ -190,7 +190,7 @@ Important: Please note that order of declaration is the same as order of lookup,
 ```javascript
 wirebox.scanLocations = ["model","transfer.com","org.majano"];
 ```
-<h4 style="color:blue">stopRecursions</h4>
+## stopRecursions
 This is an array of class path's that WireBox will use to stop recursion on any object graph that has inheritance when looking for dependencies. For example, let's say your object inherits from transfer.com.TransferDecorator, but you don't want WireBox to go past that inheritance class when looking for DI data, then you would add transfer.com.TransferDecorator to this setting.
 
 ```javascript
