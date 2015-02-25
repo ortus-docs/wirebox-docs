@@ -89,7 +89,9 @@ This structure tells WireBox how to leach itself into any ColdFusion scope when 
 wirebox.scopeRegistration = {
     // activate scope registration
 	enabled = true,
-	scope   = "application", // server, cluster, session, application
+	// The CF scope to place the WireBox injector on
+	scope   = "application",
+	// The key used to store it in the scope
 	key		= "wireBox"
 };
 ```
