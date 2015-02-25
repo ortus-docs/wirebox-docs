@@ -94,6 +94,8 @@ wirebox.scopeRegistration = {
 };
 ```
 
+> **Important** Scope registration must be enabled in order for Providers to work.
+
 <br>
 ## customDSL
 
