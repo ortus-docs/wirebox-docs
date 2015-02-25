@@ -85,35 +85,9 @@ wirebox.cacheBox = {
 ## scopeRegistration
 This structure tells WireBox how to leach itself into any ColdFusion scope when initialized instead of you placing it in the scope.
 
-<table class="tablelisting" cellpadding="5">
-<tbody><tr>
-<th><b>Key</b> </th>
-<th><b>Type</b> </th>
-<th><b>Required</b> </th>
-<th><b>Default</b> </th>
-<th><b>Description</b></th></tr>
-<tr>
-<td><b>enabled</b> </td>
-<td>boolean </td>
-<td>false </td>
-<td>true </td>
-<td>Enables scope registration</td></tr>
-<tr>
-<td><b>scope</b> </td>
-<td>CF Scope </td>
-<td>true </td>
-<td><i>application</i> </td>
-<td>The ColdFusion scope</td></tr>
-<tr>
-<td><b>key</b> </td>
-<td>string </td>
-<td>true </td>
-<td><i>wirebox</i> </td>
-<td>The key to use in the ColdFusion scope when registering</td></tr></tbody></table>
-
-
 ```
 wirebox.scopeRegistration = {
+    // activate scope registration
 	enabled = true,
 	scope   = "application", // server, cluster, session, application
 	key		= "wireBox"
