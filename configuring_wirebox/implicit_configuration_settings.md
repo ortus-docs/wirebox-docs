@@ -83,7 +83,7 @@ wirebox.cacheBox = {
 ```
 
 ## scopeRegistration
-This structure tells WireBox how to leach itself into any ColdFusion scope when initialized.
+This structure tells WireBox how to leach itself into any ColdFusion scope when initialized instead of you placing it in the scope.
 
 <table class="tablelisting" cellpadding="5">
 <tbody><tr>
