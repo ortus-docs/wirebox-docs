@@ -7,7 +7,7 @@
 * [Overview](overview/README.md)
    * [WireBox RefCard](overview/wirebox_refcard.md)
    * [Useful Resources](overview/useful_resources.md)
-   * [Training, Presentations & More](overview/training,_presentations_&_more.md)
+   * [Features at a Glance](overview/features_at_a_glance.md)
    * [Features at a Glance](overview/features_at_a_glance.md)
 * [Installing WireBox](installing_wirebox/README.md)
    * [Download](installing_wirebox/download.md)
