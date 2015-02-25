@@ -113,7 +113,7 @@ wirebox.customDSL = {
 ```
 
 ## customScopes
-Please refer to the Custom scopes section to find out more about custom scopes, the following are just the way you declare them:
+Please refer to the [Custom scopes](../custom_scopes/README.md) section to find out more about custom scopes, the following are just the way you declare them:
 
 ```javascript
 wirebox.customScopes = {
