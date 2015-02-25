@@ -102,25 +102,10 @@ wirebox.scopeRegistration = {
 
 Please refer to the Custom DSL section to find out more about custom DSLs, the following are just the way you declare them:
 
-<table>
-    <tr>
-        <th>Key</th>
-        <th>Type</th>
-        <th>Required</th>
-        <th>Default</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>{DSLNamespace}</td>
-        <td>string</td>
-        <td>true</td>
-        <td>---</td>
-        <td>The value of the DSL Namespace is the instantiation path of the DSL Namespace builder that implements coldbox.system.ioc.DSL.IDSLBuilder</td>
-    </tr>
-</table>
 
 ```javascript
 wirebox.customDSL = {
+    // The value of the DSL Namespace is the instantiation path of the DSL Namespace builder that implements coldbox.system.ioc.DSL.IDSLBuilder
 	cool = "my.path.CoolDSLBuilder",
 	funkyBox = "my.funky.DSLBuilder"
 };
