@@ -145,6 +145,7 @@ This is an array of class path's that WireBox will use to stop recursion on any 
 wirebox.stopRecursions = [ "transfer.com.TransferDecorator", "coldbox.system.EventHandler" ];
 ```
 ## parentInjector
+
 This setting is actually a reference to another parent injector you would like this injector to set as its parent injector. Now say this sentence 10 times without hiccuping.
 
 ```javascript
