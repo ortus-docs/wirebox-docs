@@ -1,4 +1,4 @@
-# Types of Scopes
+# Types & Scopes
 Each configuration binder has two public properties accessible in the `this` scope:
 
 1. `this.TYPES` : A reference to `wirebox.system.ioc.Types` used to declare what type of object you are registering for construction or wiring
