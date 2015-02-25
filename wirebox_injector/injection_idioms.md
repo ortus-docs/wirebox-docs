@@ -4,10 +4,10 @@ Now that we have constructed our injector let's discuss a little about injection
 
 <table>
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Style</th>
+        <th>Order</th>
+        <th>Motivation</th>
+        <th>Comments</th>
     </tr>
     <tr>
         <td>Constructor</td>
