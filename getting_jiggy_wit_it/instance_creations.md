@@ -13,7 +13,7 @@ We have now coded our classes and unit tests with some cool annotations in recor
     </tr>
     <tr>
         <td>Implicit Mappings</td>
-        <td>To replace createObject() calls</td>
+        <td>To replace `createObject()` or `new` calls</td>
         <td>Very natural as you just request an object by its instantiation path. Very fast prototyping. </td>
         <td>Refactoring is very hard as code is plagued with instantiation paths everywhere. Not DRY.</td>
     </tr>
