@@ -75,7 +75,7 @@ Here are the internal scopes that ship with WireBox:
     </tr>
     <tr>
         <td>CACHEBOX</td>
-        <td>A object will be time persisted in any [CacheBox](http://wiki.coldbox.org/wiki/CacheBox.cfm) cache provider</td>
+        <td>A object will be time persisted in any [CacheBox](http://cachebox.ortusbooks.com) cache provider</td>
     </tr>
 </table>
 
