@@ -105,7 +105,8 @@ Please refer to the Custom DSL section to find out more about custom DSLs, the f
 
 ```javascript
 wirebox.customDSL = {
-    // The value of the DSL Namespace is the instantiation path of the DSL Namespace builder that implements coldbox.system.ioc.DSL.IDSLBuilder
+    // The value of the DSL Namespace is the instantiation path 
+    // of the DSL Namespace builder that implements wirebox.system.ioc.DSL.IDSLBuilder
 	cool = "my.path.CoolDSLBuilder",
 	funkyBox = "my.funky.DSLBuilder"
 };
