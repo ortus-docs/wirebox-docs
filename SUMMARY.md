@@ -12,7 +12,6 @@
 * [Installing WireBox](installing_wirebox/README.md)
    * [Installation](installing_wirebox/installation.md)
 * [Dependency Injection Explained](dependency_injection_explained/README.md)
-   * [Advantages of a DI Framework](dependency_injection_explained/advantages_of_a_di_framework.md)
 * [Getting Jiggy Wit It!](getting_jiggy_wit_it/README.md)
    * [Instance Creations](getting_jiggy_wit_it/instance_creations.md)
    * [Binder Introduction](getting_jiggy_wit_it/binder_introduction.md)
