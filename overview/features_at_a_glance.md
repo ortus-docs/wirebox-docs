@@ -28,5 +28,5 @@ Here are a simple listing of features WireBox brings to the table:
 * Object life cycle events via WireBox Listeners/Interceptors
 * Customizable injection DSL
 * WireBox object providers to avoid scope-widening issues on time/volatile persisted objects
-* [Aspect Oriented Programming](aop/index.md)
+* [Aspect Oriented Programming](../aop/index.md)
 * [Standalone ORM Entity Injection](http://wiki.coldbox.org/wiki/WireBox-EntityInjection.cfm)
