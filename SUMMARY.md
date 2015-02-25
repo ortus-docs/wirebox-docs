@@ -56,6 +56,8 @@
    * [ColdBox Namespace](injection_dsl/coldbox_namespace.md)
 * [ORM Entity Injection](orm_entity_injection/README.md)
 * [Virtual Inheritance](virtual_inheritance/README.md)
+* [Dependencies DSL](mapping_dsl/dependencies_dsl.md)
+   * [Mapping Extra Attributes](mapping_dsl/mapping_extra_attributes.md)
 * [Runtime Mixins()](runtime_mixins/README.md)
 * [Parent Object Definitions](parent_object_definitions/README.md)
 * [WireBox Event Model](wirebox_event_model/README.md)
