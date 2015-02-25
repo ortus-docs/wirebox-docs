@@ -14,7 +14,7 @@
 WireBox is an enterprise ColdFusion dependency injection and AOP framework. This project has been part of ColdBox since its early version 2.0 releases but it is also a standalone library that can be used in ANY ColdFusion application or framework. WireBox's inspiration has been based on the idea of rapid workflows when building object oriented ColdFusion applications, programmatic configurations and simplicity. With that motivation we introduced dependency injection by annotations and conventions, which has been the core foundation of WireBox. We have definitely been influenced by great DI projects like Google Guice, Grails Framework, Spring and ColdSpring so we thank them for their contributions and inspiration
 
 # Versioning
-ColdBox is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.Releases will be numbered with the following format:
+WireBox is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.Releases will be numbered with the following format:
 
 ```
 <major>.<minor>.<patch>
@@ -28,8 +28,7 @@ And constructed with the following guidelines:
 
 
 # License
-The ColdBox Platform is open source and licensed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0.html) License.  If you use ColdBox,
-please try to make mention of it in your code or web site or add a Powered By Coldbox icon.
+The ColdBox Platform, WireBox is open source and licensed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0.html) License.  
 
 * Copyright by Ortus Solutions, Corp
 * ColdBox is a registered trademark by Ortus Solutions, Corp
@@ -38,12 +37,12 @@ please try to make mention of it in your code or web site or add a Powered By Co
 >**Info**: The ColdBox Websites, Documentation, logo and content have a separate license and they are a separate entity.
 
 # Discussion & Help
-The ColdBox help and discussion group can be found here: https://groups.google.com/forum/#!forum/coldbox
+The WireBox help and discussion group can be found here: https://groups.google.com/forum/#!forum/coldbox
 
 # Reporting a Bug
 We all make mistakes from time to time :) So why not let us know about it and help us out.  We also love pull requests, so please star us and fork us: https://github.com/coldbox/coldbox-platform
 * By Email: [bugs@coldbox.org](mailto:bugs@coldbox.org)
-* By Jira: https://ortussolutions.atlassian.net/browse/COLDBOX
+* By Jira: https://ortussolutions.atlassian.net/browse/WIREBOX
 
 # Professional Open Source
 ![Ortus Solutions, Corp](images/ortussolutions_button.png)
@@ -60,7 +59,7 @@ ColdBox is a professional open source software backed by [Ortus Solutions, Corp]
 # Resources
 * Official Site: http://www.coldbox.org
 * Source Code: https://github.com/coldbox/coldbox-platform
-* Bug Tracker: https://ortussolutions.atlassian.net/browse/COLDBOX
+* Bug Tracker: https://ortussolutions.atlassian.net/browse/WIREBOX
 * Twitter: [@coldbox](http://www.twitter.com/coldbox)
 * Facebook: https://www.facebook.com/coldboxplatform
 * Google+: https://www.google.com/+ColdboxOrg
