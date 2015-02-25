@@ -40,6 +40,12 @@ component extends="wirebox.system.ioc.config.Binder"{
 ### Internal Scopes
 
 Here are the internal scopes that ship with WireBox:
+
+| Scope | Description |
+| -- | -- |
+| 0:2 | 1:2 |
+
+
 <table>
     <tr>
         <th>Scope</th>
