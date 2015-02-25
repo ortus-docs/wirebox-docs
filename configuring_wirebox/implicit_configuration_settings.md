@@ -163,7 +163,7 @@ wirebox.listeners = [
         class="path.to.CFC",
         // A unique name for the listener
         name="UniqueName",
-        // A structure of name-value pairs for configuring this interceptor.
+        // A structure of name-value pairs for configuring this interceptor
         properties = {}
     }
 	{class="my.AOPTracker"},
