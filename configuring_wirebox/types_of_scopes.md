@@ -1,8 +1,8 @@
 # Types of Scopes
 Each configuration binder has two public properties accessible in the `this` scope:
 
-1. `this.TYPES` : A reference to `coldbox.system.ioc.Types` used to declare what type of object you are registering for construction or wiring
-2. `this.SCOPES` : A reference to `coldbox.system.ioc.Scopes` used to declare in what life cycle scope the object will be stored under
+1. `this.TYPES` : A reference to `wirebox.system.ioc.Types` used to declare what type of object you are registering for construction or wiring
+2. `this.SCOPES` : A reference to `wirebox.system.ioc.Scopes` used to declare in what life cycle scope the object will be stored under
 
 These two classes contain static public members in the this scope that facilitate the declaration of persistence scopes and construction types for object mappings. Below are the valid enumerations for these two classes:
 
