@@ -158,6 +158,14 @@ This section only shows you how to register WireBox listeners, so please refer t
 
 ```javascript
 wirebox.listeners = [
+    {
+        // The path to the listener
+        class="path.to.CFC",
+        // A unique name for the listener
+        name="UniqueName",
+        // A structure of name-value pairs for configuring this interceptor.
+        properties = {}
+    }
 	{class="my.AOPTracker"},
 	{class="annotationTransactioner",properties={target='*'} },
 	{class="Timer", name="CoolTimer"}
