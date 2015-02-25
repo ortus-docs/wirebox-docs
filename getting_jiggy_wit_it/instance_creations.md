@@ -13,30 +13,30 @@ We have now coded our classes and unit tests with some cool annotations in recor
 
 So let's do examples for each where our classes we just built are placed in a directory called model of the root directory.
 
-<p style="color:grey">Implicit Creation</p>
+**Implicit Creation**
 ```javascript
 injector = createObject("component","wirebox.system.ioc.Injector").init();
 espresso = injector.getInstance("model.CoffeeShop").makeEspresso();
 
 ```
 <br>
-<p style="color:grey">Explicit Binder Configuration</p>
+**Explicit Binder Configuration**
 ```javascript
 map("CoolShop").to("model.CoffeeShop");
 ```
 <br>
-<p style="color:grey">Explicit Creation</p>
+**Explicit Creation**
 ```javascript
 injector = createObject("component","wirebox.system.ioc.Injector").init();
 espresso = injector.getInstance("CoolShop").makeEspresso();
 ```
 <br>
-<p style="color:grey">Scan Locations Binder Configuration</p>
+**Scan Locations Binder Configuration**
 ```javascript
 wirebox.scanLocations = ["model"];
 ```
 <br>
-<p style="color:grey">Set Locations Creation</p>
+**Set Locations Creation**
 ```javascript
 injector = createObject("component","wirebox.system.ioc.Injector").init();
 espresso = injector.getInstance("CoffeeShop").makeEspresso();;
