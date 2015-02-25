@@ -142,9 +142,9 @@ wirebox.scanLocations = ["models","com","org.majano"];
 This is an array of class path's that WireBox will use to stop recursion on any object graph that has inheritance when looking for dependencies.
 
 ```javascript
-wirebox.stopRecursions = ["transfer.com.TransferDecorator","coldbox.system.EventHandler"];
+wirebox.stopRecursions = [ "transfer.com.TransferDecorator", "coldbox.system.EventHandler" ];
 ```
-<h4 style="color:blue">parentInjector</h4>
+## parentInjector
 This setting is actually a reference to another parent injector you would like this injector to set as its parent injector. Now say this sentence 10 times without hiccuping.
 
 ```javascript
