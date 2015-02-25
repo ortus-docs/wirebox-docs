@@ -77,7 +77,6 @@
    * [Scoping Process](custom_scopes/scoping_process.md)
    * [Registering a Custom Scope](custom_scopes/registering_a_custom_scope.md)
 * [WireBox Injector Interface](wirebox_injector_interface/README.md)
-* [WireBox ORM Services](wirebox_orm_services/README.md)
 * [WireBox Object Populator](wirebox_object_populator/README.md)
    * [populateFromXML](wirebox_object_populator/populatefromxml.md)
    * [populateFromQuery](wirebox_object_populator/populatefromquery.md)
