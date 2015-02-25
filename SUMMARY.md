@@ -11,7 +11,6 @@
    * [System Requirements](installing_wirebox/system_requirements.md)
 * [Installing WireBox](installing_wirebox/README.md)
    * [Installation](installing_wirebox/installation.md)
-   * [Installation](installing_wirebox/installation.md)
 * [Dependency Injection Explained](dependency_injection_explained/README.md)
    * [Advantages of a DI Framework](dependency_injection_explained/advantages_of_a_di_framework.md)
 * [Getting Jiggy Wit It!](getting_jiggy_wit_it/README.md)
