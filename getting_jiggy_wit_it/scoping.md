@@ -11,15 +11,32 @@ We touched briefly on singleton and no scope objects in this section, so let's d
 
 ### Scope Configuration Binder
 
-<div style="border: 1px dashed black">
-<p style="margin:12px">component extends=<span style="color:blue">"wirebox.system.ioc.config.Binder"</span>{<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">function</span> configure(){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// map with shorthand or full scope notation</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mapPath(<span style="color:blue">"model.CoffeeShop"</span>).asSingleton();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mapPath(<span style="color:blue">"model.CoffeeShop"</span>).into(<span style="color:red">this</span>.SCOPES.SINGLETON);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// map some long espresso into request scope</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map(<span style="color:blue">"longEspress"</span>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.to(<span style="color:blue">"model.Espresso"</span>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.to(<span style="color:red">"this"</span>.SCOPE.REQUEST);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// cache some tea</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map(<span style="color:blue">"GreenTea"</span>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.to(<span style="color:blue">"model.Tea"</span>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.inCacheBox(timeout=20,provider=(<span style="color:blue">"ehCache"</span>);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// cache some google news that refresh themselves every 40 min or after 20 min of inactivity</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map(<span style="color:blue">"latestNews"</span>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.inCacheBox(timeout=20,provider=(<span style="color:blue">"ehCache"</span>);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.toRSS(<span style="color:blue">"http://news.google.com/news?output=rss"</span>);</p>
-</div>
-<br>
-<div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="8%" style="float:left;margin-top:3px"><p style="margin:12px"><b> Note: In the configuration binder section you will see where the this.SCOPES enumeration class comes from.</b></p>
-<div style="clear:both"></div>
-</div>
-<br>
+```javascript
+component extends="wirebox.system.ioc.config.Binder"{
+
+	function configure(){
+
+		// map with shorthand or full scope notation
+		mapPath("model.CoffeeShop").asSingleton();
+		mapPath("model.CoffeeShop").into(this.SCOPES.SINGLETON);
+		// map some long espresso into request scope
+		map("longEspress")
+			.to("model.Espresso")
+			.into(this.SCOPES.REQUEST);
+		// cache some tea
+		map("GreenTea")
+			.to("model.Tea")
+			.inCacheBox(timeout=20,provider="ehCache");
+		// cache some google news that refresh themselves every 40 minutes or after 20 minutes of inactivity
+		map("latestNews")
+			.inCacheBox(timeout=40,lastAccessTimeout=20,provider="ehCache");
+			.toRSS("http://news.google.com/news?output=rss")
+	}
+
+}
+
+```
+
 ### Internal Scopes
 
 Here are the internal scopes that ship with WireBox:
