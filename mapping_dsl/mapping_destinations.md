@@ -64,7 +64,7 @@ mapPath("UserService")
 ```
 <br>
 <div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="10%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
+<img src="../images/icon_important.png" width="18%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
 Important : Please note that WireBox can create different types of objects for DI. However, only CFCs will be inspected for autowiring automatically unless you specifically tell WireBox that a certain mapping should not be autowired. In this case you will use the dependencies DSL to define all DI relationships.  </b></p>
 <div style="clear:both"></div>
 </div>

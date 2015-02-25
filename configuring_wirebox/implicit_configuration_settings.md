@@ -110,44 +110,42 @@ wirebox.cacheBox = {
 <h4 style="color:blue">scopeRegistration</h4>
 This structure tells WireBox how to leach itself into any ColdFusion scope when initialized.
 
-<table>
-    <tr>
-        <th>Kry</th>
-        <th>Type</th>
-        <th>Required</th>
-        <th>Default</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>enabled</td>
-        <td>boolean</td>
-        <td>false</td>
-        <td>true</td>
-        <td>Enables scope registration</td>
-    </tr>
-    <tr>
-        <td>scope</td>
-        <td>CF Scope</td>
-        <td>true</td>
-        <td>application</td>
-        <td>The ColdFusion scope</td>
-    </tr>
-    <tr>
-        <td>key</td>
-        <td>string</td>
-        <td>true</td>
-        <td>wirebox</td>
-        <td>The key to use in the ColdFusion scope when registering</td>
-    </tr>
-</table>
+<table class="tablelisting" cellpadding="5">
+<tbody><tr>
+<th><b>Key</b> </th>
+<th><b>Type</b> </th>
+<th><b>Required</b> </th>
+<th><b>Default</b> </th>
+<th><b>Description</b></th></tr>
+<tr>
+<td><b>enabled</b> </td>
+<td>boolean </td>
+<td>false </td>
+<td>true </td>
+<td>Enables scope registration</td></tr>
+<tr>
+<td><b>scope</b> </td>
+<td>CF Scope </td>
+<td>true </td>
+<td><i>application</i> </td>
+<td>The ColdFusion scope</td></tr>
+<tr>
+<td><b>key</b> </td>
+<td>string </td>
+<td>true </td>
+<td><i>wirebox</i> </td>
+<td>The key to use in the ColdFusion scope when registering</td></tr></tbody></table>
 
-```javascript
+
+```
 wirebox.scopeRegistration = {
 	enabled = true,
 	scope   = "application", // server, cluster, session, application
 	key		= "wireBox"
 };
 ```
+
+<br>
 <h4 style="color:blue">customDSL</h4>
 
 Please refer to the Custom DSL section to find out more about custom DSLs, the following are just the way you declare them:

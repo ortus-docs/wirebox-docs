@@ -23,25 +23,10 @@ Ok, now that we know how to configure WireBox, let's get into the fun stuff of o
 
 <br>
 <div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="10%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
+<img src="../images/icon_important.png" width="10%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
 Important: From the methods we have seen above only the map() and with() methods require a DSL destination. </b></p>
 <div style="clear:both"></div>
 </div>
 <br>
 
-<h4 style="color:blue">MapDirectory() Influence & Filters</h4>
 
-The mapDirectory() allows you to leverage closures or UDF'sto influence and filter mappings. The arguments are filter to add a filter that MUST return boolean in order to process the mapping and influence that can influence the created mapping with any custom bindings.
-```javascript
-// influence only certain components to be singleton
-mapDirectory(packagePath="coldbox.testing.testModel.ioc", influence=function(binder, path){
-	if( findNoCase( "simple", arguments.path) ){
-		arguments.binder.asSingleton();
-	}
-});
-
-// filter some components from registration
-mapDirectory(packagePath="coldbox.testing.testModel.ioc", filter=function(path){
-	return ( findNoCase( "simple", arguments.path ) ? false : true );
-});
-```

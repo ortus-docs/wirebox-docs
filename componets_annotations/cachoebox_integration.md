@@ -26,7 +26,7 @@ component cachebox="ehcache" cacheTimeout="20"{}
 component cache cacheTimeout="60" cacheLastAccessTimeout="10"{}
 ```
 <div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="12%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
+<img src="../images/icon_important.png" width="15%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
 Important : When storing objects in volatile scopes like cache, session, request, etc. You must be careful of not injecting them directly into singletons or other volatile objects as you could have memory leaks via a side effect called Scope Widening Injection. We recommend combining them via WireBox Providers to avoid this side effect. </b></p>
 <div style="clear:both"></div>
 </div>

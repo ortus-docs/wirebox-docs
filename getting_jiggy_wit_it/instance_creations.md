@@ -33,28 +33,32 @@ We have now coded our classes and unit tests with some cool annotations in recor
 So let's do examples for each where our classes we just built are placed in a directory called model of the root directory.
 
 <p style="color:grey">Implicit Creation</p>
-<div style="border: 1px dashed black">
-<p style="margin:12px">injector = <span style="color:red">createObject</span>("<span style="color:blue">"component","wirebox.sistem.ioc.Injector"</span>) init();<br>espresso = injector.getInstance("<span style="color:blue">"model.CoffeShop"</span>).makeEspresso();</p>
-</div>
+```javascript
+injector = createObject("component","wirebox.system.ioc.Injector").init();
+espresso = injector.getInstance("model.CoffeeShop").makeEspresso();
+
+```
 <br>
 <p style="color:grey">Explicit Binder Configuration</p>
-<div style="border: 1px dashed black">
-<p style="margin:12px">map(<span style="color:blue">"CoolShop"</span>).to(<span style="color:blue">"model.Coffeshop"</span>);</p>
-</div>
+```javascript
+map("CoolShop").to("model.CoffeeShop");
+```
 <br>
 <p style="color:grey">Explicit Creation</p>
-<div style="border: 1px dashed black">
-<p style="margin:12px">injector = <span style="color:red">createObject</span>("<span style="color:blue">"component","wirebox.sistem.ioc.Injector"</span>) init();<br>espresso = injector.getInstance("<span style="color:blue">"CoolShop"</span>).makeEspresso();</p>
-</div>
+```javascript
+injector = createObject("component","wirebox.system.ioc.Injector").init();
+espresso = injector.getInstance("CoolShop").makeEspresso();
+```
 <br>
 <p style="color:grey">Scan Locations Binder Configuration</p>
-<div style="border: 1px dashed black">
-<p style="margin:12px">wirebox.scanLocations = [<span style="color:blue">"model"</span>];</p>
-</div>
+```javascript
+wirebox.scanLocations = ["model"];
+```
 <br>
 <p style="color:grey">Set Locations Creation</p>
-<div style="border: 1px dashed black">
-<p style="margin:12px">injector = <span style="color:red">createObject</span>("<span style="color:blue">"component","wirebox.sistem.ioc.Injector"</span>) init();<br>espresso = injector.getInstance("<span style="color:blue">"CoffeShop"</span>).makeEspresso();</p>
-</div>
+```javascript
+injector = createObject("component","wirebox.system.ioc.Injector").init();
+espresso = injector.getInstance("CoffeeShop").makeEspresso();;
+```
 <br>
 So our recommendation is to always try to create configuration binders as best practice, but your requirements might dictate something else.
