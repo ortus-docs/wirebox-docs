@@ -26,10 +26,5 @@ Most of the time we believe our DI engines should be black boxes, but we try to 
 3. If the builder could not produce an instance, it is logged and DI is skipped on it.
 
 
-<div style="border: 1px solid black">
-<img src="../images/icon_important.png" width="15%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Important: Circular dependencies are supported in all injection styles within WireBox. With one caveat, if you choose constructor arguments with circular dependencies, you must use object providers. </b></p>
-<div style="clear:both"></div>
-</div>
-<br>
+> **Important** Circular dependencies are supported in all injection styles within WireBox. With one caveat, if you choose constructor arguments with circular dependencies, you must use object providers.
 
