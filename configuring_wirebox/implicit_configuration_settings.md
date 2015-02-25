@@ -12,7 +12,10 @@ function configure(){
 	wireBox = {
 	
 	    // LogBox Config: instantiation path
-	    logBoxConfig = "wirebox.system.ioc.config.LogBox";
+	    logBoxConfig = "wirebox.system.ioc.config.LogBox",
+	    
+	    // CacheBox
+	    cacheBox = { enabled = true },
 	    
 		// Scope registration, automatically register a wirebox injector instance on any CF scope
 		// By default it registeres itself on application scope
