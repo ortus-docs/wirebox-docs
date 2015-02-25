@@ -14,8 +14,8 @@ coldbox.system.aop
 wirebox.system.aop
 ```
 
-Requirements
+## Requirements
 
-    ColdFusion 8 and above
-    Railo 3.1 and above
-    Disk/Memory Generation
+* ColdFusion 8 and above
+* Railo 3.1 and above
+* Disk/Memory Generation
