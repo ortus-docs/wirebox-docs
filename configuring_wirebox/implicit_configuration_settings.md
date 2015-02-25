@@ -67,21 +67,18 @@ wirebox.logBoxConfig = "wirebox.system.ioc.config.LogBox";
 
 ## cachebox
 
-If you are using WireBox within a ColdBox application this setting is ignored. The following are the keys for this configuration structure:
-
-| Key | Type | Required | Default | Description |
-| -- | -- | -- | -- | -- |
-| enabled | boolean |boolean | boolean | Enables [CacheBox](http://wiki.coldbox.org/wiki/CacheBox.cfm) integration |
-| configFile | config path  | false  |coldbox.system.ioc.config.CacheBox |The [CacheBox](http://wiki.coldbox.org/wiki/CacheBox.cfm) configuration file to use when creating CacheBox|
-| cacheFactory  | object | false |--- | A reference to an already instantiated CacheBox factory to use with this Injector |
-| classNamespace | class path  | false | coldbox.system.cache  |The default namespace location of CacheBox. If using the standalone version of CacheBox you most likely will change this to cachebox.system.cache, else ignore this setting. |
+If you are using WireBox within a ColdBox application this setting is ignored and it will use the ColdBox application's CacheBox configuration. The following are the keys for this configuration structure:
 
 ```javascript
 wirebox.cacheBox = {
+    // Activate the CacheBox DSL and caching
 	enabled = false,
-	configFile = "coldbox.system.ioc.config.CacheBox", //An optional configuration file to use for loading CacheBox
-	cacheFactory = "", //A reference to an already instantiated CacheBox CacheFactory
-	classNamespace = "" //A class path namespace to use to create CacheBox: Default=coldbox.system.cache or wirebox.system.cache
+	// An optional configuration file to use for loading CacheBox
+	configFile = "coldbox.system.ioc.config.CacheBox", 
+	// A reference to an already instantiated CacheBox CacheFactory, instead of building one
+	cacheFactory = "", 
+	//A class path namespace to use to create CacheBox: Default=coldbox.system.cache or wirebox.system.cache
+	classNamespace = ""
 };
 ```
 
