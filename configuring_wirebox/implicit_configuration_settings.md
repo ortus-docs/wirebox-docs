@@ -115,24 +115,11 @@ wirebox.customDSL = {
 ## customScopes
 Please refer to the Custom scopes section to find out more about custom scopes, the following are just the way you declare them:
 
-<table>
-    <tr>
-        <th>Key</th>
-        <th>Type</th>
-        <th>Required</th>
-        <th>Default</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>{ScopeName}</td>
-        <td>string</td>
-        <td>true</td>
-        <td>---</td>
-        <td>The value of the instantiation path of the custom scope that implements coldbox.system.ioc.scopes.IScope. The name of the scope will be used when registered the scope annotation.</td>
-    </tr>
-</table>
 ```javascript
 wirebox.customScopes = {
+    // The value of the instantiation path of the custom scope 
+    // that implements coldbox.system.ioc.scopes.IScope. 
+    // The name of the scope will be used when registered the scope annotation.
 	CoolSingletons = "my.path.SingletonScope",
 	FunkyTransaction = "my.funky.Transaction"
 };
