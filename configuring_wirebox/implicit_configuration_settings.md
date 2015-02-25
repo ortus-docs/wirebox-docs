@@ -151,7 +151,7 @@ This setting is actually a reference to another parent injector you would like t
 ```javascript
 wirebox.parentInjector = application.coolInjector;
 // or
-wirebox.parentInjector = createObject("component","coldbox.system.ioc.Injector").init("old.legacy.binder");
+wirebox.parentInjector = new coldbox.system.ioc.Injector("old.legacy.binder");
 ```
 <h4 style="color:blue">listeners</h4>
 This section only shows you how to register WireBox listeners, so please refer to the object life cycle events section for more information. This setting is an array of listener structure definitions that WireBox's event manager will use when broadcasting object life cycle events. Each interceptor structure definition has the following keys:
