@@ -16,11 +16,3 @@ WireBox can be downloaded as a separate framework or it is included with the lat
 
 <br>
 <img src="../images/installing_ColdBoxSystem.jpg">
-<br>
-<br>
-
-
-
-
-
-
