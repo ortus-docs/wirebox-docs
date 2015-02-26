@@ -4,7 +4,7 @@
 > <small> <i>Dhanji R. Prasanna</i></small>
 
 
-<img src="../images/overview_WireBoxIcon.png" width="46%" style="float:left"> 
+<img src="../images/overview_WireBoxIcon.png" width="46%" style="float:left">
 
 <p>WireBox alleviates the need for custom object factories or manual object creation in your ColdFusion applications. It provides a standardized approach to object construction and assembling that will make your code easier to adapt to changes, easier to test, [mock](http://wiki.coldbox.org/wiki/MockBox.cfm) and extend.</p>
 

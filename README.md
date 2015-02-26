@@ -1,11 +1,11 @@
 ```
- __          ___          ____            
- \ \        / (_)        |  _ \           
+ __          ___          ____
+ \ \        / (_)        |  _ \
   \ \  /\  / / _ _ __ ___| |_) | _____  __
    \ \/  \/ / | | '__/ _ \  _ < / _ \ \/ /
-    \  /\  /  | | | |  __/ |_) | (_) >  < 
+    \  /\  /  | | | |  __/ |_) | (_) >  <
      \/  \/   |_|_|  \___|____/ \___/_/\_\ v2.0.0
-                                          
+
 ```
 
 # WireBox Manual - Version 2.0.0
@@ -28,7 +28,7 @@ And constructed with the following guidelines:
 
 
 # License
-The ColdBox Platform, WireBox is open source and licensed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0.html) License.  
+The ColdBox Platform, WireBox is open source and licensed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0.html) License.
 
 * Copyright by Ortus Solutions, Corp
 * ColdBox is a registered trademark by Ortus Solutions, Corp
