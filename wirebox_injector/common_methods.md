@@ -2,7 +2,7 @@
 
 The following chart shows you the most common methods when dealing with the WireBox Injector. This doesn't mean there are no other methods on the Injector that are of value, so please check out the CFC Docs for more in-depth knowledge.
 
-```js 
+```js
 // A method you can use to send objects to get autowired by convention or mapping lookups
 autowire(target,[mapping],[targetID],[annotationCheck]) </td>
 
