@@ -2,7 +2,7 @@
 
 Now that we have built our aspect we need to register it with WireBox so it nows about it and all DI can be performed in it. Let's open our WireBox binder and use the following DSL method:
 
-* mapAspect(aspect,autoBinding=[true])
+* `mapAspect(aspect,autoBinding=[true])`
 
 ```javascript
 mapAspect("MethodLogger").to("model.aspects.MethodLogger");
