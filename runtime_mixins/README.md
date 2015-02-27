@@ -29,4 +29,4 @@ component mixins="/helpers/base"{
 
 This will grab all the methods in the `base.cfm` and `model.cfm` templates and inject them into the target mapping as public methods. Awesome right?
 
-> **Tip** The list of templates can include a `.cfm` extension or none at allor not
+> **Tip** The list of templates can include a `.cfm` extension or none at all
