@@ -1,5 +1,5 @@
 # MethodMatcher Annotation DSL
-Create a methodMatcher annotation on the component with the following DSL values:
+Create a `methodMatcher` annotation on the component with the following DSL values:
 
 |DSL|Description|
 |--|--|
