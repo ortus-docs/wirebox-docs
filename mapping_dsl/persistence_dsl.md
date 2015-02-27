@@ -4,10 +4,9 @@ The next step in our mapping DSL excursion is to learn about how WireBox will pe
 
 However, we need to specifically tell WireBox into what scope the declared mapped objects should be placed on in order for us to leverage caching, the singleton pattern, etc. This is accomplished by leveraging our persistence component annotations or the following methods if you prefer a non-annotation approach:
 
-<h4 style="color:red">Important</h4>
+>> **Note** Please note that all WireBox configuration binders have two public properties:
 
-<b>Note: Please note that all WireBox configuration binders have two public properties:</b>
-```javascript
+```js
 this.TYPES - Enum class (coldbox.system.ioc.Types)
 this.SCOPES - Enum class (coldbox.system.ioc.Scopes)
 ```
