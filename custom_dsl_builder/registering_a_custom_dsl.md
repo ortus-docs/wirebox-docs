@@ -20,3 +20,13 @@ property name="funky" inject="ortus:funkyObject";
 map("Luis")
 	.toDSL("ortus:funkyObject");
 ```
+
+## Dynamic Custom DSL Registration
+
+Injectors allow you to register custom DSLs at runtime by using the `registerDSL()` method on any injector.
+
+```js
+// Register Custom DSL
+controller.getWireBox()
+    .registerDSL( namespace="javaloader", path="app.model.JavaLoaderDSL" );
+```
