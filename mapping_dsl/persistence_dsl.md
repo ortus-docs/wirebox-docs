@@ -10,11 +10,10 @@ However, we need to specifically tell WireBox into what scope the declared mappe
 this.TYPES - Enum class (coldbox.system.ioc.Types)
 this.SCOPES - Enum class (coldbox.system.ioc.Scopes)
 ```
-<div style="border:1px dashed">
-    <p style="margin:10px">
+
 These classes have on themselves several public properties that are a cool shorthand way to link to construction types or persistence scopes
-    </p>
-</div>
+
+
 <br>
 <table class="tablelisting" cellpadding="5">
 <tbody><tr>
