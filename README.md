@@ -41,10 +41,12 @@ The WireBox help and discussion group can be found here: https://groups.google.c
 
 # Reporting a Bug
 We all make mistakes from time to time :) So why not let us know about it and help us out.  We also love pull requests, so please star us and fork us: https://github.com/coldbox/coldbox-platform
+
 * By Email: [bugs@coldbox.org](mailto:bugs@coldbox.org)
 * By Jira: https://ortussolutions.atlassian.net/browse/WIREBOX
 
 # Professional Open Source
+
 ![Ortus Solutions, Corp](images/ortussolutions_button.png)
 
 ColdBox is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
