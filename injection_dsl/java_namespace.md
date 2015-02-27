@@ -10,4 +10,6 @@ Interact with Java directly
 <td>Get a reference or instantiate the java {class} for you.</td></tr></tbody></table>
 
 
-`
+```javascript
+property name="builder" inject="java:java.lang.StringBuilder";
+```
