@@ -19,4 +19,4 @@ function useChatter(){
 }
 ```
 
-The WireBox provider object (coldbox.system.ioc.Provider) has an onMissingMethod() function that will take all missing method calls and proxy them to the provided object. Now, this is great but be ready to lose on performance if you use this approach. That is the only caveat to this approach, is that you will be impacted by performance, not crazy, but try it.
+The WireBox provider object (`wirebox.system.ioc.Provider`) has an `onMissingMethod()` function that will take all missing method calls and proxy them to the provided object. Now, this is great but be ready to lose on performance if you use this approach. That is the only caveat to this approach, is that you will be impacted by performance, not crazy, but try it.
