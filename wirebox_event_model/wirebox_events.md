@@ -83,6 +83,4 @@ WireBox's offers a wide gamut of life cycle events that are announced at certain
 <li><b>targetID</b> : The unique target object ID used for wiring </li></ul></td>
 <td>Called right after the instance has been created, initialized and DI has been completed on it. </td></tr></tbody></table>
 
-> **Note** Please see our [CacheBox](http://cachebox.ortusbooks.com) documentation to see all of CacheBox's events. </b></p>
-<div style="clear:both"></div>
-</div>
+> **Note** Please see our [CacheBox](http://cachebox.ortusbooks.com) documentation to see all of CacheBox's events. 
