@@ -10,7 +10,7 @@ mapScope("ortus","path.model.dsl.OrtusScope");
 
 ```
 
-Now I can use the ortus scope in my mappings DSL and even my annotations, isn't that cool!
+Now I can use the `ortus` scope in my mappings DSL and even my annotations, isn't that cool!
 
 ```javascript
 component scope="ortus"{
