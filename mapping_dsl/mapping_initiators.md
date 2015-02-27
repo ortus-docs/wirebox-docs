@@ -23,6 +23,6 @@ Ok, now that we know how to configure WireBox, let's get into the fun stuff of o
 <td>This method is a utility method that retrieves the <i>alias</i> mapping so you can start concatenating methods for that specific mapping. Basically putting it into a workable context.</td></tr></tbody></table>
 
 <br>
-> **Important** From the methods we have seen above only the map() and with() methods require a DSL destination. 
+> **Important** From the methods we have seen above only the `map()` and `with()` methods require a DSL destination. 
 
 
