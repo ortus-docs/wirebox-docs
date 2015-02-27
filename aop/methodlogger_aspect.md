@@ -97,7 +97,7 @@ And our invokeMethod implementation:
 ```
 
 
-As you can see, the before advice part is what happens before the execution of the real method (or more aspects) occurrs. So everything before the call to arguments.invocation.proceed():
+As you can see, the before advice part is what happens before the execution of the real method (or more aspects) occurrs. So everything before the call to `arguments.invocation.proceed()`:
 
 ```javascript
 var refLocal = {};
