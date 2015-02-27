@@ -12,7 +12,7 @@ mapDSL("ortus","path.model.dsl.OrtusBuilder");
 This will register a new injection DSL namespace called ortus that maps to that instantiation component `path.model.dsl.OrtusBuilder`. Here is a very simple DSL Builder:
 
 ```javascript
-<cfcomponent implements="coldbox.system.ioc.dsl.IDSLBuilder" output="false">
+<cfcomponent implements="wirebox.system.ioc.dsl.IDSLBuilder" output="false">
 
 	<---  init --->
     <cffunction name="init" output="false" access="public" returntype="any" hint="Configure the DSL for operation and returns itself" colddoc:generic="wirebox.system.ioc.dsl.IDSLBuilder">
