@@ -110,12 +110,14 @@ log.debug(debugString);
 
 Then we execute the real method or more aspects (we do not do anything around the method call):
 
+
 ```javascript
 // proceed execution
 refLocal.results = arguments.invocation.proceed();
 ```
 
 Finally, we do the after advice part which happens after the method or other aspects fire and results are returned:
+
 
 ```javascript
 // result logging and returns
