@@ -1,6 +1,6 @@
 # WireBox Events
 
-WireBox's offers a wide gamut of life cycle events that are announced at certain points in execution time. Below are the current events announced by the Injector coldbox.system.ioc.Injector.
+WireBox's offers a wide gamut of life cycle events that are announced at certain points in execution time. Below are the current events announced by the Injector `wirebox.system.ioc.Injector`.
 
 <table class="tablelisting" cellpadding="5">
 <tbody><tr>
