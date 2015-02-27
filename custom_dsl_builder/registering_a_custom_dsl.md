@@ -10,7 +10,7 @@ mapDSL("ortus","path.model.dsl.MyDSL");
 
 ```
 
-Now I can use the ortus scope in my mappings DSL and even my annotations, isn't that cool!
+Now I can use the `ortus` DSL Namespace in my mappings DSL and even my annotations, isn't that cool!
 
 ```javascript
 component scope="ortus"{
@@ -19,6 +19,5 @@ component scope="ortus"{
 
 // map it
 map("Luis")
-	.to("model.path.LuisService")
-	.into("Ortus");
+	.toDSL("ortus:funkyObject");
 ```
