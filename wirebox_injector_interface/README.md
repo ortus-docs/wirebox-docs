@@ -36,3 +36,8 @@ We also provide an interface to create objects that adhere to our injector inter
 <img src="../images/injectorInterface_hierarchies.jpg">
 
 Once you create this CFC that implements this interface then you can call on the injector's `setParent()` method and you are ready to roll.
+
+
+```js
+injector.setParent( myCustomInjector );
+```
