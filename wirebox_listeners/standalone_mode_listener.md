@@ -1,6 +1,6 @@
 # Standalone Mode Listener
 
-<img src="../images/standaloneListener.jpg">
+<img src="../images/standAloneListener.jpg">
 
 <table class="tablelisting" cellpadding="5">
 <tbody><tr>
