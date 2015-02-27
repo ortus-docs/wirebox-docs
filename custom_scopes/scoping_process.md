@@ -5,7 +5,7 @@ The scoping process must be done by using some of the referenced injector's meth
 * `buildInstance(mapping, initArguments)`
 * `autowire()`
 
-These methods must be called sequentially in order to avoid circular reference locks. The first method buildInstance is used to construct and initialize an object instance. The autowire method is used then to process DI and AOP on the targeted object. Let's look at my Ortus Scope:
+These methods must be called sequentially in order to avoid circular reference locks. The first method `buildInstance` is used to construct and initialize an object instance. The autowire method is used then to process DI and AOP on the targeted object. Let's look at my Ortus Scope:
 
 ```javascript
 <cfcomponent output="false" implements="coldbox.system.ioc.scopes.IScope" hint="I am the Ortus Scope of Scopes">
