@@ -21,11 +21,9 @@ component{
 
 }
 ```
-<div style="border: 1px solid black">
-<img src="../images/icon_important.png" width="12%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Important: The inject annotations are done in comments as ColdFusion 9 has a bug when adding annotations on scripted arguments.  </b></p>
-<div style="clear:both"></div>
-</div>
+
+> **Important** The inject annotations are done in comments as ColdFusion 9 has a bug when adding annotations on scripted arguments. 
+
 <br>
 
 An example of a flawed object could be the following:
