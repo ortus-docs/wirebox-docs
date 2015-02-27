@@ -65,4 +65,4 @@ component extends="coldbox.system.ioc.config.Binder"{
 }
 ```
 <br>
-Cool! That's it, anytime you request an Espresso, WireBox will direct its construction to the provider you registered it with.
+Cool! That's it, anytime you request an `Espresso`, WireBox will direct its construction to the provider you registered it with.
