@@ -51,7 +51,7 @@ Why is this object flawed? It is flawed because the majority of DI engines, incl
 
 > **Note** This side effect of concurrency will only occur on objects that are singletons or persisted in scopes like session, server, application, server or cachebox. It does not affect transient or request scoped objects. 
 
-WireBox, can help you lock and provide thread safety to setter and property injections by providing you with the ThreadSafe annotation or our binder threadSafe() tagging method. So if we wanted to make the last example thread safe for property and setter wiring then we would do the following:
+WireBox, can help you lock and provide thread safety to setter and property injections by providing you with the `ThreadSafe` annotation or our binder `threadSafe()` tagging method. So if we wanted to make the last example thread safe for property and setter wiring then we would do the following:
 
 ```javascript
 component threadSafe{
@@ -79,11 +79,9 @@ component threadSafe=true{
 map("MyObject").to("path.model.MyObject").asSingleton().threadSafe();
 ```
 
-<div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="12%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Note: All objects are marked as non thread safe for dependency wiring by default in order to allow for circular dependencies. Please note that if you mark an object as threadSafe, then it will not be able to support circular dependencies unless it uses WireBox providers. ( See Providers Section )  </b></p>
-<div style="clear:both"></div>
-</div>
+> **Note** All objects are marked as non thread safe for dependency wiring by default in order to allow for circular dependencies. Please note that if you mark an object as threadSafe, then it will not be able to support circular dependencies unless it uses WireBox providers. ( See Providers Section )  
+
 <br>
+
 Our threadSafe annotation and binder tagging property will allow for these objects to be completely locked and synchronized for object creation, wiring and onDiComplete(). However, circular dependencies will now fail as persistence cannot be guaranteed for the setter or property dependencies. However, since WireBox is so awesome, you can still use circular dependencies by wiring instead our object providers. (Please see providers section). In conclusion, constructing and designing a CFC that is thread safe is often a very arduous process. It is also very difficult to test and recreate threading issues in your objects and applications. So don't feel bad, as even the best of us can get into some nasty wormholes when dealing with concurrency and thread safety. However, always try to design for as much concurrency as possible and test test test!
 
