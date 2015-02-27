@@ -1,6 +1,8 @@
 # Persistence DSL
 
-The next step in our mapping DSL excursion is to learn about how WireBox will persist these object mappings into WireBox scopes. By default (as we have seen), all object mappings are transient objects and they belong to a scope type called NOSCOPE. However, we need to specifically tell WireBox into what scope the declared mapped objects should be placed on in order for us to leverage caching, the singleton pattern, etc. This is accomplished by leveraging our persistence component annotations or the following methods if you prefer a non-annotation approach:
+The next step in our mapping DSL excursion is to learn about how WireBox will persist these object mappings into WireBox scopes. By default (as we have seen), all object mappings are transient objects and they belong to a scope type called **NOSCOPE**.
+
+However, we need to specifically tell WireBox into what scope the declared mapped objects should be placed on in order for us to leverage caching, the singleton pattern, etc. This is accomplished by leveraging our persistence component annotations or the following methods if you prefer a non-annotation approach:
 
 <h4 style="color:red">Important</h4>
 
