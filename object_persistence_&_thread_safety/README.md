@@ -79,7 +79,7 @@ component threadSafe=true{
 map("MyObject").to("path.model.MyObject").asSingleton().threadSafe();
 ```
 
-> **Note** All objects are marked as non thread safe for dependency wiring by default in order to allow for circular dependencies. Please note that if you mark an object as `threadSafe`, then it will not be able to support circular dependencies unless it uses WireBox providers. ( See Providers Section )  
+> **Note** All objects are marked as non thread safe for dependency wiring by default in order to allow for circular dependencies. Please note that if you mark an object as `threadSafe`, then it will not be able to support circular dependencies unless it uses WireBox providers. ( See [Providers Section](providers/README.md) )  
 
 <br>
 
