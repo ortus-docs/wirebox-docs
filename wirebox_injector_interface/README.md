@@ -1,4 +1,5 @@
 # WireBox Injector Interface
+
 We also provide an interface to create objects that adhere to our injector interface: coldbox.system.ioc.IInjector. Then these objects can be used as parent injectors, great for legacy factories or creating hierarchies according to your specs. All you have to do is implement the following interface:
 
 ```javascript
