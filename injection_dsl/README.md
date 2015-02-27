@@ -46,3 +46,22 @@ function init(required myService, required cache){
 ```
 
 > **Important** In full script components, annotating inline arguments is broken in Adobe ColdFusion 9. You will have to annotate them via the alternative annotation syntax in ColdFusion 9 via the javadocs style comments.
+
+
+## Setter Method Annotation
+
+You can also annotate setter methods with the inject annotation to provide injections
+
+```javascript
+<---  Via tag based annotations --->
+<cffunction name="setService" returntype="any" output="false" inject="UserService">
+	<cfargument name="service">
+</cffunction>
+
+
+function setService(required service) inject="UserService"{
+  variables.service = arguments.service;
+}
+```
+
+WireBox offers a wide gamut of annotation namespaces you can use in your CFML applications and ColdBox applications. However, we took it a step further and allowed you to create your own custom DSL namespaces making your annotations come alive!
