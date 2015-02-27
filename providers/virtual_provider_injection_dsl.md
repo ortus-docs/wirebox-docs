@@ -1,6 +1,8 @@
 # Virtual Provider Injection DSL
 
-You can inject automatic object providers by using the provider injection DSL namespace. This will inject a WireBox provider class (`wirebox.system.ioc.Provider`) that follows our [Provider pattern](http://en.wikipedia.org/wiki/Provider_model) with one method on it: get() that will provide you with the requested mapped object. The difference between custom providers here is that WireBox will create a virtual provider object for you dynamically at runtime, configure it to retrieve a specific type of mapping and then use that for you. The provider namespace will take everything after it and evaluate it as either a named mapping or a full injection DSL string.
+You can inject automatic object providers by using the provider injection DSL namespace. This will inject a WireBox provider class (`wirebox.system.ioc.Provider`) that follows our [Provider pattern](http://en.wikipedia.org/wiki/Provider_model) with one method on it: `get()` that will provide you with the requested mapped object. 
+
+The difference between custom providers here is that WireBox will create a virtual provider object for you dynamically at runtime, configure it to retrieve a specific type of mapping and then use that for you. The provider namespace will take everything after it and evaluate it as either a named mapping or a full injection DSL string.
 
 For example, inject="provider:MyService" will inject a provider of MyService objects, so it will look for a MyService ID in the binder. However, you can also get mega funky and do this: inject="provider:logbox:logger:{this}" and WireBox will create a provider of logbox:logger:{this}.
 
