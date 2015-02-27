@@ -1,4 +1,5 @@
 # ID-Model-Empty Namespace
+
 The default namespace is not specifying one. This namespace is used to retreive either named mappings or full component paths.
 
 <table class="tablelisting" cellpadding="”5”,">
