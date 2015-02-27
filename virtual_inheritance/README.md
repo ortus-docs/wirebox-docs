@@ -11,4 +11,4 @@ map("BaseModel").to("model.base.BaseModel");
 map("UserService").to("model.users.UserService").virtualInheritance("BaseModel");
 ```
 
-This will grab all methods and properties in the AbstractModel CFC and mix them into the UserService, then create a virtual $super scope which will map to an instantiated instance of the BaseModel object.
+This will grab all methods and properties in the `AbstractModel` CFC and mix them into the `UserService`, then create a virtual `$super` scope which will map to an instantiated instance of the `BaseModel` object.
