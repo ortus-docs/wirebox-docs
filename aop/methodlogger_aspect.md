@@ -3,7 +3,7 @@
 Here is my MethodLogger aspect that I will create:
 
 ```javascript
-<cfcomponent output="false" implements="coldbox.system.aop.MethodInterceptor" hint="A simple interceptor that logs method calls and their results">
+<cfcomponent output="false" implements="wirebox.system.aop.MethodInterceptor" hint="A simple interceptor that logs method calls and their results">
 
 	<---  Dependencies --->
 	<cfproperty name="log" inject="logbox:logger:{this}">
