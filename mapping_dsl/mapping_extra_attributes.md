@@ -19,17 +19,16 @@ function afterInstanceAutowire(event, interceptData){
 	var iData 	= {};
 
 	// listen to plugins only
-	if( structKeyExists(attribs, "isPlugin") ){
+	if( structKeyExists(attribs, "handlerPath") ){
 		//Fill-up Intercepted MetaData
-		iData.pluginPath = attribs.pluginPath;
-		iData.custom 	 = attribs.custom;
-		iData.module 	 = attribs.module;
-		iData.oPlugin    = interceptData.target;
+		iData.handlerPath = attribs.handlerPath;
+		iData.module 	  = attribs.module;
+		iData.oHandler    = interceptData.target;
 
 		//Fire My Own Custom Interception
-		instance.interceptorService.processState("afterPluginCreation",iData);
+		instance.interceptorService.processState("afterHandlerCreation",iData);
 	}
 }
 ```
 
-As you can see from this sample, the extra attributes are incredibly essential, as the listener just sends the target object. It would take lots of introspection and metadata inspections in order for me to determine if the incoming object is my system's plugin or not. However, with the extra attributes, it is just a snap!
+As you can see from this sample, the extra attributes are incredibly essential, as the listener just sends the target object. It would take lots of introspection and metadata inspections in order to determine certain metadata about an object. However, with the extra attributes, it is just a snap!
