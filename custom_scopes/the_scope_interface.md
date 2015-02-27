@@ -4,7 +4,7 @@
 <cfinterface hint="The main interface to produce WireBox storage scopes">
 
     <---  init --->
-    <cffunction name="init" output="false" access="public" returntype="any" hint="Configure the scope for operation and returns itself" colddoc:generic="coldbox.system.ioc.scopes.IScope">
+    <cffunction name="init" output="false" access="public" returntype="any" hint="Configure the scope for operation and returns itself" colddoc:generic="wirebox.system.ioc.scopes.IScope">
     	<cfargument name="injector" type="any" required="true" hint="The linked WireBox injector" colddoc:generic="coldbox.system.ioc.Injector"/>
     </cffunction>
 
