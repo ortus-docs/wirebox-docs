@@ -28,6 +28,7 @@ The default namespace is not specifying one. This namespace is used to retreive 
 <td><b>model:{name}:{method}</b> </td>
 <td>Get the {name} instance object, call the {method} and inject the results </td></tr></tbody></table>
 
+
 ```javascript
 // Let's assume we have mapped a few objects called: UserService, SecurityService and RoleService
 
