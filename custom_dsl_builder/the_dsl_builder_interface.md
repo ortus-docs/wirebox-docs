@@ -15,7 +15,7 @@ This will register a new injection DSL namespace called ortus that maps to that 
 <cfcomponent implements="coldbox.system.ioc.dsl.IDSLBuilder" output="false">
 
 	<---  init --->
-    <cffunction name="init" output="false" access="public" returntype="any" hint="Configure the DSL for operation and returns itself" colddoc:generic="coldbox.system.ioc.dsl.IDSLBuilder">
+    <cffunction name="init" output="false" access="public" returntype="any" hint="Configure the DSL for operation and returns itself" colddoc:generic="wirebox.system.ioc.dsl.IDSLBuilder">
     	<cfargument name="injector" type="any" required="true" hint="The linked WireBox injector" colddoc:generic="wirebox.system.ioc.Injector"/>
 		<cfscript>
 			instance = { injector = arguments.injector };
