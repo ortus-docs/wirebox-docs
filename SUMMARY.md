@@ -54,8 +54,6 @@
 * [ORM Entity Injection](orm_entity_injection/README.md)
 * [WireBox Event Model](wirebox_event_model/README.md)
    * [WireBox Events](wirebox_event_model/wirebox_events.md)
-       * [ColdBox Mode Listener](wirebox_listeners/coldbox_mode_listener.md)
-       * [Standalone Mode Listener](wirebox_listeners/standalone_mode_listener.md)
    * [WireBox Listeners](wirebox_listeners/README.md)
        * [ColdBox Mode Listener](wirebox_listeners/coldbox_mode_listener.md)
        * [Standalone Mode Listener](wirebox_listeners/standalone_mode_listener.md)
