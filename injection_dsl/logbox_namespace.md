@@ -1,5 +1,5 @@
 # LogBox Namespace
-Interact with LogBox
+This DSL namespace interacts with the loaded LogBox instance.
 
 <table class="tablelisting" cellpadding="”5”,">
 Interact with LogBox<tbody><tr>
