@@ -11,7 +11,7 @@ Create a `methodMatcher` annotation on the component with the following DSL valu
 |regex:{regex} |Matches against a CFC instantiation path or function name using regular expressions|
 
 ## Overiding Bindings
-One thing to note about self binding aspects is that you can also override their matching by using the autoBind argument in the mapAspect() method call. So if you wanted to override the class and method matching on this aspect you would do this:
+One thing to note about self binding aspects is that you can also override their matching by using the `autoBind` argument in the `mapAspect()` method call. So if you wanted to override the class and method matching on this aspect you would do this:
 
 ```javascript
 mapAspect(aspect="TransactionAspect",autoBind=false).to("model.aspects.MyTransactionAspect");
