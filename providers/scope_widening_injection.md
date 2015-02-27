@@ -32,5 +32,5 @@ component name="handler" singleton{
 }
 ```
 
-That's it! My getUser() method will be replaced by WireBox with a proxy provider method that will request from the WireBox injector the user mapping instance.
+That's it! My `getUser()` method will be replaced by WireBox with a proxy provider method that will request from the WireBox injector the user mapping instance.
 
