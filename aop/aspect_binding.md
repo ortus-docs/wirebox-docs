@@ -8,13 +8,13 @@ Since we have now mapped our aspect in WireBox, we now need to tell it the most 
 
 We do this with another binder DSL method:
 
-* bindAspect(classes,methods,aspects)
+* `bindAspect(classes,methods,aspects)`
 
 ```javascript
 bindAspect(classes=match().mappings('UserService'),methods=match().methods('save'),aspects="MethodLogger");
 ```
 
-What is up with that funky match().... stuff? Well, the classes and methods arguments of the bindAspect() call uses our AOP funky matcher methods that exist in an object called: coldbox.system.aop.Matcher. This matcher object is used to match classes and methods to whatever criteria you like. The binder has a convenience method called match() that creates a new matcher object for you and returns it so you can configure it for classes and method matching. Here are the most common matching methods below:
+What is up with that funky `match()`.... stuff? Well, the classes and methods arguments of the `bindAspect()` call uses our AOP funky matcher methods that exist in an object called: `wirebox.system.aop.Matcher`. This matcher object is used to match classes and methods to whatever criteria you like. The binder has a convenience method called `match()` that creates a new matcher object for you and returns it so you can configure it for classes and method matching. Here are the most common matching methods below:
 
 |Method|Class Matching|Method Matching|Description|
 |--|--|--|--|
