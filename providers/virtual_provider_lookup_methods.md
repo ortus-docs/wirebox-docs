@@ -1,6 +1,6 @@
 # Virtual Provider Lookup Methods
 
-This is a ColdFusion 9/10 feature only, where you can mark methods in your components with a special provider annotation so they can serve the objects you requested automatically for you. This is an amazing feature as it will take the original method signature and replace the method for you with one that will serve the provided objects for you automatically. How insane is that! You deserve some <b>getting jiggy wit it (chapter 4) </b> dancing!
+This is a feature where you can mark methods in your components with a special `provider` annotation so they can serve the objects you requested automatically for you. This is an amazing feature as it will take the original method signature and replace the method for you with one that will serve the provided objects for you automatically. How insane is that! You deserve some <b>getting jiggy wit it (chapter 4) </b> dancing!
 
 ```javascript
 public Espresso function getEspresso() provider="espresso"{}
