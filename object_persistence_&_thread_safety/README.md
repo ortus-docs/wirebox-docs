@@ -47,9 +47,7 @@ Why is this object flawed? It is flawed because the majority of DI engines, incl
 >"The subtle reason has to do with the way Java Virtual Machines (JVM) are designed to manage threads. Threads may keep local, cached copies of non-volatile fields that can quickly get out of sync with one another unless they are synchronized correctly."
 <br><small>From Dependency Injection by Dhanji R. Prasanna</small>
 
-<div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="12%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Note: This side effect of concurrency will only occur on objects that are singletons or persisted in scopes like session, server, application, server or cachebox. It does not affect transient or request scoped objects. </b></p>
+> **Note** This side effect of concurrency will only occur on objects that are singletons or persisted in scopes like session, server, application, server or cachebox. It does not affect transient or request scoped objects. </b></p>
 <div style="clear:both"></div>
 </div>
 <br>
