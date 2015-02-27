@@ -1,5 +1,5 @@
 # Aspect Oriented Programming
-WireBox fully supports aspect-oriented programming (AOP) for ColdFusion and any ColdFusion framework. Just note the different namespaces if using within the ColdBox Platform and standalone WireBox.
+WireBox fully supports [aspect-oriented programming](http://en.wikipedia.org/wiki/Aspect-oriented_programming) (AOP) for ColdFusion and any ColdFusion framework. Just note the different namespaces if using within the ColdBox Platform and standalone WireBox.
 
 ## WireBox AOP RefCard
 
