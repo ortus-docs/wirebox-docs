@@ -30,13 +30,9 @@ component implements="CFIDE.orm.IEventHandler"{
 	* postLoad called by hibernate which in turn announces a coldbox interception: ORMPostLoad
 	*/
 	public void function postLoad(any entity){
-		var args = { 
-		    entity=arguments.entity, 
-		    entityName=getMetadata( arguments.entity ).name 
-		};
 		application.wirebox.autowire( 
-		    target=args.entity, 
-		    targetID="ORMEntity-#args.entityName#" 
+		    target=arguments.entity, 
+		    targetID="ORMEntity-#getMetadata( arguments.entity ).name#" 
 		);
 	}
 
