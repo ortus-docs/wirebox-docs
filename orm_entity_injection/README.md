@@ -2,7 +2,7 @@
 WireBox 2.0.0 supports entity injection via
 
 * [ColdBox ORM Module](https://github.com/coldbox/cbox-cborm) - for use in ColdBox applications
-* Custom ORM Event Handler
+* Custom ORM Event Handler - for use in any CFML application
 
 ## Custom ORM Event Handler
 
