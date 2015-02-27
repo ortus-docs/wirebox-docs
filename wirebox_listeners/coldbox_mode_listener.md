@@ -40,7 +40,7 @@ component{
 		log.info("DUDE, I am going down!!!");
 	}
 
-	function afterInstanceCreation(event, interceptData){
+	function afterInstanceCreation(event, interceptData, buffer){
 		var injector = arguments.interceptData.injector;
 		var target = arguments.interceptData.target;
 		var mapping = arguments.interceptData.mapping;
