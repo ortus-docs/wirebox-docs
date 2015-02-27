@@ -65,7 +65,7 @@
    * [Virtual Provider Lookup Methods](providers/virtual_provider_lookup_methods.md)
    * [Provider onMissingMethod Proxy](providers/provider_onmissingmethod_proxy.md)
    * [Scope Widening Injection](providers/scope_widening_injection.md)
-* [Custom DSL Builder](custom_dsl_builder/README.md)
+* [Custom DSL](custom_dsl_builder/README.md)
    * [The DSL Builder Interface](custom_dsl_builder/the_dsl_builder_interface.md)
 * [Custom Scopes](custom_scopes/README.md)
    * [The Scope Interface](custom_scopes/the_scope_interface.md)
