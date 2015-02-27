@@ -47,9 +47,4 @@ These methods must be called sequentially in order to avoid circular reference l
 </cfcomponent>
 ```
 
-<div style="border: 1px solid black">
-<img src="../images/icon_important.png" width="12%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Important: ALways make sure that you use the buildInstance method and then store the results in the scope before wiring is done to avoid endless loops errors. </b></p>
-<div style="clear:both"></div>
-</div>
-<br>
+> **Important** Always make sure that you use the `buildInstance` method and then store the results in the scope before wiring is done to avoid endless loops errors. 
