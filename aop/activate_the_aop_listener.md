@@ -1,6 +1,6 @@
 # Activate The AOP Listener
 
-WireBox has an amazing event driven architecture that can help you modify, listen and do all kinds of magic during object creation, wiring, etc. Our AOP implementation is just a listener (`wirebox.system.aop.Mixer`) that will transform objects once they are finalized with dependency injection. This means, our AOP engine is completely decoupled from the internals of the DI engine and is incredibly fast and light weight. 
+WireBox has an amazing [event driven architecture](../wirebox_event_model/README.md) that can help you modify, listen and do all kinds of magic during object creation, wiring, etc. Our AOP implementation is just a listener (`wirebox.system.aop.Mixer`) that will transform objects once they are finalized with dependency injection. This means, our AOP engine is completely decoupled from the internals of the DI engine and is incredibly fast and light weight. 
 
 So let's activate it in our WireBox binder configuration:
 
