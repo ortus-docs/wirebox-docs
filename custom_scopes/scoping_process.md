@@ -2,8 +2,8 @@
 
 The scoping process must be done by using some of the referenced injector's methods:
 
-* buildInstance(mapping, initArguments)
-* autowire()
+* `buildInstance(mapping, initArguments)`
+* `autowire()`
 
 These methods must be called sequentially in order to avoid circular reference locks. The first method buildInstance is used to construct and initialize an object instance. The autowire method is used then to process DI and AOP on the targeted object. Let's look at my Ortus Scope:
 
