@@ -17,7 +17,13 @@
 <td><b>interceptData</b> </td>
 <td>struct </td>
 <td><b>standalone-coldbox</b> </td>
-<td>The data structure passed in the event </td></tr></tbody></table>
+<td>The data structure passed in the event </td></tr>
+<tr>
+<td><b>buffer</b> </td>
+<td>coldbox.system.web.context.RequestBuffer </td>
+<td><b>standalone-coldbox</b> </td>
+<td>The data structure passed in the event </td></tr>
+</tbody></table>
 
 So let's say that we want to listen on the beforeInjectorShutdown and on the afterInstanceCreation event in our listener.
 
