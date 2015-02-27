@@ -1,6 +1,6 @@
 # Provider onMissingMethod Proxy
 
-Thanks to our friend Brad Wood, we have a feature in our Providers that you can leverage its onMissngMethod() to proxy calls into the provided object itself. So let's say our provided object has a method called sayHello(), then with an injected provider you must do this:
+Thanks to our ColdBox Evangelist, Brad Wood, we have a feature in our Providers that you can leverage its `onMissngMethod()` to proxy calls into the provided object itself. So let's say our provided object has a method called `sayHello()`, then with an injected provider you must do this:
 
 ```javascript
 property name="chatter" inject="provider:Chat";
@@ -9,7 +9,7 @@ function useChatter(){
 	return chatter.get().sayHello();
 }
 ```
-That is great, but you can proxy calls into the provider itself by doing this:
+That is great, but you can proxy calls into the provider itself by removing the extra `get()` call and doing this:
 
 ```javascript
 property name="chatter" inject="provider:Chat";
