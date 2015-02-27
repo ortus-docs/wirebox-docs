@@ -21,5 +21,22 @@ this.ormSettings = {
 };
 ```
 
+Then you can create the custom event handler with a custom `postLoad()` function where you will leverage WireBox for DI.
 
+```js
+component implements="CFIDE.orm.IEventHandler"{
+    
+    /**
+	* postLoad called by hibernate which in turn announces a coldbox interception: ORMPostLoad
+	*/
+	public void function postLoad(any entity){
+		var orm 		= getORMUtil();
+		var datasource 	= orm.getEntityDatasource( arguments.entity );
+		
+		var args = { entity=arguments.entity, entityName=orm.getSession( datasource ).getEntityName( arguments.entity ) };
+		processEntityInjection(args.entityName, args.entity);
+		announceInterception("ORMPostLoad",args);
+	}
+
+}
 
