@@ -7,7 +7,7 @@
 * **Advice** : An action taken at a particular join point. Usually, before, after or around it.
 * **AOP Proxy** : An object or method representation for the original join point or method.
 
-WireBox has an amazing [event driven architecture](http://wiki.coldbox.org/wiki/WireBox.cfm#WireBox_Event_Model) that can help you modify, listen and do all kinds of magic during object creation, wiring, etc. Our AOP implementation is just a listener that will transform objects once they are finalized with dependency injection. This means, our AOP engine is completely decoupled from the interals of the DI engine and is incredibly fast and light weight. So let's activate it in our WireBox binder configuration:
+WireBox has an amazing [event driven architecture](../../wirebox_event_model/README.md) that can help you modify, listen and do all kinds of magic during object creation, wiring, etc. Our AOP implementation is just a listener that will transform objects once they are finalized with dependency injection. This means, our AOP engine is completely decoupled from the interals of the DI engine and is incredibly fast and light weight. So let's activate it in our WireBox binder configuration:
 
 ```javascript
 wirebox.listeners = [
