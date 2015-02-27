@@ -20,7 +20,6 @@ Now isn't this amazing! We are back to our original business logic and code with
 
 So, easy as 1-2-3! AOP is powerful and extermely flexible. Hopefully, your imagination is now going into overdrive and coming up with ways to not only clean up your code from cross cutting concerns, but also help you do things like:
 
-
 * threaded methods
 * transform method results
 * method auditing
