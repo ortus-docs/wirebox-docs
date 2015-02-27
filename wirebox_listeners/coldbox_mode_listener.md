@@ -22,7 +22,7 @@
 <td><b>buffer</b> </td>
 <td>coldbox.system.core.util.RequestBuffer </td>
 <td><b>ColdBox</b> </td>
-<td>A request buffer object for producing elegant content </td></tr>
+<td>A request buffer object for producing elegant content in ColdBox applications </td></tr>
 </tbody></table>
 
 So let's say that we want to listen on the beforeInjectorShutdown and on the afterInstanceCreation event in our listener.
