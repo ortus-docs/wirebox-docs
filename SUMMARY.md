@@ -38,7 +38,7 @@
    * [Mapping DSL Examples](mapping_dsl_examples/README.md)
 * [Component Annotations](componets_annotations/README.md)
    * [Persistence Annotations](componets_annotations/scope_persistence_annotations.md)
-   * [CacheBox Integration](componets_annotations/cachebox_integration.md)
+   * [CacheBox Annotations](componets_annotations/cachebox_integration.md)
 * [Object Persistence & Thread Safety](object_persistence_&_thread_safety/README.md)
 * [Injection DSL](injection_dsl/README.md)
    * [Property Annotation](injection_dsl/property_annotation.md)
