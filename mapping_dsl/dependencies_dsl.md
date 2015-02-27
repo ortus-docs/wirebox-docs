@@ -2,13 +2,9 @@
 
 The dependencies DSL methods are mostly used to define dependencies and also to activate advanced features on target objects, such as runtime mixins, virtual inheritance, etc.
 
-<br>
-<div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="10%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Please note that you can concatenate more than one of these methods calls to dictate multiple constructor arguments, setter methods, cf properties, and more. </b></p>
-<div style="clear:both"></div>
-</div>
-<br>
+
+> **Note** Please note that you can concatenate more than one of these methods calls to dictate multiple constructor arguments, setter methods, cf properties, and more. 
+
 
 <table class="tablelisting" cellpadding="5">
 <tbody><tr>
