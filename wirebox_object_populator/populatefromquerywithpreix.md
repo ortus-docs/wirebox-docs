@@ -1,4 +1,4 @@
-# populateFromQueryWithPreix
+# populateFromQueryWithPrefix
 
 
 Populates an Object using only specific columns from a query. Useful for performing a query with joins that needs to populate multiple objects.
