@@ -2,7 +2,9 @@
 
 While the injector can help in many ways to secure the creation of your objects, it is ultimately up to you to create code that is both thread safe and tested. It is always a great idea to design your objects without the injector in mind for threading and concurrency. 
 
-DI is not a silver bullet, but a tool to relieve object creation and not to relieve the burden of good object design. Thread safety is much more complex and can be compromised when using persistent scopes like singleton, session, server, application and cache box, as more than one thread will be trying to access your code and dependencies. The only guarantee the injector can provide is the constructor and constructor dependency creation to be completely locked. The following object is to be guaranteed to be locked when created and wired with dependencies:
+DI is not a silver bullet, but a tool to relieve object creation and not to relieve the burden of good object design. Thread safety is much more complex and can be compromised when using persistent scopes like singleton, session, server, application and cachebox, as more than one thread will be trying to access your code and dependencies. 
+
+The only guarantee the injector can provide is the constructor and constructor dependency creation to be completely locked. The following object is to be guaranteed to be locked when created and wired with dependencies:
 
 ```javascript
 component{
