@@ -1,5 +1,5 @@
 # ClassMatcher Annotation DSL
-Create a classMatcher annotation on the component with the following DSL values:
+Create a `classMatcher` annotation on the component with the following DSL values:
 
 |DSL|Description|
 |--|--|
