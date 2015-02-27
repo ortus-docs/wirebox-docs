@@ -22,7 +22,7 @@ Here is my MethodLogger aspect that I will create:
 
 	<---  invokeMethod --->
     <cffunction name="invokeMethod" output="false" access="public" returntype="any" hint="Invoke an AOP method invocation">
-    	<cfargument name="invocation" required="true" hint="The method invocation object: coldbox.system.aop.MethodInvocation">
+    	<cfargument name="invocation" required="true" hint="The method invocation object: wirebox.system.aop.MethodInvocation">
 		<cfscript>
 			var refLocal = {};
 			var debugString = "target: #arguments.invocation.getTargetName()#,method: #arguments.invocation.getMethod()#,arguments:#serializeJSON(arguments.invocation.getArgs())#";
