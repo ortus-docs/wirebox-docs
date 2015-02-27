@@ -36,7 +36,7 @@
    * [Dependencies DSL](mapping_dsl/dependencies_dsl.md)
        * [Mapping Extra Attributes](mapping_dsl/mapping_extra_attributes.md)
    * [Mapping DSL Examples](mapping_dsl_examples/README.md)
-* [Componets Annotations](componets_annotations/README.md)
+* [Component Annotations](componets_annotations/README.md)
    * [Scope Persistence Annotations](componets_annotations/scope_persistence_annotations.md)
    * [CachoeBox Integration](componets_annotations/cachoebox_integration.md)
 * [Injection DSL](injection_dsl/README.md)
