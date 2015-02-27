@@ -1,5 +1,6 @@
 # Provider Namespace
-Inject object providers, please refer to our provider section in this guide.
+Inject object providers, please refer to our [provider section](../providers/README.md) in this guide.
+
 <table class="tablelisting" cellpadding="”5”,">
 <tbody><tr>
 <th><b>DSL</b> </th>
