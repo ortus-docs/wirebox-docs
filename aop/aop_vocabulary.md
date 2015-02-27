@@ -19,7 +19,7 @@ That's it! That tells WireBox to register the AOP engine once it loads. This lis
 
 |Property|Type|Required|Default Value|Description|
 |--|--|--|--|--|
-|generationPath |cf include path |false|<i>/coldbox/system/aop/tmp </i>|The location where UDF stubs will be generated to. This can be to disk or memory.|
-|classMatchReload|boolean|false |false |A cool flag to allow you to reload the class matching dictionary for development purposes only.|
+| `generationPath` |cf include path |false|`/wirebox/system/aop/tmp`|The location where UDF stubs will be generated to. This can be to disk or memory.|
+| `classMatchReload` |boolean|false |false |A cool flag to allow you to reload the class matching dictionary for development purposes only.|
 
 
