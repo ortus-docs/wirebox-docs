@@ -67,7 +67,7 @@
    * [Scope Widening Injection](providers/scope_widening_injection.md)
 * [Custom DSL](custom_dsl_builder/README.md)
    * [The DSL Builder Interface](custom_dsl_builder/the_dsl_builder_interface.md)
-   * Registering a Custom DSL
+   * [Registering a Custom DSL](custom_dsl_builder/registering_a_custom_dsl.md)
 * [Custom Scopes](custom_scopes/README.md)
    * [The Scope Interface](custom_scopes/the_scope_interface.md)
    * [Scoping Process](custom_scopes/scoping_process.md)
