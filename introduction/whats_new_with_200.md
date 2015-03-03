@@ -7,14 +7,14 @@ WireBox  2.0.0 is a major release of our Dependency Injection and AOP library wi
 ## Release Notes
 
 You can find the release version information here: https://ortussolutions.atlassian.net/browse/WIREBOX/fixforversion/12300
-                
+
 <h3>Bugs
 </h3>
 <ul>
 <li>[<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-31'>WIREBOX-31</a>] -Builder.buildDSLDependency does not use the custom DSL correctly as the default namespace kicks in
 </li>
 </ul>
-                        
+
 <h3>Improvements
 </h3>
 <ul>
@@ -23,7 +23,7 @@ You can find the release version information here: https://ortussolutions.atlass
 <li>[<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-35'>WIREBOX-35</a>] -Remove coldbox:cacheManager DSL reference, it is no longer valid
 </li>
 </ul>
-        
+
 <h3>New Features</h3>
 <ul>
 <li>[<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-2'>WIREBOX-2</a>] -allow mapDSL to be altered at runtime by modules via new wirebox method: registerDSL()

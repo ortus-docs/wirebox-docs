@@ -15,31 +15,13 @@ These classes have on themselves several public properties that are a cool short
     </p>
 </div>
 <br>
-<table class="tablelisting" cellpadding="5">
-<tbody><tr>
-<th><b>Method Signature</b> </th>
-<th><b>Description</b> </th></tr>
-<tr>
-<td><b>asSingleton</b>() </td>
-<td>Maps an object to the WireBox internal <i>Singleton</i> scope</td></tr>
-<tr>
-<td><b>into</b>(scope) </td>
-<td>Maps an object to a valid WireBox internal scope or any custom registered scopes by using the registered scope name. Valid internal WireBox scopes are:
-<ul>
-<li>NOSCOPE</li>
-<li>PROTOTYPE</li>
-<li>SINGLETON</li>
-<li>SESSION</li>
-<li>APPLICATION</li>
-<li>REQUEST </li>
-<li>SERVER </li>
-<li>CACHEBOX </li></ul></td></tr>
-<tr>
-<td><b>inCacheBox</b>([key='mappingName'],[timeout],[lastAccessTimeout],[provider='default']) </td>
-<td>Maps an object to the integrated <a href="wiki/CacheBox.cfm">CacheBox</a> instance.</td></tr>
-<tr>
-<td><b>asEagerInit()</b> </td>
-<td>Maps an object to be created immediately once the Injector is created. By default all object mappings are lazy loaded in construction.</td></tr></tbody></table>
+
+|Method Signature|Description|
+|--|--|
+|<b>asSingleton</b>()|Maps an object to the WireBox internal <i>Singleton</i> scope|
+|<b>into</b>(scope) |Maps an object to a valid WireBox internal scope or any custom registered scopes by using the registered scope name. Valid internal WireBox scopes are:<br><br>NOSCOPE<br>PROTOTYPE<br>SINGLETON<br>SESSION<br>APPLICATION<br>REQUEST<br>SERVER <br>CACHEBOX|
+|<b>inCacheBox</b>([key='mappingName'],[timeout],[lastAccessTimeout],[provider='default'])|Maps an object to the integrated <a href="wiki/CacheBox.cfm">CacheBox</a> instance|
+|<b>asEagerInit()</b> |Maps an object to be created immediately once the Injector is created. By default all object mappings are lazy loaded in construction.|
 
 So just remember that these persistence DSL methods are not mandatory. If you are an annotations kinda developer, then you can easily add these persistence annotations to your classes.
 

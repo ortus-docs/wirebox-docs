@@ -1,22 +1,22 @@
 # Implicit Configuration Settings
 
-In the `configure()` method you can create a structure called `wirebox` in the `variables` scope that will hold the configuration data for WireBox. 
+In the `configure()` method you can create a structure called `wirebox` in the `variables` scope that will hold the configuration data for WireBox.
 
 ```
 /**
 * Configure WireBox
 */
 function configure(){
-	
+
 	// The WireBox configuration structure DSL
 	wireBox = {
-	
+
 	    // LogBox Config: instantiation path
 	    logBoxConfig = "wirebox.system.ioc.config.LogBox",
-	    
+
 	    // CacheBox
 	    cacheBox = { enabled = true },
-	    
+
 		// Scope registration, automatically register a wirebox injector instance on any CF scope
 		// By default it registeres itself on application scope
 		scopeRegistration = {
@@ -29,29 +29,29 @@ function configure(){
 		customDSL = {
 			// namespace = "mapping name"
 		},
-		
+
 		// Custom Storage Scopes
 		customScopes = {
 			// annotationName = "mapping name"
 		},
-		
+
 		// Package scan locations
 		scanLocations = [],
-		
+
 		// Stop Recursions
 		stopRecursions = [],
-		
+
 		// Parent Injector to assign to the configured injector, this must be an object reference
 		parentInjector = "",
-		
+
 		// Register all event listeners here, they are created in the specified order
 		listeners = [
 			// { class="", name="", properties={} }
-		]			
+		]
 	};
-	
+
 	// Map Bindings below
-}	
+}
 ```
 
 
@@ -74,9 +74,9 @@ wirebox.cacheBox = {
     // Activate the CacheBox DSL and caching
 	enabled = false,
 	// An optional configuration file to use for loading CacheBox
-	configFile = "coldbox.system.ioc.config.CacheBox", 
+	configFile = "coldbox.system.ioc.config.CacheBox",
 	// A reference to an already instantiated CacheBox CacheFactory, instead of building one
-	cacheFactory = "", 
+	cacheFactory = "",
 	//A class path namespace to use to create CacheBox: Default=coldbox.system.cache or wirebox.system.cache
 	classNamespace = ""
 };
@@ -105,7 +105,7 @@ Please refer to the [Custom DSL](../custom_dsl_builder/README.md) section to fin
 
 ```javascript
 wirebox.customDSL = {
-    // The value of the DSL Namespace is the instantiation path 
+    // The value of the DSL Namespace is the instantiation path
     // of the DSL Namespace builder that implements wirebox.system.ioc.DSL.IDSLBuilder
 	cool = "my.path.CoolDSLBuilder",
 	funkyBox = "my.funky.DSLBuilder"
@@ -117,9 +117,9 @@ Please refer to the [Custom scopes](../custom_scopes/README.md) section to find 
 
 ```javascript
 wirebox.customScopes = {
-    // The value of the instantiation path of the custom scope 
-    // that implements coldbox.system.ioc.scopes.IScope. 
-    // The name of the scope will be used when registered 
+    // The value of the instantiation path of the custom scope
+    // that implements coldbox.system.ioc.scopes.IScope.
+    // The name of the scope will be used when registered
     // the scope annotation.
 	CoolSingletons = "my.path.SingletonScope",
 	FunkyTransaction = "my.funky.Transaction"
@@ -134,7 +134,7 @@ The instantiation paths that this Injector will have registered to do object loc
 wirebox.scanLocations = ["models","com","org.majano"];
 ```
 
-> ** Note** Please note that order of declaration is the same as order of lookup, so it really matters. Also note that this setting only makes sense if you do not like to create mappings for objects and you just want WireBox to discover them for you. 
+> ** Note** Please note that order of declaration is the same as order of lookup, so it really matters. Also note that this setting only makes sense if you do not like to create mappings for objects and you just want WireBox to discover them for you.
 
 
 ## stopRecursions
@@ -154,7 +154,7 @@ wirebox.parentInjector = application.coolInjector;
 wirebox.parentInjector = new coldbox.system.ioc.Injector( "old.legacy.binder" );
 ```
 ## listeners
-This section only shows you how to register WireBox listeners, so please refer to the object life cycle events section for more information. This setting is an array of listener structure definitions that WireBox's event manager will use when broadcasting object life cycle events. 
+This section only shows you how to register WireBox listeners, so please refer to the object life cycle events section for more information. This setting is an array of listener structure definitions that WireBox's event manager will use when broadcasting object life cycle events.
 
 ```javascript
 wirebox.listeners = [
