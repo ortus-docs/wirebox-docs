@@ -16,9 +16,9 @@ map("SearchService")
 
 You can use the following mapping methods to map to virtual providers by using their dsl arguments:
 
-* mapDSL()
-* mapDSL()
-* property(name="",dsl="")
-* setter(name="",dsl="")
-* methodArg(name="",dsl="")
+* `mapDSL()`
+* `mapDSL()`
+* `property(name="",dsl="")`
+* `setter(name="",dsl="")`
+* `methodArg(name="",dsl="")`
 

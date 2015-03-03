@@ -1,5 +1,6 @@
 # WireBox Injector Interface
-We also provide an interface to create objects that adhere to our injector interface: coldbox.system.ioc.IInjector. Then these objects can be used as parent injectors, great for legacy factories or creating hierarchies according to your specs. All you have to do is implement the following interface:
+
+We also provide an interface to create objects that adhere to our injector interface: `wirebox.system.ioc.IInjector`. Then these objects can be used as parent injectors, which are great for legacy factories or creating hierarchies according to your specs. All you have to do is implement the following interface:
 
 ```javascript
 <cfinterface hint="An interface that enables any CFC to act like a parent injector within WireBox">
@@ -34,4 +35,9 @@ We also provide an interface to create objects that adhere to our injector inter
 
 <img src="../images/injectorInterface_hierarchies.jpg">
 
-Once you create this CFC that implements this interface then you can call on the injector's setParent() method and you are ready to roll.
+Once you create this CFC that implements this interface then you can call on the injector's `setParent()` method and you are ready to roll.
+
+
+```js
+injector.setParent( myCustomInjector );
+```

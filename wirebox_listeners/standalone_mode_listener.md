@@ -1,6 +1,6 @@
 # Standalone Mode Listener
 
-<img src="../images/standaloneListener.jpg">
+<img src="../images/standAloneListener.jpg">
 
 <table class="tablelisting" cellpadding="5">
 <tbody><tr>
@@ -42,16 +42,12 @@ component{
 	}
 }
 ```
-Please note the configure() method in the standalone listener. This is necessary when you are using Wirebox listeners outside of a ColdBox application. The configure() method receives two parameters:
+Please note the `configure()` method in the standalone listener. This is necessary when you are using Wirebox listeners outside of a ColdBox application. The `configure()` method receives two parameters:
 
-* injector : An instance reference to the calling Injector where this listener will be registered with.
-* properties : A structure of properties that passes through from the configuration file.
+* `injector` : An instance reference to the calling Injector where this listener will be registered with.
+* `properties` : A structure of properties that passes through from the configuration file.
 
 As you can see from the examples above, each Listener component can listen to multiple events. Now you might be asking yourself, in what order are these listeners executed in? Well, they are executed in the order they are declared in either the ColdBox configuration file as interceptors or the WireBox configuration file as listeners.
 
-<div style="border: 1px solid black">
-<img src="../images/icon_important.png" width="12%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Important: Order is EXTREMELY important for interceptors/listeners. So please make sure you order them in the declaration file. </b></p>
-<div style="clear:both"></div>
-</div>
+> **Important** Order is EXTREMELY important for interceptors/listeners. So please make sure you order them in the declaration file.
 

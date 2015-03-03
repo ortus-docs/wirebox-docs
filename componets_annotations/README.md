@@ -1,4 +1,4 @@
-# Componets Annotations
+# Component Annotations
 
 The following are all the annotations that are discovered by WireBox on any component declaration that WireBox constructs:
 

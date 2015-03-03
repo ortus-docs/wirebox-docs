@@ -1,6 +1,6 @@
 # WireBox Events
 
-WireBox's offers a wide gamut of life cycle events that are announced at certain points in execution time. Below are the current events announced by the Injector coldbox.system.ioc.Injector.
+WireBox's offers a wide gamut of life cycle events that are announced at certain points in execution time. Below are the current events announced by the Injector `wirebox.system.ioc.Injector`.
 
 <table class="tablelisting" cellpadding="5">
 <tbody><tr>
@@ -83,8 +83,4 @@ WireBox's offers a wide gamut of life cycle events that are announced at certain
 <li><b>targetID</b> : The unique target object ID used for wiring </li></ul></td>
 <td>Called right after the instance has been created, initialized and DI has been completed on it. </td></tr></tbody></table>
 
-<div style="border: 1px solid black">
-<img src="../images/icon_info.png" width="8%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Note: Please see our [CacheBox](http://wiki.coldbox.org/wiki/CacheBox.cfm) documentation to see all of CacheBox's events. </b></p>
-<div style="clear:both"></div>
-</div>
+> **Note** Please see our [CacheBox](http://cachebox.ortusbooks.com) documentation to see all of CacheBox's events. 

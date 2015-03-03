@@ -1,8 +1,8 @@
 # LogBox Namespace
-Interact with LogBox
+This DSL namespace interacts with the loaded LogBox instance.
 
 <table class="tablelisting" cellpadding="”5”,">
-Interact with LogBox<tbody><tr>
+<tbody><tr>
 <th><b>DSL</b> </th>
 <th><b>Description</b> </th></tr>
 <tr>
@@ -17,6 +17,7 @@ Interact with LogBox<tbody><tr>
 <tr>
 <td><b>logbox:logger:{this}</b> </td>
 <td>Get a reference to a named logger using the current target object's path as the category name</td></tr></tbody></table>
+
 
 ```javascript
 property name="logbox" inject="logbox";

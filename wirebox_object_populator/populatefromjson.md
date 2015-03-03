@@ -1,6 +1,6 @@
 # populateFromJSON
 
-Populate a bean from a json string
+Populate a bean from a JSON string
 
 <h4 style="color:blue">Returns</h4>
 

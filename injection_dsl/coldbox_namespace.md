@@ -88,6 +88,7 @@ This namespace is a combination of namespaces that are only active when used wit
 <td><b>webservice:{alias}</b> </td>
 <td>Get a webservice object using an {alias} that matches in your coldbox configuration file.</td></tr></tbody></table>
 
+
 ```javascript
 // some examples
 property name="logbox" inject="logbox";

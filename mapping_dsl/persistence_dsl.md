@@ -1,19 +1,19 @@
 # Persistence DSL
 
-The next step in our mapping DSL excursion is to learn about how WireBox will persist these object mappings into WireBox scopes. By default (as we have seen), all object mappings are transient objects and they belong to a scope type called NOSCOPE. However, we need to specifically tell WireBox into what scope the declared mapped objects should be placed on in order for us to leverage caching, the singleton pattern, etc. This is accomplished by leveraging our persistence component annotations or the following methods if you prefer a non-annotation approach:
+The next step in our mapping DSL excursion is to learn about how WireBox will persist these object mappings into WireBox scopes. By default (as we have seen), all object mappings are transient objects and they belong to a scope type called **NOSCOPE**.
 
-<h4 style="color:red">Important</h4>
+However, we need to specifically tell WireBox into what scope the declared mapped objects should be placed on in order for us to leverage caching, the singleton pattern, etc. This is accomplished by leveraging our persistence component annotations or the following methods if you prefer a non-annotation approach:
 
-<b>Note: Please note that all WireBox configuration binders have two public properties:</b>
-```javascript
+> **Note** Please note that all WireBox configuration binders have two public properties:
+
+```js
 this.TYPES - Enum class (coldbox.system.ioc.Types)
 this.SCOPES - Enum class (coldbox.system.ioc.Scopes)
 ```
-<div style="border:1px dashed">
-    <p style="margin:10px">
+
 These classes have on themselves several public properties that are a cool shorthand way to link to construction types or persistence scopes
-    </p>
-</div>
+
+
 <br>
 
 |Method Signature|Description|
@@ -43,10 +43,5 @@ map("myWS")
 	.toWebservice("http://myapp.com/app.cfc?wsdl")
 	.into(this.SCOPES.APPLICATION);
 ```
-<br>
-<div style="border: 1px solid black">
-<img src="../images/icon_important.png" width="18%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Important : Please note that by leveraging scopes that can expire such as cachebox,request,session,applications,etc you must take into account the way they are injected into other objects. They can experience a DI side effect called scope widening injection that can link an object reference that expires into another object reference that does not expire (like singleton). This causes nasty side effects and issues, so please refer to the WireBox Providers section to find out how you can avoid this nasty pitfall by using WireBox providers.  </b></p>
-<div style="clear:both"></div>
-</div>
-<br>
+
+> **Important** Please note that by leveraging scopes that can expire such as cachebox,request,session,applications,etc you must take into account the way they are injected into other objects. They can experience a DI side effect called scope widening injection that can link an object reference that expires into another object reference that does not expire (like singleton). This causes nasty side effects and issues, so please refer to the WireBox Providers section to find out how you can avoid this nasty pitfall by using WireBox providers.

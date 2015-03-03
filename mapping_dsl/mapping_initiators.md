@@ -1,4 +1,5 @@
 # Mapping Initiators
+
 Ok, now that we know how to configure WireBox, let's get into the fun stuff of object mapping. How do we do this? By using our DSL mapping initiators that tell WireBox how to start the object registration process. You will then concatenate the initiators with some DSL destinations methods, DI data, etc to tell WireBox all the information it might need to construct, wire and persist the object. Here are the DSL initiators:
 
 
@@ -11,11 +12,6 @@ Ok, now that we know how to configure WireBox, let's get into the fun stuff of o
 |<b>with</b>(alias)|This method is a utility method that retrieves the <i>alias</i> mapping so you can start concatenating methods for that specific mapping. Basically putting it into a workable context|
 
 <br>
-<div style="border: 1px solid black">
-<img src="../images/icon_important.png" width="10%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Important: From the methods we have seen above only the map() and with() methods require a DSL destination. </b></p>
-<div style="clear:both"></div>
-</div>
-<br>
+> **Important** From the methods we have seen above only the `map()` and `with()` methods require a DSL destination. 
 
 

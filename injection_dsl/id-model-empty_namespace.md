@@ -1,4 +1,5 @@
 # ID-Model-Empty Namespace
+
 The default namespace is not specifying one. This namespace is used to retreive either named mappings or full component paths.
 
 <table class="tablelisting" cellpadding="”5”,">
@@ -26,6 +27,7 @@ The default namespace is not specifying one. This namespace is used to retreive 
 <tr>
 <td><b>model:{name}:{method}</b> </td>
 <td>Get the {name} instance object, call the {method} and inject the results </td></tr></tbody></table>
+
 
 ```javascript
 // Let's assume we have mapped a few objects called: UserService, SecurityService and RoleService

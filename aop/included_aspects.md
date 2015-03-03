@@ -1,5 +1,5 @@
 # Included Aspects
-WireBox comes bundled with three aspects that you can use in your applications and can be found in coldbox.system.aop.aspects:
+WireBox comes bundled with three aspects that you can use in your applications and can be found in `wirebox.system.aop.aspects`:
 
 |Aspect|Description|
 |--|--|

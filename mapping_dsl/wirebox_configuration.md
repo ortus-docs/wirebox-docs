@@ -17,7 +17,7 @@ The configuration binder has the same methods as the implicit structures that ca
 |<b>scopeRegistration</b>(enabled,scope,key)|This method is used to tell the Injector if it should auto-register itself in any ColdFusion scope automatically|
 |<b>stopRecursions</b>(classes)|A method used to register one or a list (array) of class paths the injector will look out for when discovering DI metadata. If these classes are found in the inheritance chain of an object, the injector will not process that inherited chain|
 
-```javascript
+```js
 	logBoxConfig("config.LogBox")
 	.scanLocations( getAppMappig() & ".includes.models" )
 	.stopRecursions( "model.BaseService,model.BaseModel" )

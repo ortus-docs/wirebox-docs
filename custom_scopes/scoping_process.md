@@ -2,17 +2,17 @@
 
 The scoping process must be done by using some of the referenced injector's methods:
 
-* buildInstance(mapping, initArguments)
-* autowire()
+* `buildInstance(mapping, initArguments)`
+* `autowire()`
 
-These methods must be called sequentially in order to avoid circular reference locks. The first method buildInstance is used to construct and initialize an object instance. The autowire method is used then to process DI and AOP on the targeted object. Let's look at my Ortus Scope:
+These methods must be called sequentially in order to avoid circular reference locks. The first method `buildInstance` is used to construct and initialize an object instance. The autowire method is used then to process DI and AOP on the targeted object. Let's look at my Ortus Scope:
 
 ```javascript
-<cfcomponent output="false" implements="coldbox.system.ioc.scopes.IScope" hint="I am the Ortus Scope of Scopes">
+<cfcomponent output="false" implements="wirebox.system.ioc.scopes.IScope" hint="I am the Ortus Scope of Scopes">
 
 	<---  init --->
     <cffunction name="init" output="false" access="public" returntype="any" hint="Configure the scope for operation">
-    	<cfargument name="injector" type="any" required="true" hint="The linked WireBox injector" colddoc:generic="coldbox.system.ioc.Injector"/>
+    	<cfargument name="injector" type="any" required="true" hint="The linked WireBox injector" colddoc:generic="wirebox.system.ioc.Injector"/>
 		<cfscript>
 			instance = {
 				injector = arguments.injector,
@@ -24,7 +24,7 @@ These methods must be called sequentially in order to avoid circular reference l
 
 	<---  getFromScope --->
     <cffunction name="getFromScope" output="false" access="public" returntype="any" hint="Retrieve an object from scope or create it if not found in scope">
-    	<cfargument name="mapping" 			type="any" required="true"  hint="The object mapping" colddoc:generic="coldbox.system.ioc.config.Mapping"/>
+    	<cfargument name="mapping" 			type="any" required="true"  hint="The object mapping" colddoc:generic="wirebox.system.ioc.config.Mapping"/>
 		<cfargument name="initArguments" 	type="any" required="false" hint="The constructor structure of arguments to passthrough when initializing the instance" colddoc:generic="struct"/>
 		<cfscript>
 			var name = arguments.mapping.getName();
@@ -47,9 +47,4 @@ These methods must be called sequentially in order to avoid circular reference l
 </cfcomponent>
 ```
 
-<div style="border: 1px solid black">
-<img src="../images/icon_important.png" width="12%" style="float:left;margin-top:10px"><p style="margin:12px"><b>
-Important: ALways make sure that you use the buildInstance method and then store the results in the scope before wiring is done to avoid endless loops errors. </b></p>
-<div style="clear:both"></div>
-</div>
-<br>
+> **Important** Always make sure that you use the `buildInstance` method and then store the results in the scope before wiring is done to avoid endless loops errors. 

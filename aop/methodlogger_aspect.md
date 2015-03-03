@@ -3,7 +3,7 @@
 Here is my MethodLogger aspect that I will create:
 
 ```javascript
-<cfcomponent output="false" implements="coldbox.system.aop.MethodInterceptor" hint="A simple interceptor that logs method calls and their results">
+<cfcomponent output="false" implements="wirebox.system.aop.MethodInterceptor" hint="A simple interceptor that logs method calls and their results">
 
 	<---  Dependencies --->
 	<cfproperty name="log" inject="logbox:logger:{this}">
@@ -22,7 +22,7 @@ Here is my MethodLogger aspect that I will create:
 
 	<---  invokeMethod --->
     <cffunction name="invokeMethod" output="false" access="public" returntype="any" hint="Invoke an AOP method invocation">
-    	<cfargument name="invocation" required="true" hint="The method invocation object: coldbox.system.aop.MethodInvocation">
+    	<cfargument name="invocation" required="true" hint="The method invocation object: wirebox.system.aop.MethodInvocation">
 		<cfscript>
 			var refLocal = {};
 			var debugString = "target: #arguments.invocation.getTargetName()#,method: #arguments.invocation.getMethod()#,arguments:#serializeJSON(arguments.invocation.getArgs())#";
@@ -74,7 +74,7 @@ And our invokeMethod implementation:
 ```javascript
 <---  invokeMethod --->
 <cffunction name="invokeMethod" output="false" access="public" returntype="any" hint="Invoke an AOP method invocation">
-<cfargument name="invocation" required="true" hint="The method invocation object: coldbox.system.aop.MethodInvocation">
+<cfargument name="invocation" required="true" hint="The method invocation object: wirebox.system.aop.MethodInvocation">
 <cfscript>
 	var refLocal = {};
 	var debugString = "target: #arguments.invocation.getTargetName()#,method: #arguments.invocation.getMethod()#,arguments:#serializeJSON(arguments.invocation.getArgs())#";
@@ -97,7 +97,7 @@ And our invokeMethod implementation:
 ```
 
 
-As you can see, the before advice part is what happens before the execution of the real method (or more aspects) occurrs. So everything before the call to arguments.invocation.proceed():
+As you can see, the before advice part is what happens before the execution of the real method (or more aspects) occurrs. So everything before the call to `arguments.invocation.proceed()`:
 
 ```javascript
 var refLocal = {};
@@ -110,12 +110,14 @@ log.debug(debugString);
 
 Then we execute the real method or more aspects (we do not do anything around the method call):
 
+
 ```javascript
 // proceed execution
 refLocal.results = arguments.invocation.proceed();
 ```
 
 Finally, we do the after advice part which happens after the method or other aspects fire and results are returned:
+
 
 ```javascript
 // result logging and returns

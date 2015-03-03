@@ -17,7 +17,13 @@
 <td><b>interceptData</b> </td>
 <td>struct </td>
 <td><b>standalone-coldbox</b> </td>
-<td>The data structure passed in the event </td></tr></tbody></table>
+<td>The data structure passed in the event </td></tr>
+<tr>
+<td><b>buffer</b> </td>
+<td>coldbox.system.core.util.RequestBuffer </td>
+<td><b>ColdBox</b> </td>
+<td>A request buffer object for producing elegant content in ColdBox applications </td></tr>
+</tbody></table>
 
 So let's say that we want to listen on the beforeInjectorShutdown and on the afterInstanceCreation event in our listener.
 
@@ -34,7 +40,7 @@ component{
 		log.info("DUDE, I am going down!!!");
 	}
 
-	function afterInstanceCreation(event, interceptData){
+	function afterInstanceCreation(event, interceptData, buffer){
 		var injector = arguments.interceptData.injector;
 		var target = arguments.interceptData.target;
 		var mapping = arguments.interceptData.mapping;
