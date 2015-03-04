@@ -45,7 +45,7 @@ function init(required myService, required cache){
 }
 ```
 
-> **Important** In full script components, annotating inline arguments is broken in Adobe ColdFusion 9. You will have to annotate them via the alternative annotation syntax in ColdFusion 9 via the javadocs style comments.
+> **Caution** In full script components, annotating inline arguments is broken in Adobe ColdFusion 9. You will have to annotate them via the alternative annotation syntax in ColdFusion 9 via the javadocs style comments.
 
 
 ## Setter Method Annotation

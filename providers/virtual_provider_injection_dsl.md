@@ -6,7 +6,7 @@ The difference between custom providers here is that WireBox will create a virtu
 
 For example, `inject="provider:MyService"` will inject a provider of `MyService` objects, so it will look for a `MyService` ID in the binder. However, you can also get mega funky and do this: `inject="provider:logbox:logger:{this}"` and WireBox will create a provider of `logbox:logger:{this}`.
 
-> **Important** Remember that the value of the provider can be a simple ID or a full injection DSL.
+> **Caution** Remember that the value of the provider can be a simple ID or a full injection DSL.
 
 ```javascript
 // use the provider DSL namespace on a property

@@ -8,4 +8,4 @@ public Espresso function getEspresso() provider="espresso"{}
 
 Wow! That's it! Yep, just create an empty method signature and annotated with `provider={mapping}` and then WireBox will read these annotated methods and replace them for you at runtime so when you call `etEspresso()` it actually calls the WireBox injector and requests a new espresso instance and it returns it.
 
-> **Important** Please note that the visibility of provided methods does not matter to WireBox. It can provide `public, private, or packaged` visibilities with no problem at all.
+> **Caution** Please note that the visibility of provided methods does not matter to WireBox. It can provide `public, private, or packaged` visibilities with no problem at all.

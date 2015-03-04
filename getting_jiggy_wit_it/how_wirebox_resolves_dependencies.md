@@ -26,5 +26,5 @@ Most of the time we believe our DI engines should be black boxes, but we try to 
 3. If the builder could not produce an instance, it is logged and DI is skipped on it.
 
 
-> **Important** Circular dependencies are supported in all injection styles within WireBox. With one caveat, if you choose constructor arguments with circular dependencies, you must use object providers.
+> **Caution** Circular dependencies are supported in all injection styles within WireBox. With one caveat, if you choose constructor arguments with circular dependencies, you must use object providers.
 

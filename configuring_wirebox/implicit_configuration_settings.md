@@ -96,7 +96,7 @@ wirebox.scopeRegistration = {
 };
 ```
 
-> **Important** Scope registration must be enabled in order for Providers to work.
+> **Caution** Scope registration must be enabled in order for Providers to work.
 
 ## customDSL
 
@@ -172,6 +172,6 @@ wirebox.listeners = [
 ];
 ```
 
-> **Important** Please note that order of declaration is the same as order of execution, so it really matters, just like ColdBox Interceptors. Please note that if you are using WireBox within a ColdBox application, you can also register listeners as interceptors in your ColdBox configuration file.
+> **Caution** Please note that order of declaration is the same as order of execution, so it really matters, just like ColdBox Interceptors. Please note that if you are using WireBox within a ColdBox application, you can also register listeners as interceptors in your ColdBox configuration file.
 
 

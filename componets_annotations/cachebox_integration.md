@@ -27,4 +27,4 @@ component cache cacheTimeout="60" cacheLastAccessTimeout="10"{}
 ```
 
 
-> **Important** When storing objects in volatile scopes like cache, session, request, etc. You must be careful of not injecting them directly into singletons or other volatile objects as you could have memory leaks via a side effect called Scope Widening Injection. We recommend combining them via WireBox Providers to avoid this side effect. 
+> **Caution** When storing objects in volatile scopes like cache, session, request, etc. You must be careful of not injecting them directly into singletons or other volatile objects as you could have memory leaks via a side effect called Scope Widening Injection. We recommend combining them via WireBox Providers to avoid this side effect. 

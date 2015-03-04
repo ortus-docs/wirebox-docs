@@ -24,7 +24,7 @@ component{
 
 <br>
 
-> **Important** The inject annotations are done in comments as ColdFusion 9 has a bug when adding annotations on scripted arguments. 
+> **Caution** The inject annotations are done in comments as ColdFusion 9 has a bug when adding annotations on scripted arguments. 
 
 <br>
 
