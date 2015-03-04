@@ -2,91 +2,35 @@
 
 This namespace is a combination of namespaces that are only active when used within a ColdBox application:
 
-<table class="tablelisting" cellpadding="”5”,">
-<tbody><tr>
-<th><b>DSL</b> </th>
-<th><b>Description</b> </th></tr>
-<tr>
-<td><b>coldbox</b> </td>
-<td>Get the coldbox controller reference</td></tr>
-<tr>
-<td><b>coldbox:flash</b> </td>
-<td>Get a reference to the application's flash scope object</td></tr>
-<tr>
-<td><b>coldbox:setting:{setting}</b> </td>
-<td>Get the coldbox application <i>{setting}</i> setting and inject it </td></tr>
-<tr>
-<td><b>coldbox:setting:{setting}@{module}</b> </td>
-<td>Get the coldbox application <i>{setting}</i> from the <i>{module}</i> and inject it </td></tr>
-<tr>
-<td><b>coldbox:plugin:{plugin}</b> </td>
-<td>Get the <i>{plugin}</i> plugin and inject it </td></tr>
-<tr>
-<td><b>coldbox:myPlugin:{MyPlugin}</b> </td>
-<td>Get the <i>{MyPlugin}</i> custom plugin and inject it </td></tr>
-<tr>
-<td><b>coldbox:myPlugin:{MyPlugin}@{module}</b> </td>
-<td>Get the <i>{MyPlugin}</i> custom plugin from the {module} module and inject it </td></tr>
-<tr>
-<td><b>coldbox:datasource:{alias}</b> </td>
-<td>Get a new datasource bean according to <i>{alias}</i></td></tr>
-<tr>
-<td><b>coldbox:configBean</b> </td>
-<td>Get a new config bean object and inject it </td></tr>
-<tr>
-<td><b>coldbox:mailsettingsbean</b> </td>
-<td>Get a new mail settings bean and inject it </td></tr>
-<tr>
-<td><b>coldbox:loaderService</b> </td>
-<td>Get a reference to the loader service </td></tr>
-<tr>
-<td><b>coldbox:requestService</b> </td>
-<td>Get a reference to the request service </td></tr>
-<tr>
-<td><b>coldbox:debuggerService</b> </td>
-<td>Get a reference to the debugger service </td></tr>
-<tr>
-<td><b>coldbox:pluginService</b> </td>
-<td>Get a reference to the plugin service </td></tr>
-<tr>
-<td><b>coldbox:handlerService</b> </td>
-<td>Get a reference to the handler service </td></tr>
-<tr>
-<td><b>coldbox:interceptorService</b> </td>
-<td>Get a reference to the interceptor service </td></tr>
-<tr>
-<td><b>coldbox:moduleService</b> </td>
-<td>Get a reference to the ColdBox Module Service</td></tr>
-<tr>
-<td><b>coldbox:interceptor:{name}</b> </td>
-<td>Get a reference of a named interceptor <i>{name}</i></td></tr>
-<tr>
-<td><b>coldbox:cacheManager</b> </td>
-<td>get the cache manager </td></tr>
-<tr>
-<td><b>coldbox:fwConfigBean</b> </td>
-<td>Get a configuration bean object with ColdBox settings instead of Application settings</td></tr>
-<tr>
-<td><b>coldbox:fwSetting:{setting}</b> </td>
-<td>Get a setting from the ColdBox settings instead of the Application settings</td></tr>
-<tr>
-<td><b>coldbox:moduleSettings:{module}</b> </td>
-<td>Inject the entire <i>{module}</i> settings structure</td></tr>
-<tr>
-<td><b>coldbox:moduleConfig:{module}</b> </td>
-<td>Inject the entire <i>{module}</i> configurations structure</td></tr>
-<tr>
-<td><b>ioc</b> </td>
-<td>Get the named ioc bean and inject it. Name comes from the cfproperty, setter or argument name</td></tr>
-<tr>
-<td><b>ioc:{beanName}</b> </td>
-<td>Get the ioc bean according to <i>{beanName}</i></td></tr>
-<tr>
-<td><b>javaLoader:{class}</b> </td>
-<td>Create an object from the <a href="wiki/Plugins:JavaLoader.cfm">JavaLoader</a> plugin and its set of loaded java libraries</td></tr>
-<tr>
-<td><b>webservice:{alias}</b> </td>
-<td>Get a webservice object using an {alias} that matches in your coldbox configuration file.</td></tr></tbody></table>
+|DSL|Description|
+|--|--|
+|coldbox |Get the coldbox controller reference|
+|coldbox:flash |Get a reference to the application's flash scope object|
+|coldbox:setting:{setting} |Get the coldbox application *{setting}* setting and inject it |
+|coldbox:setting:{setting}@{module} |Get the coldbox application *{setting}* from the *{module}* and inject it |
+|coldbox:plugin:{plugin} |Get the {plugin} plugin and inject it |
+|coldbox:myPlugin:*{MyPlugin}* |Get the *{MyPlugin}* custom plugin and inject it |
+|coldbox:myPlugin:{MyPlugin}@{module} |Get the *{MyPlugin}* custom plugin from the *{module}* module and inject it |
+|coldbox:datasource:{alias} |Get a new datasource bean according to *{alias}*|
+|coldbox:configBean |Get a new config bean object and inject it |
+|coldbox:mailsettingsbean |Get a new mail settings bean and inject it |
+|coldbox:loaderService |Get a reference to the loader service |
+|coldbox:requestService |Get a reference to the request service |
+|coldbox:debuggerService |Get a reference to the debugger service |
+|coldbox:pluginService |Get a reference to the plugin service |
+|coldbox:handlerService |Get a reference to the handler service |
+|coldbox:interceptorService |Get a reference to the interceptor service |
+|coldbox:moduleService |Get a reference to the ColdBox Module Service|
+|coldbox:interceptor:{name} |Get a reference of a named interceptor *{name}*|
+|coldbox:cacheManager |get the cache manager |
+|coldbox:fwConfigBean |Get a configuration bean object with ColdBox settings instead of Application settings|
+|coldbox:fwSetting:{setting} |Get a setting from the ColdBox settings instead of the Application settings|
+|coldbox:moduleSettings:{module} |Inject the entire *{module}* settings structure|
+|coldbox:moduleConfig:{module} |Inject the entire *{module}* configurations structure|
+|ioc|Get the named ioc bean and inject it. Name comes from the cfproperty, setter or argument name|
+|ioc:{beanName} |Get the ioc bean according to *{beanName}*|
+|javaLoader:{class} |Create an object from the [JavaLoader](http://wiki.coldbox.org/wiki/Plugins:JavaLoader.cfm) plugin and its set of loaded java libraries|
+|webservice:{alias} |Get a webservice object using an {alias} that matches in your coldbox configuration file.|
 
 
 ```javascript

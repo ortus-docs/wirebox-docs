@@ -47,6 +47,7 @@
    * [Provider Namespace](injection_dsl/provider_namespace.md)
    * [WireBox Namespace](injection_dsl/wirebox_namespace.md)
    * [CacheBox Namespace](injection_dsl/cachebox_namespace.md)
+   * [EntityService Namespace](injection_dsl/entityservice_namespace.md)
    * [LogBox Namespace](injection_dsl/logbox_namespace.md)
    * [Java Namespace](injection_dsl/java_namespace.md)
    * [ColdBox Namespace](injection_dsl/coldbox_namespace.md)

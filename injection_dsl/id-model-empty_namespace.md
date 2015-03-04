@@ -2,31 +2,15 @@
 
 The default namespace is not specifying one. This namespace is used to retreive either named mappings or full component paths.
 
-<table class="tablelisting" cellpadding="”5”,">
-<tbody><tr>
-<th><b>DSL</b> </th>
-<th><b>Description</b> </th></tr>
-<tr>
-<td><b>empty</b> </td>
-<td>Same as saying <i>id</i>. Get a mapped instance with the same name as defined in the property, argument or setter method.</td></tr>
-<tr>
-<td><b>id</b> </td>
-<td>Get a mapped instance with the same name as defined in the property, argument or setter method.</td></tr>
-<tr>
-<td><b>id:{name}</b> </td>
-<td>Get a mapped instance by using the second part of the DSL as the mapping name.</td></tr>
-<tr>
-<td><b>id:{name}:{method}</b> </td>
-<td>Get the {name} instance object, call the {method} and inject the results </td></tr>
-<tr>
-<td><b>model</b> </td>
-<td>Get a mapped instance with the same name as defined in the property, argument or setter method. </td></tr>
-<tr>
-<td><b>model:{name}</b> </td>
-<td>Get a mapped instance by using the second part of the DSL as the mapping name.</td></tr>
-<tr>
-<td><b>model:{name}:{method}</b> </td>
-<td>Get the {name} instance object, call the {method} and inject the results </td></tr></tbody></table>
+|DSL|Description|
+|--|--|
+|empty|Same as saying id. Get a mapped instance with the same name as defined in the property, argument or setter method.|
+|id|Get a mapped instance with the same name as defined in the property, argument or setter method.|
+|id:{name} |Get a mapped instance by using the second part of the DSL as the mapping name.|
+|id:{name}:{method} |Get the {name} instance object, call the {method} and inject the results |
+|model|Get a mapped instance with the same name as defined in the property, argument or setter method. |
+|model:{name} |Get a mapped instance by using the second part of the DSL as the mapping name.|
+|model:{name}:{method} |Get the {name} instance object, call the {method} and inject the results |
 
 
 ```javascript

@@ -3,7 +3,7 @@
 The dependencies DSL methods are mostly used to define dependencies and also to activate advanced features on target objects, such as runtime mixins, virtual inheritance, etc.
 
 
-> **Note** Please note that you can concatenate more than one of these methods calls to dictate multiple constructor arguments, setter methods, cf properties, and more. 
+> **Note** Please note that you can concatenate more than one of these methods calls to dictate multiple constructor arguments, setter methods, cf properties, and more.
 
 
 |Method Signature|Description|
