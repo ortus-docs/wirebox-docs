@@ -5,14 +5,14 @@ The mapping destinations tell WireBox what type of object you are mapping to. Yo
 
 |Method Signature|Description|
 |--|--|
-|<b>to</b>(path) |Maps a name to a CFC instantiation path|
-|<b>toDSL</b>(dsl) |Maps a name to DSL builder string. Construction is done by using this DSL string (Look at Injection DSL)|
-|<b>toFactoryMethod</b>(factory,method)|Maps a name to another mapping (factory) and its method call. If you would like to pass in parameters to this factory method call you will use the <i>methodArg()</i> DSL method concatenated to this method call|
-|<b>toJava</b>(path)|Maps a name to a Java class that can be instantiated via <i>createObject("java")</i>|
-|<b>toProvider</b>(provider) |Maps a name to another mapping (provider) that must implement the WireBox Provider interface (<i>coldbox.system.ioc.IProvider</i>)|
-|<b>toRSS</b>(path)|Maps a name to an atom or RSS URL. WireBox will then use the <i>cffeed</i> tag to construct this RSS feed. It builds out into a structure with two keys:<br><b>metadata</b> : The metadata of the feed<br><b>items</b> : The items in the feed|
-|<b>toValue</b>(value) |Maps a name to a constant value, which can be ANYTHING.|
-|<b>toWebservice</b>(path)|Maps a name to a webservice WSDL URL. WireBox will create the webservice via <i>createObject("webservice")</i> for you.|
+| `to(path)` | Maps a name to a CFC instantiation path|
+| `toDSL(dsl)` | Maps a name to DSL builder string. Construction is done by using this DSL string (Look at Injection DSL)|
+| `toFactoryMethod(factory,method)` | Maps a name to another mapping (factory) and its method call. If you would like to pass in parameters to this factory method call you will use the `methodArg()` DSL method concatenated to this method call|
+| `toJava(path)` | Maps a name to a Java class that can be instantiated via `createObject("java")`|
+| `toProvider(provider)` | Maps a name to another mapping (provider) that must implement the WireBox Provider interface (`coldbox.system.ioc.IProvider`)|
+| `toRSS(path)` | Maps a name to an atom or RSS URL. WireBox will then use the `cffeed` tag to construct this RSS feed. It builds out into a structure with two keys:<br><b>metadata</b> : The metadata of the feed<br><b>items</b> : The items in the feed|
+| `toValue(value)` | Maps a name to a constant value, which can be ANYTHING.|
+| `toWebservice(path)` | Maps a name to a webservice WSDL URL. WireBox will create the webservice via `createObject("webservice")` for you.|
 
 Here are some examples:
 ```javascript
