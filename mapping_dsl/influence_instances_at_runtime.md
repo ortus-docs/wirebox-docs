@@ -13,5 +13,6 @@ map( 'myObject' )
       return object;
 });
 ```
+
 In this instance, the instance is already built and then passed into the closure for additional influence. Note, the object is returned from the closure. Make this optional, but if something IS returned, it will override the instance which will allow a developer to replace or decorate the instance as they see fit.
 
