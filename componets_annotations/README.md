@@ -5,7 +5,7 @@ The following are all the annotations that are discovered by WireBox on any comp
 |Annotation|Type|Description|
 |--|--|--|
 |autowire |boolean |All objects are marked as autowire=true, so if you want to disable autowiring, you can add this annotation as false. You do NOT need to add this annotation if you want to autowire it, it is redundant if you do.|
-|alias |string|A list of aliased names you can attach to a CFC instance apart from its Component name. This is great when using the mapDirectory() binder function.|
+|alias |string|A list of aliased names you can attach to a CFC instance apart from its Component name. This is great when using the `mapDirectory()` binder function.|
 |eagerInit |none|All objects are lazy loaded unless they are marked with this annotation or marked as eager init in the binder configuration.|
 |threadSafe |none or boolean |Determines the locking construction of the object for its wiring of dependencies. Please see our *Object Persistence & Thread Safety* Section.|
 |scope|string|A valid WireBox scope or a custom registered scope. Remember that ALL components by default are placed in the NO SCOPE scope. This means they are considered transient objects.|

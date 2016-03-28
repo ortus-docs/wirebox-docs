@@ -1,6 +1,6 @@
 # Mapping Destinations
 
-The mapping destinations tell WireBox what type of object you are mapping to. You will usually use these methods by concatenating map() or with() initiator calls:
+The mapping destinations tell WireBox what type of object you are mapping to. You will usually use these methods by concatenating `map()` or `with()` initiator calls:
 
 
 |Method Signature|Description|
