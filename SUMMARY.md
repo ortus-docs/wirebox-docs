@@ -37,7 +37,7 @@
    * [Dependencies DSL](mapping_dsl/dependencies_dsl.md)
        * [Mapping Extra Attributes](mapping_dsl/mapping_extra_attributes.md)
    * [Mapping DSL Examples](mapping_dsl_examples/README.md)
-   * Influence Instances at Runtime
+   * [Influence Instances at Runtime](mapping_dsl/influence_instances_at_runtime.md)
 * [Component Annotations](componets_annotations/README.md)
    * [Persistence Annotations](componets_annotations/scope_persistence_annotations.md)
    * [CacheBox Annotations](componets_annotations/cachebox_integration.md)
