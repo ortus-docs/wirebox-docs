@@ -16,7 +16,7 @@
     ],
     "pluginsConfig": {
     	"edit-link": {
-            "base": "https://github.com/coldbox/wirebox-docs/tree/development",
+            "base": "https://github.com/coldbox/wirebox-docs/tree/master",
             "label": "Edit This Page"
         },
         "github": {
