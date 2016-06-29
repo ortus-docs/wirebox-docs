@@ -23,4 +23,4 @@ searchCriteria.get().getCriteria();
 coolObjectProvider.get().executeSomeMethod();
 ```
 <br>
-That's it! You basically use the `provider:{mapping}` injection DSL to tell a property, setter or argument that you want a provider object instead of the real deal. This will allow you to delay construction of such object or avoid the nasty pitfall of scope widening injection.
+That's it! You basically use the `provider:{mapping}` injection DSL to tell a property, setter or argument that you want a provider object instead of the real deal. This will allow you to delay construction of such an object or avoid the nasty pitfall of scope widening injection.
