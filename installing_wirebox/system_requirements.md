@@ -1,5 +1,4 @@
 # System Requirements
 
-* Adobe ColdFusion 9+
-* Railo 4.1+
+* Adobe ColdFusion 10+
 * Lucee 4.5+
