@@ -1,22 +1,6 @@
 # Installing WireBox
 
-WireBox can be downloaded as a standalone framework or it is included with the latest ColdBox Platform release. The main difference between both versions is the instantiation and usage namespace, the rest is the same.
-
-* [Download WireBox Standalone](http://www.coldbox.org/download)
-* [Download API Docs](http://www.coldbox.org/api)
-
-
-## Manual Installation
-
-If you are using WireBox within a ColdBox application context, then WireBox is part of the platform. Just install ColdBox normally. If you are using WireBox standalone, just drop WireBox in your application root or create a mapping called `wirebox` that points to the installation folder. If you can run the following snippet, then WireBox is installed correctly:
-
-```
-wirebox = new wirebox.system.ioc.Injector();
-```
-
-> **Note** Please remember that if you use the standalone version the namespace is `wirebox.system.ioc` and if you use the ColdBox application version it is `coldbox.system.ioc`. From this point on, we will use the standalone namespace for simplicity.
-<br>
-
+WireBox can be downloaded as a standalone framework or it is included with the latest ColdBox Platform release, so no need to install it if you are within a ColdBox application. 
 
 ## CommandBox Installation
 
@@ -26,9 +10,11 @@ You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox)
 box install wirebox
 ```
 
-You can then leverage the standalone namespace within your application: `wirebox.system.ioc`
+This will install Wirebox as a dependency in your application into a folder called `wirebox`.  You can then leverage the standalone namespace within your application: `wirebox.system.ioc`.
 
+## Manual Download
 
+You can download the latest version of WireBox from https://www.coldbox.org/download#wirebox. Place in your webroot or create a `/wirebox` mapping in your system.
 
 ## Standalone Namespace
 
