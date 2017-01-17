@@ -1,5 +1,5 @@
 {
-	"isbn" : "978-1511838870",
+    "isbn" : "978-1511838870",
     "pdf": {
         "margin": {
             "bottom": 56,
@@ -17,7 +17,7 @@
         "collapsible-chapters"
     ],
     "pluginsConfig": {
-    	"edit-link": {
+        "edit-link": {
             "base": "https://github.com/coldbox/wirebox-docs/tree/master",
             "label": "Edit This Page"
         },
