@@ -34,9 +34,19 @@ function onShutdown(){
 }
 ```
 
-> **Info** The latter approach will be less verbose when talking to the mapping DSL the Binder object exposes. However, both are fully functional and matter of preference.
+{% hint style="info" %}
+The latter approach will be less verbose when talking to the mapping DSL the Binder object exposes. However, both are fully functional and matter of preference.
+{% endhint %}
 
-From the `configure()` method you will be able to interact with the Binder methods or creating implicit DSL structures in order to configure WireBox for operation and also to create object mappings.
 
-> **Info** Please also note that the Binder itself has a reference to the current Injector it belongs to \(`getInjector()`\).
+From the `configure()` method you will be able to interact with the Binder methods or creating implicit DSL structures in order to configure WireBox for operation and also to create object mappings.  From the `onLoad()` method you can also use it for mappings with main distinction that the WireBox machinery is now online (logging, events, caching, etc).  This is necessary for leveraging `mapDirectory()` calls.
+
+
+{% hint style="info" %}
+Please also note that the Binder itself has a reference to the current Injector it belongs to \(`getInjector()`\).
+{% endhint %}
+
+
+
+
 
