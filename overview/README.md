@@ -25,6 +25,7 @@ Here are a simple listing of features WireBox brings to the table:
   * Constant values
   * DSL string building
   * Factory Methods
+  * Providers
 * Multiple Injection Styles: Property, Setter, Method, Constructor
 * Automatic Package/Directory object scanning and registration
 * Multiple object life cycle persistence scopes:
@@ -35,6 +36,7 @@ Here are a simple listing of features WireBox brings to the table:
   * Application Scoped
   * Server Scoped
   * CacheBox Scoped
+* Integrated caching via [CacheBox](https://cachebox.ortusbooks.com), scale your objects and metadata
 * Integrated logging via [LogBox](https://logbox.ortusbooks.com), never try to figure out what in the world the DI engine is doing
 * Parent Factories
 * Factory Method Object Creations
