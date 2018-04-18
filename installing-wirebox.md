@@ -35,3 +35,4 @@ You can download the latest version of WireBox from [https://www.coldbox.org/dow
 
 ![](.gitbook/assets/installing_coldboxsystem.jpg)
 
+

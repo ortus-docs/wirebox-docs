@@ -32,7 +32,6 @@
 
 * [Overview](overview/README.md)
   * [WireBox RefCard](overview/wirebox-refcard.md)
-  * [Useful Resources](overview/useful-resources.md)
   * [Features at a Glance](overview/features-at-a-glance.md)
 * [Installing WireBox](installing-wirebox.md)
 * [Getting Jiggy Wit It!](getting-jiggy-wit-it/README.md)
