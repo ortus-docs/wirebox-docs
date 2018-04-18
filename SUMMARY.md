@@ -31,7 +31,6 @@
 ## Getting Started
 
 * [Overview](overview/README.md)
-  * [WireBox RefCard](overview/wirebox-refcard.md)
 * [Installing WireBox](installing-wirebox.md)
 * [Getting Jiggy Wit It!](getting-jiggy-wit-it/README.md)
   * [Instance Creations](getting-jiggy-wit-it/instance-creations.md)
