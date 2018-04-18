@@ -53,7 +53,7 @@ Here are the internal scopes that ship with WireBox:
 | `APPLICATION` | The object will exist in the application scope |
 | `REQUEST` | The object will exist in the request scope |
 | `SERVER` | The object will exist in the server scope |
-| `CACHEBOX` | A object will be time persisted in any [CacheBox](http://cachebox.ortusbooks.com) cache provider |
+| `CACHEBOX` | A object will be time persisted in any [CacheBox](https://cachebox.ortusbooks.com) cache provider |
 
 This is cool! We can now have full control of how objects are persisted via the WireBox injector, we are not constricted to one type of persistence anymore.   
 
