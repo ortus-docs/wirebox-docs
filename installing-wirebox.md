@@ -6,12 +6,6 @@ WireBox can be downloaded as a standalone framework or it is included with the l
 The best way to install LogBox is using **CommandBox CLI and package manager.**
 {% endhint %}
 
-## WireBox RefCard
-
-Our Wirebox RefCard will get you up and running in no time
-
-![](.gitbook/assets/overview_wireboxrefcard.png)
-
 ## System Requirements
 
 * Adobe ColdFusion 11+
