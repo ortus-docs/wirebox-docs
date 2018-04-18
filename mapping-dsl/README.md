@@ -6,10 +6,10 @@ The chains are divided into three types:
 
 1. **Initiators** - Start the mapping DSL process
 2. **Modifiers** - Can modify a mapping with metadata and behavior
-3. **Terminators** - Finalizes and stores the mapping in the binder
+3. **Destinations** - Tells the binder to what object or behavior we should map to.
 
 {% hint style="danger" %}
-If a mapping is not terminated, then the information stored in the chain can bleed into other mappings.
+If a mapping does not have a destination, then the information stored in the chain can bleed into other mappings.
 {% endhint %}
 
 ```javascript
