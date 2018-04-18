@@ -7,8 +7,8 @@ Scopes allow you to customize the object's life span and duration. The **singlet
 ## Scope Annotations
 
 * You can tag a `cfcomponent` tag or component declaration with a `scope={named scope}` annotation that tells WireBox what scope to use
-* You can have nothing on the `cfcomponent` tag or component declaration which denotes the NO SCOPE
-* You can tag a `cfcomponent` tag or component declaration with a singleton annotation
+* You can have nothing on the `cfcomponent` tag or component declaration which denotes the **NO SCOPE**
+* You can tag a `cfcomponent` tag or component declaration with a **singleton** annotation
 
 ## Scope Configuration Binder
 
@@ -20,14 +20,17 @@ component extends="wirebox.system.ioc.config.Binder"{
         // map with shorthand or full scope notation
         mapPath("model.CoffeeShop").asSingleton();
         mapPath("model.CoffeeShop").into(this.SCOPES.SINGLETON);
+        
         // map some long espresso into request scope
         map("longEspress")
             .to("model.Espresso")
             .into(this.SCOPES.REQUEST);
+        
         // cache some tea
         map("GreenTea")
             .to("model.Tea")
             .inCacheBox(timeout=20,provider="ehCache");
+        
         // cache some google news that refresh themselves every 40 minutes or after 20 minutes of inactivity
         map("latestNews")
             .inCacheBox(timeout=40,lastAccessTimeout=20,provider="ehCache");
@@ -43,14 +46,14 @@ Here are the internal scopes that ship with WireBox:
 
 | Scope | Description |
 | --- | --- |
-| NOSCOPE | A prototype object that gets created every time it is requested. |
-| PROTOTYPE | A prototype object that gets created every time it is requested. |
-| SINGLETON | Only one instance of the object exists |
-| SESSION | The object will exist in the session scope |
-| APPLICATION | The object will exist in the application scope |
-| REQUEST | The object will exist in the request scope |
-| SERVER | The object will exist in the server scope |
-| CACHEBOX | A object will be time persisted in any [CacheBox](http://cachebox.ortusbooks.com) cache provider |
+| `NOSCOPE` | A prototype object that gets created every time it is requested. |
+| `PROTOTYPE` | A prototype object that gets created every time it is requested. |
+| `SINGLETON` | Only one instance of the object exists |
+| `SESSION` | The object will exist in the session scope |
+| `APPLICATION` | The object will exist in the application scope |
+| `REQUEST` | The object will exist in the request scope |
+| `SERVER` | The object will exist in the server scope |
+| `CACHEBOX` | A object will be time persisted in any [CacheBox](http://cachebox.ortusbooks.com) cache provider |
 
 This is cool! We can now have full control of how objects are persisted via the WireBox injector, we are not constricted to one type of persistence anymore.   
 
