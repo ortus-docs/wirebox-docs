@@ -25,7 +25,11 @@ Our Wirebox RefCard will get you up and running in no time
 You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) to install the standalone version of WireBox with a simple command:
 
 ```bash
+# Latest Version
 box install wirebox
+
+# Bleeding Edge
+box install wirebox@be
 ```
 
 This will install Wirebox as a dependency in your application into a folder called `wirebox`. You can then leverage the standalone namespace within your application: `wirebox.system.ioc`.
@@ -34,13 +38,15 @@ This will install Wirebox as a dependency in your application into a folder call
 
 You can download the latest version of WireBox from [https://www.coldbox.org/download\#wirebox](https://www.coldbox.org/download#wirebox). Place in your webroot or create a `/wirebox` mapping in your system.
 
-## Standalone Namespace
+## Namespaces
+
+### Standalone Namespace
 
 `wirebox.system.ioc`
 
 ![](.gitbook/assets/installing_wireboxsystem.jpg)
 
-## ColdBox Namespace
+### ColdBox Namespace
 
 `coldbox.system.ioc`
 
