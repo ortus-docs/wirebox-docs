@@ -19,6 +19,14 @@ We have moved from an `instance` scope approach to a `variables` scope approach 
 
 We have completely re-engineered virtual inheritance in 5.0.0 and it behaves eerily similar to traditional inheritance at the dynamic level.  Not only do we cover public methods like we used to, but also private methods and object state.  You can also leverage AOP with virtual inheritance now which was a limitation in the previous version.
 
+We have also added the capability to inherit implicit getters and setters from parent classes.
+
+## Listener Registration
+
+You now can register listeners on-demand with WireBox via the `registerListener( listener )` method in the Injector.  
+
+
+
 
 ## Release Notes
             
