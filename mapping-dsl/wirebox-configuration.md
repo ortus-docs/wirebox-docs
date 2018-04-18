@@ -1,6 +1,6 @@
 # WireBox Configuration
 
-The configuration binder has the same methods as the implicit structures that can be used to configure WireBox for operation but using methods instead of data.
+The configuration binder has the same methods as the implicit structures that can be used to configure WireBox for operation but using methods instead of data. All methods return an instance of the binder so you can concatenate methods.
 
 | Method Signature | Description |
 | --- | --- |
@@ -22,4 +22,3 @@ logBoxConfig( "config.LogBox" )
     .stopRecursions( "model.BaseService,model.BaseModel" )
     .mapScope( "Ortus", "model.scopes.Ortus" );
 ```
-
