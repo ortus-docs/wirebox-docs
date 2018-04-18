@@ -54,7 +54,10 @@ function configure(){
 }
 ```
 
-> **Info** Please note that it is completely optional to use the implicit structure configuration. You can use the programmatic methods instead. Each configuration key has the same method in the binder for programmatic configuration.
+{% hint style="info" %}
+Please note that it is completely optional to use the implicit structure configuration. You can use the programmatic methods instead. Each configuration key has the same method in the binder for programmatic configuration.
+{% endhint %}
+
 
 ## logBoxConfig
 
@@ -96,7 +99,9 @@ wirebox.scopeRegistration = {
 };
 ```
 
-> **Caution** Scope registration must be enabled in order for Providers to work.
+{% hint style="danger" %}
+**Caution** Scope registration must be enabled in order for Providers to work.
+{% endhint %}
 
 ## customDSL
 
@@ -134,7 +139,10 @@ The instantiation paths that this Injector will have registered to do object loc
 wirebox.scanLocations = ["models","com","org.majano"];
 ```
 
-> ** Note** Please note that order of declaration is the same as order of lookup, so it really matters. Also note that this setting only makes sense if you do not like to create mappings for objects and you just want WireBox to discover them for you.
+{% hint style="warning" %}
+Please note that order of declaration is the same as order of lookup, so it really matters. Also note that this setting only makes sense if you do not like to create mappings for objects and you just want WireBox to discover them for you.
+{% endhint %}
+
 
 ## stopRecursions
 
@@ -174,5 +182,6 @@ wirebox.listeners = [
 ];
 ```
 
-> **Caution** Please note that order of declaration is the same as order of execution, so it really matters, just like ColdBox Interceptors. Please note that if you are using WireBox within a ColdBox application, you can also register listeners as interceptors in your ColdBox configuration file.
-
+{% hint style="danger" %}
+**Caution** Please note that order of declaration is the same as order of execution, so it really matters, just like ColdBox Interceptors. Please note that if you are using WireBox within a ColdBox application, you can also register listeners as interceptors in your ColdBox configuration file.
+{% endhint %}
