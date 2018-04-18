@@ -1,15 +1,12 @@
-# Table of contents
+# Summary
+
+## Intro
 
 * [Introduction](README.md)
-* [What's New With 2.1.0](whats-new-with-2.1.0.md)
-* [What's New With 2.0.0](whats-new-with-2.0.0.md)
-* [About This Book](about-this-book.md)
-* [Author](author.md)
-* [Overview](overview/README.md)
-  * [WireBox RefCard](overview/wirebox-refcard.md)
-  * [Useful Resources](overview/useful-resources.md)
-  * [Features at a Glance](overview/features-at-a-glance.md)
-  * [System Requirements](overview/system-requirements.md)
+  * [What's New With 2.1.0](whats-new-with-2.1.0.md)
+  * [What's New With 2.0.0](whats-new-with-2.0.0.md)
+  * [About This Book](about-this-book.md)
+  * [Author](author.md)
 * [Installing WireBox](installing-wirebox.md)
 * [Dependency Injection Explained](dependency-injection-explained.md)
 * [Getting Jiggy Wit It!](getting-jiggy-wit-it/README.md)
@@ -98,4 +95,12 @@
     * [HibernateTransaction](aspect-oriented-programming/included-aspects/hibernatetransaction.md)
     * [MethodLogger](aspect-oriented-programming/included-aspects/methodlogger.md)
   * [Summary](aspect-oriented-programming/summary.md)
+
+## Getting Started
+
+* [Overview](overview/README.md)
+  * [WireBox RefCard](overview/wirebox-refcard.md)
+  * [Useful Resources](overview/useful-resources.md)
+  * [Features at a Glance](overview/features-at-a-glance.md)
+  * [System Requirements](overview/system-requirements.md)
 
