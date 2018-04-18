@@ -3,7 +3,7 @@
 ## Intro
 
 * [Introduction](README.md)
-  * What's New With 5.0.0
+  * [What's New With 5.0.0](whats-new-with-500.md)
   * [What's New With 2.1.0](whats-new-with-2.1.0.md)
   * [What's New With 2.0.0](whats-new-with-2.0.0.md)
   * [About This Book](about-this-book.md)
