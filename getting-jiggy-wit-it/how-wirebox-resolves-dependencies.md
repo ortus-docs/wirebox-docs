@@ -23,5 +23,8 @@ Most of the time we believe our DI engines should be black boxes, but we try to 
 2. The DSL builder then tries to parse and process the DSL string for object retrieval. If the DSL is a WireBox mapping then we try to retrieve the instance by name \(Refer back to Instance Creation\).
 3. If the builder could not produce an instance, it is logged and DI is skipped on it.
 
-> **Caution** Circular dependencies are supported in all injection styles within WireBox. With one caveat, if you choose constructor arguments with circular dependencies, you must use object providers.
+{% hint style="danger" %}
+**Caution** Circular dependencies are supported in all injection styles within WireBox. With one caveat, if you choose constructor arguments with circular dependencies, you must use object providers.
+{% endhint %}
+
 
