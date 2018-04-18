@@ -15,6 +15,11 @@ AOP now performs in over 70% faster than previous implementations.  In previous 
 We have moved from an `instance` scope approach to a `variables` scope approach with accessors and mutators in 5.0.0 and yet again we benefit from CFML engine speed improvements.  Again, thanks to the community for many pull requests.
 
 
+## Virtual Inheritance
+
+We have completely re-engineered virtual inheritance in 5.0.0 and it behaves eerily similar to traditional inheritance at the dynamic level.  Not only do we cover public methods like we used to, but also private methods and object state.  You can also leverage AOP with virtual inheritance now which was a limitation in the previous version.
+
+
 ## Release Notes
             
 ### Bugs
