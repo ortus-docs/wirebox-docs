@@ -27,6 +27,14 @@ You now can register listeners on-demand with WireBox via the `registerListener(
 
 ## New `onLoad()` Binder interceptor
 
+Any WireBox binder can now have a new interception method `onLoad()` which can guarantee you that the entire WireBox machinery is online.  You can use this for leveraging `mapDirectory()` calls which require the entire event system to be online.
+
+```js
+function onLoad(){
+    mapDirectory( "commandbox.commands" );
+}
+```
+
 
 ## Release Notes
             
