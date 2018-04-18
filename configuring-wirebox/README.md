@@ -7,6 +7,15 @@
     function configure(required binder){
 
     }
+
+        function onLoad(){
+    
+    }
+    
+    function onShutdown(){
+    
+    }
+
    }
    ```
 
@@ -16,6 +25,14 @@
    component extends="coldbox.system.ioc.config.Binder"{
     function configure(){
 
+    }
+    
+    function onLoad(){
+    
+    }
+    
+    function onShutdown(){
+    
     }
    }
    ```
