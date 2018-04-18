@@ -6,6 +6,10 @@ This release is part of the ColdBox 5.0.0 upgrade and it is a major release.  Be
 
 We have done greats strides in consistency of error reporting during the creation of objects and their wiring.  We have also added countermeasures for **rogue** mappings that could bring entire applications down.  You will now get more consistency and better error reporting overall.
 
+## AOP Performance
+
+AOP now performs in over 70% faster than previous implementations.  In previous versions, we would create intermediate class files that would then be loaded and injected as part of the AOP proxies.  This took time and not only that, it would create 1 stub per call to a method implementation.  Our strategy worked but lacked performance.  In 5.0.0 we completely re-architected the way we did method injection and stub creation.  We now take md5 hashes of the source code to be injected and only created the stubs 1 per-lifetime.  The improvements are drastic and amazing.  Enjoy AOP and don't hold back! 
+
 
 ## Release Notes
             
