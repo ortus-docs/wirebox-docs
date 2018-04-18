@@ -1,10 +1,9 @@
 # About This Book
 
-The source code for this book is hosted in GitHub: [https://github.com/ortus-docs/wirebox-docs](https://github.com/ortus-docs/wirebox-docs). You can freely contribute to it and submit pull requests. The contents of this book is copyright by [Ortus Solutions, Corp](http://www.ortussolutions.com) and cannot be altered or reproduced without author's consent. All content is provided _"As-Is"_ and can be freely distributed.
+The source code for this book is hosted in GitHub: [https://github.com/ortus-docs/wirebox-docs](https://github.com/ortus-docs/wirebox-docs). You can freely contribute to it and submit pull requests. The contents of this book is copyright by [Ortus Solutions, Corp](https://www.ortussolutions.com) and cannot be altered or reproduced without author's consent. All content is provided _"As-Is"_ and can be freely distributed.
 
 * The majority of code examples in this book are done in `cfscript`.
-* The majority of code generation and running of examples are done via **CommandBox**: The ColdFusion \(CFML\) CLI, Package Manager, REPL - [http://www.ortussolutions.com/products/commandbox](http://www.ortussolutions.com/products/commandbox)
-* All ColdFusion examples designed to run on the open soure Railo Platform or Adobe ColdFusion 9.0.2+
+* The majority of code generation and running of examples are done via **CommandBox**: The ColdFusion \(CFML\) CLI, Package Manager, REPL - [https://www.ortussolutions.com/products/commandbox](https://www.ortussolutions.com/products/commandbox)
 
 ## External Trademarks & Copyrights
 
@@ -16,7 +15,7 @@ The information in this book is distributed “as is”, without warranty. The a
 
 ## Contributing
 
-We highly encourage contribution to this book and our open source software. The source code for this book can be found in our [GitHub repository](https://github.com/ColdBox/wirebox-docs) where you can submit pull requests.
+We highly encourage contribution to this book and our open source software. The source code for this book can be found in our [GitHub repository](https://github.com/ortus-docs/wirebox-docs) where you can submit pull requests.
 
 ## Charitable Proceeds
 
