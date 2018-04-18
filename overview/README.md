@@ -30,8 +30,6 @@ Compared to manual Dependency Injection \(DI\), using WireBox can lead to the fo
 * Objects will become more testable and easier to mock, which in turn can accelerate your development by using a TDD \(Test Driven Development\), BDD \(Behavior Driven Development\) approach.
 * Once WireBox leverages your objects you can take advantage of AOP or other event life cycle processes to really get funky with OO.
 
-
-
 ## Features at a Glance
 
 Here are a simple listing of features WireBox brings to the table:
