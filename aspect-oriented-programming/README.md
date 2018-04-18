@@ -1,4 +1,4 @@
-# Aspect Oriented Programming
+# Aspect Oriented Programming )AOP)
 
 WireBox fully supports [aspect-oriented programming](http://en.wikipedia.org/wiki/Aspect-oriented_programming) \(AOP\) for ColdFusion \(CFML\) and any ColdFusion framework. Just note the different namespaces if using within the ColdBox Platform and standalone WireBox.
 
@@ -20,8 +20,7 @@ wirebox.system.aop
 
 ## Requirements
 
-* ColdFusion 9+
-* Railo 4.1+
+* ColdFusion 11+
 * Lucee 4.5+
 
 AND

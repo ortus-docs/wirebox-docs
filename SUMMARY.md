@@ -98,7 +98,7 @@
 
 ## Aspect Oriented Programming
 
-* [Aspect Oriented Programming](aspect-oriented-programming/README.md)
+* [AOP Intro](aspect-oriented-programming/README.md)
   * [Overview](aspect-oriented-programming/overview/README.md)
     * [AOP Vocabulary](aspect-oriented-programming/overview/aop-vocabulary.md)
   * [Activate The AOP Listener](aspect-oriented-programming/activate-the-aop-listener.md)
