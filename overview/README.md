@@ -42,7 +42,7 @@ Here are a simple listing of features WireBox brings to the table:
 * Customizable injection DSL
 * WireBox object providers to avoid scope-widening issues on time/volatile persisted objects
 * [Aspect Oriented Programming](/aspect-oriented-programming/README.md)
-* [Standalone ORM Entity Injection](../orm-entity-injection.md)
+* [Standalone ORM Entity Injection](/orm-entity-injection.md)
 
 
 
