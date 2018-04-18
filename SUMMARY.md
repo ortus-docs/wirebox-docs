@@ -34,7 +34,6 @@
   * [WireBox RefCard](overview/wirebox-refcard.md)
   * [Useful Resources](overview/useful-resources.md)
   * [Features at a Glance](overview/features-at-a-glance.md)
-  * [System Requirements](overview/system-requirements.md)
 * [Installing WireBox](installing-wirebox.md)
 * [Getting Jiggy Wit It!](getting-jiggy-wit-it/README.md)
   * [Instance Creations](getting-jiggy-wit-it/instance-creations.md)
@@ -64,6 +63,8 @@
   * [Persistence Annotations](component-annotations/persistence-annotations.md)
   * [CacheBox Annotations](component-annotations/cachebox-annotations.md)
 * [Parent Object Definitions](parent-object-definitions.md)
+
+## Usage
 
 ## Advanced Topics
 

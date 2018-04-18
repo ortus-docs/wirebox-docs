@@ -2,6 +2,13 @@
 
 WireBox can be downloaded as a standalone framework or it is included with the latest ColdBox Platform release, so no need to install it if you are within a ColdBox application.
 
+## System Requirements
+
+* Adobe ColdFusion 11+
+* Lucee 4.5+
+
+
+
 ## CommandBox Installation
 
 You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) to install the standalone version of WireBox with a simple command:
