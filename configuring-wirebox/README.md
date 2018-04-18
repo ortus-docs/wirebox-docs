@@ -2,8 +2,9 @@
 
 1. Create a configuration CFC that extends the WireBox configuration object: `coldbox.system.ioc.config.Binder` and has a `configure()` method.
 
-   ```javascript
-   component extends="coldbox.system.ioc.config.Binder"{
+```javascript
+component extends="coldbox.system.ioc.config.Binder"{
+   
     function configure(){
 
     }
@@ -15,21 +16,25 @@
     function onShutdown(){
     
     }
-   }
-   ```
+}
+```
    
 2. Create a simple configuration CFC that has a `configure( binder )` method that accepts a WireBox configuration binder object
 
 ```javascript
 component{
-function configure(required binder){
 
-}
+ function configure(required binder){
 
-function onLoad(){
-}
-function onShutdown(){
-}
+ }
+
+ function onLoad(){
+
+ }
+
+ function onShutdown(){
+
+ }
 
 }
 ```
