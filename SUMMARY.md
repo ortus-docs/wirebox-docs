@@ -8,11 +8,6 @@
   * [What's New With 2.0.0](whats-new-with-2.0.0.md)
   * [About This Book](about-this-book.md)
   * [Author](author.md)
-* [WireBox Event Model](wirebox-event-model/README.md)
-  * [WireBox Events](wirebox-event-model/wirebox-events.md)
-  * [WireBox Listeners](wirebox-event-model/wirebox-listeners/README.md)
-    * [ColdBox Mode Listener](wirebox-event-model/wirebox-listeners/coldbox-mode-listener.md)
-    * [Standalone Mode Listener](wirebox-event-model/wirebox-listeners/standalone-mode-listener.md)
 
 ## Getting Started
 
@@ -62,6 +57,11 @@
   * [LogBox Namespace](injection-dsl/logbox-namespace.md)
   * [Java Namespace](injection-dsl/java-namespace.md)
   * [ColdBox Namespace](injection-dsl/coldbox-namespace.md)
+* [WireBox Event Model](wirebox-event-model/README.md)
+  * [WireBox Events](wirebox-event-model/wirebox-events.md)
+  * [WireBox Listeners](wirebox-event-model/wirebox-listeners/README.md)
+    * [ColdBox Mode Listener](wirebox-event-model/wirebox-listeners/coldbox-mode-listener.md)
+    * [Standalone Mode Listener](wirebox-event-model/wirebox-listeners/standalone-mode-listener.md)
 
 ## Advanced Topics
 

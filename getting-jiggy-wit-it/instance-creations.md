@@ -15,8 +15,8 @@ So let's do examples for each where our classes we just built are placed in a di
 **Implicit Creation**
 
 ```javascript
-injector = createObject("component","wirebox.system.ioc.Injector").init();
-espresso = injector.getInstance("model.CoffeeShop").makeEspresso();
+injector = new wirebox.system.ioc.Injector();
+espresso = injector.getInstance( "model.CoffeeShop" ).makeEspresso();
 ```
 
   
