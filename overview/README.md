@@ -13,7 +13,7 @@ We have also seen the value of a central location for object configuration and b
 
 ## Dependency Injection Explained
 
-We have released one of our chapters from our [CBOX202: Dependency Injection](http://www.coldbox.org/courses/cbox202) course that deals with getting started with Dependency Injection, the problem, the benefits and the solutions. We encourage you to download it, print it, share it, digest it and learn it: [http://ortus-public.s3.amazonaws.com/cbox202-unit1-3.pdf](http://ortus-public.s3.amazonaws.com/cbox202-unit1-3.pdf)
+We have released one of our chapters from our [CBOX202: Dependency Injection](https://www.ortussolutions.com/learn) course that deals with getting started with Dependency Injection, the problem, the benefits and the solutions. We encourage you to download it, print it, share it, digest it and learn it: [http://ortus-public.s3.amazonaws.com/cbox202-unit1-3.pdf](http://ortus-public.s3.amazonaws.com/cbox202-unit1-3.pdf)
 
 If you require any training please [contact us.](http://www.ortussolutions.com/#contact) or visit our [online course catalog](http://www.ortussolutions.com/services/training).
 
