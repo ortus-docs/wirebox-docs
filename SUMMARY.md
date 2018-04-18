@@ -3,22 +3,48 @@
 ## Intro
 
 * [Introduction](README.md)
+  * What's New With 5.0.0
   * [What's New With 2.1.0](whats-new-with-2.1.0.md)
   * [What's New With 2.0.0](whats-new-with-2.0.0.md)
   * [About This Book](about-this-book.md)
   * [Author](author.md)
-* [Installing WireBox](installing-wirebox.md)
 * [Dependency Injection Explained](dependency-injection-explained.md)
+* [WireBox Injector](wirebox-injector/README.md)
+  * [Injector Constructor Arguments](wirebox-injector/injector-constructor-arguments.md)
+  * [Injection Idioms](wirebox-injector/injection-idioms.md)
+  * [Common Methods](wirebox-injector/common-methods.md)
+* [Injection DSL](injection-dsl/README.md)
+  * [ID-Model-Empty Namespace](injection-dsl/id-model-empty-namespace.md)
+  * [Provider Namespace](injection-dsl/provider-namespace.md)
+  * [WireBox Namespace](injection-dsl/wirebox-namespace.md)
+  * [CacheBox Namespace](injection-dsl/cachebox-namespace.md)
+  * [EntityService Namespace](injection-dsl/entityservice-namespace.md)
+  * [LogBox Namespace](injection-dsl/logbox-namespace.md)
+  * [Java Namespace](injection-dsl/java-namespace.md)
+  * [ColdBox Namespace](injection-dsl/coldbox-namespace.md)
+* [WireBox Event Model](wirebox-event-model/README.md)
+  * [WireBox Events](wirebox-event-model/wirebox-events.md)
+  * [WireBox Listeners](wirebox-event-model/wirebox-listeners/README.md)
+    * [ColdBox Mode Listener](wirebox-event-model/wirebox-listeners/coldbox-mode-listener.md)
+    * [Standalone Mode Listener](wirebox-event-model/wirebox-listeners/standalone-mode-listener.md)
+
+## Getting Started
+
+* [Overview](overview/README.md)
+  * [WireBox RefCard](overview/wirebox-refcard.md)
+  * [Useful Resources](overview/useful-resources.md)
+  * [Features at a Glance](overview/features-at-a-glance.md)
+  * [System Requirements](overview/system-requirements.md)
+* [Installing WireBox](installing-wirebox.md)
 * [Getting Jiggy Wit It!](getting-jiggy-wit-it/README.md)
   * [Instance Creations](getting-jiggy-wit-it/instance-creations.md)
   * [Binder Introduction](getting-jiggy-wit-it/binder-introduction.md)
   * [Scoping](getting-jiggy-wit-it/scoping.md)
   * [Eager Init](getting-jiggy-wit-it/eager-init.md)
   * [How WireBox Resolves Dependencies](getting-jiggy-wit-it/how-wirebox-resolves-dependencies.md)
-* [WireBox Injector](wirebox-injector/README.md)
-  * [Injector Constructor Arguments](wirebox-injector/injector-constructor-arguments.md)
-  * [Injection Idioms](wirebox-injector/injection-idioms.md)
-  * [Common Methods](wirebox-injector/common-methods.md)
+
+## Configuration
+
 * [Configuring WireBox](configuring-wirebox/README.md)
   * [Binder Configuration Properties](configuring-wirebox/binder-configuration-properties.md)
   * [ColdBox Enhanced Binder](configuring-wirebox/coldbox-enhanced-binder.md)
@@ -38,24 +64,9 @@
   * [Persistence Annotations](component-annotations/persistence-annotations.md)
   * [CacheBox Annotations](component-annotations/cachebox-annotations.md)
 * [Parent Object Definitions](parent-object-definitions.md)
-* [Virtual Inheritance](virtual-inheritance.md)
-* [Runtime Mixins\(\)](runtime-mixins.md)
-* [Injection DSL](injection-dsl/README.md)
-  * [ID-Model-Empty Namespace](injection-dsl/id-model-empty-namespace.md)
-  * [Provider Namespace](injection-dsl/provider-namespace.md)
-  * [WireBox Namespace](injection-dsl/wirebox-namespace.md)
-  * [CacheBox Namespace](injection-dsl/cachebox-namespace.md)
-  * [EntityService Namespace](injection-dsl/entityservice-namespace.md)
-  * [LogBox Namespace](injection-dsl/logbox-namespace.md)
-  * [Java Namespace](injection-dsl/java-namespace.md)
-  * [ColdBox Namespace](injection-dsl/coldbox-namespace.md)
-* [Object Persistence & Thread Safety](object-persistence-and-thread-safety.md)
-* [ORM Entity Injection](orm-entity-injection.md)
-* [WireBox Event Model](wirebox-event-model/README.md)
-  * [WireBox Events](wirebox-event-model/wirebox-events.md)
-  * [WireBox Listeners](wirebox-event-model/wirebox-listeners/README.md)
-    * [ColdBox Mode Listener](wirebox-event-model/wirebox-listeners/coldbox-mode-listener.md)
-    * [Standalone Mode Listener](wirebox-event-model/wirebox-listeners/standalone-mode-listener.md)
+
+## Advanced Topics
+
 * [Providers](providers/README.md)
   * [Custom Providers](providers/custom-providers.md)
   * [toProvider\(\) closures](providers/toprovider-closures.md)
@@ -64,6 +75,19 @@
   * [Virtual Provider Lookup Methods](providers/virtual-provider-lookup-methods.md)
   * [Provider onMissingMethod Proxy](providers/provider-onmissingmethod-proxy.md)
   * [Scope Widening Injection](providers/scope-widening-injection.md)
+* [Virtual Inheritance](virtual-inheritance.md)
+* [Runtime Mixins\(\)](runtime-mixins.md)
+* [Object Persistence & Thread Safety](object-persistence-and-thread-safety.md)
+* [ORM Entity Injection](orm-entity-injection.md)
+* [WireBox Object Populator](wirebox-object-populator/README.md)
+  * [populateFromXML](wirebox-object-populator/populatefromxml.md)
+  * [populateFromQuery](wirebox-object-populator/populatefromquery.md)
+  * [populateFromStruct](wirebox-object-populator/populatefromstruct.md)
+  * [populateFromQueryWithPreix](wirebox-object-populator/populatefromquerywithpreix.md)
+  * [populateFromJSON](wirebox-object-populator/populatefromjson.md)
+
+## Extending WireBox
+
 * [Custom DSL](custom-dsl/README.md)
   * [The DSL Builder Interface](custom-dsl/the-dsl-builder-interface.md)
   * [Registering a Custom DSL](custom-dsl/registering-a-custom-dsl.md)
@@ -72,12 +96,9 @@
   * [Scoping Process](custom-scopes/scoping-process.md)
   * [Registering a Custom Scope](custom-scopes/registering-a-custom-scope.md)
 * [WireBox Injector Interface](wirebox-injector-interface.md)
-* [WireBox Object Populator](wirebox-object-populator/README.md)
-  * [populateFromXML](wirebox-object-populator/populatefromxml.md)
-  * [populateFromQuery](wirebox-object-populator/populatefromquery.md)
-  * [populateFromStruct](wirebox-object-populator/populatefromstruct.md)
-  * [populateFromQueryWithPreix](wirebox-object-populator/populatefromquerywithpreix.md)
-  * [populateFromJSON](wirebox-object-populator/populatefromjson.md)
+
+## Aspect Oriented Programming
+
 * [Aspect Oriented Programming](aspect-oriented-programming/README.md)
   * [Overview](aspect-oriented-programming/overview/README.md)
     * [AOP Vocabulary](aspect-oriented-programming/overview/aop-vocabulary.md)
@@ -95,12 +116,4 @@
     * [HibernateTransaction](aspect-oriented-programming/included-aspects/hibernatetransaction.md)
     * [MethodLogger](aspect-oriented-programming/included-aspects/methodlogger.md)
   * [Summary](aspect-oriented-programming/summary.md)
-
-## Getting Started
-
-* [Overview](overview/README.md)
-  * [WireBox RefCard](overview/wirebox-refcard.md)
-  * [Useful Resources](overview/useful-resources.md)
-  * [Features at a Glance](overview/features-at-a-glance.md)
-  * [System Requirements](overview/system-requirements.md)
 
