@@ -35,6 +35,10 @@ function onLoad(){
 }
 ```
 
+## Binder Is An Interceptor
+
+The new WireBox Binder object is also an interceptor now.  So you can create functions that listen to the entire DI/AOP process.  Please see the [events sections](/wirebox-event-model/wirebox-events.md).
+
 
 ## Release Notes
             
