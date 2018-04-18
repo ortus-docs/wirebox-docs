@@ -25,7 +25,7 @@ We have also added the capability to inherit implicit getters and setters from p
 
 You now can register listeners on-demand with WireBox via the `registerListener( listener )` method in the Injector.  
 
-
+## New `onLoad()` Binder interceptor
 
 
 ## Release Notes
