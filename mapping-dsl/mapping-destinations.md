@@ -43,5 +43,9 @@ mapPath("UserService")
     .providerMethod("getUser","User");
 ```
 
-> **Caution** Please note that WireBox can create different types of objects for DI. However, only CFCs will be inspected for autowiring automatically unless you specifically tell WireBox that a certain mapping should not be autowired. In this case you will use the dependencies DSL to define all DI relationships.
+{% hint style="danger" %}
+**Caution** Please note that WireBox can create different types of objects for DI. However, only CFCs will be inspected for autowiring automatically unless you specifically tell WireBox that a certain mapping should not be autowired. In this case you will use the dependencies DSL to define all DI relationships.
+{% endhint %}
+
+
 
