@@ -1,6 +1,6 @@
 # Data Configuration Settings
 
-In the `configure()` method you can create a structure called `wirebox` in the `variables` scope that will hold the configuration data for WireBox.  You can configure WireBox for operation using these structures or via programmatic method calls.
+In the `configure()` method you can create a structure called `wirebox` in the `variables` scope that will hold the configuration data for WireBox.  You can configure WireBox for operation using these structures or via [programmatic method calls](/mapping-dsl/wirebox-configuration.md).
 
 ```text
 /**

@@ -1,6 +1,6 @@
-# WireBox Configuration
+# Programmatic Configuration
 
-The configuration binder has the same methods as the implicit structures that can be used to configure WireBox for operation but using methods instead of data. All methods return an instance of the binder so you can concatenate methods.
+Instead of declaring data structures you can use the methods in the binder to configure WireBox for operation. All methods return an instance of the binder so you can concatenate methods.
 
 | Method Signature | Description |
 | --- | --- |
