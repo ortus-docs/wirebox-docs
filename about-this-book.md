@@ -19,13 +19,13 @@ We highly encourage contribution to this book and our open source software. The 
 
 ## Charitable Proceeds
 
-15% of the proceeds of this book will go to charity to support orphaned kids in El Salvador - [http://www.harvesting.org/](http://www.harvesting.org/). So please donate and purchase the printed version of this book, every book sold can help a child for almost 2 months.
+15% of the proceeds of this book will go to charity to support orphaned kids in El Salvador - [https://www.harvesting.org/](https://www.harvesting.org/). So please donate and purchase the printed version of this book, every book sold can help a child for almost 2 months.
 
 ### Shalom Children's Home
 
 ![Shalom Children&apos;s Home](.gitbook/assets/shalom.jpg)
 
-Shalom Children’s Home \([http://www.harvesting.org/](http://www.harvesting.org/)\) is one of the ministries that is dear to our hearts located in El Salvador. During the 12 year civil war that ended in 1990, many children were left orphaned or abandoned by parents who fled El Salvador. The Benners saw the need to help these children and received 13 children in 1982. Little by little, more children werecame on their own, churches and the government brought children to them for care, and the Shalom Children’s Home was founded.
+Shalom Children’s Home \([https://www.harvesting.org/](https://www.harvesting.org/)\) is one of the ministries that is dear to our hearts located in El Salvador. During the 12 year civil war that ended in 1990, many children were left orphaned or abandoned by parents who fled El Salvador. The Benners saw the need to help these children and received 13 children in 1982. Little by little, more children werecame on their own, churches and the government brought children to them for care, and the Shalom Children’s Home was founded.
 
 Shalom now cares for over 80 children in El Salvador, from newborns to 18 years old. They receive shelter, clothing, food, medical care, education and life skills training in a Christian environment. The home is supported by a child sponsorship program.
 
