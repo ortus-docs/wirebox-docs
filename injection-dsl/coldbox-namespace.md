@@ -47,12 +47,8 @@ property name="rootLogger" inject="logbox:root";
 property name="logger" inject="logbox:logger:model.com.UserService";
 property name="moduleService" inject="coldbox:moduleService";
 property name="producer" inject="coldbox:interceptor:MessageProducer";
-property name="configBean" inject="coldbox:fwConfigBean";
 property name="producer" inject="interceptor:MessageProducer";
 property name="appPath" inject="coldbox:fwSetting:ApplicationPath";
 
-// JavaLoader goodness
-property name="binaryHeap" inject="javaLoader:org.apache.commons.collections.BinaryHeap";
-property name="email" inject="javaLoader:org.apache.commons.mail.SimpleEmail";
 ```
 
