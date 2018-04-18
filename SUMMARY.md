@@ -8,20 +8,6 @@
   * [What's New With 2.0.0](whats-new-with-2.0.0.md)
   * [About This Book](about-this-book.md)
   * [Author](author.md)
-* [Dependency Injection Explained](dependency-injection-explained.md)
-* [WireBox Injector](wirebox-injector/README.md)
-  * [Injector Constructor Arguments](wirebox-injector/injector-constructor-arguments.md)
-  * [Injection Idioms](wirebox-injector/injection-idioms.md)
-  * [Common Methods](wirebox-injector/common-methods.md)
-* [Injection DSL](injection-dsl/README.md)
-  * [ID-Model-Empty Namespace](injection-dsl/id-model-empty-namespace.md)
-  * [Provider Namespace](injection-dsl/provider-namespace.md)
-  * [WireBox Namespace](injection-dsl/wirebox-namespace.md)
-  * [CacheBox Namespace](injection-dsl/cachebox-namespace.md)
-  * [EntityService Namespace](injection-dsl/entityservice-namespace.md)
-  * [LogBox Namespace](injection-dsl/logbox-namespace.md)
-  * [Java Namespace](injection-dsl/java-namespace.md)
-  * [ColdBox Namespace](injection-dsl/coldbox-namespace.md)
 * [WireBox Event Model](wirebox-event-model/README.md)
   * [WireBox Events](wirebox-event-model/wirebox-events.md)
   * [WireBox Listeners](wirebox-event-model/wirebox-listeners/README.md)
@@ -62,6 +48,20 @@
 * [Parent Object Definitions](parent-object-definitions.md)
 
 ## Usage
+
+* [WireBox Injector](wirebox-injector/README.md)
+  * [Injector Constructor Arguments](wirebox-injector/injector-constructor-arguments.md)
+  * [Injection Idioms](wirebox-injector/injection-idioms.md)
+  * [Common Methods](wirebox-injector/common-methods.md)
+* [Injection DSL](injection-dsl/README.md)
+  * [ID-Model-Empty Namespace](injection-dsl/id-model-empty-namespace.md)
+  * [Provider Namespace](injection-dsl/provider-namespace.md)
+  * [WireBox Namespace](injection-dsl/wirebox-namespace.md)
+  * [CacheBox Namespace](injection-dsl/cachebox-namespace.md)
+  * [EntityService Namespace](injection-dsl/entityservice-namespace.md)
+  * [LogBox Namespace](injection-dsl/logbox-namespace.md)
+  * [Java Namespace](injection-dsl/java-namespace.md)
+  * [ColdBox Namespace](injection-dsl/coldbox-namespace.md)
 
 ## Advanced Topics
 
