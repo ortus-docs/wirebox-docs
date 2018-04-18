@@ -46,10 +46,10 @@ wirebox.scanLocations = ["model"];
 
 ```javascript
 injector = new wirebox.system.ioc.Injector();
-
 espresso = injector.getInstance("CoffeeShop").makeEspresso();;
 ```
 
-  
- So our recommendation is to always try to create configuration binders as best practice, but your requirements might dictate something else.
+{% hint style="info" %}
+So our recommendation is to always try to create configuration binders as best practice, but your requirements might dictate something else.
+{% endhint %}
 
