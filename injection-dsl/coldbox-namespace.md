@@ -38,6 +38,8 @@ This namespace is a combination of namespaces that are only active when used wit
 | coldbox:moduleConfig:{module} | Inject the entire _{module}_ configurations structure |
 
 
+## Examples
+
 ```javascript
 // some examples
 property name="logbox" inject="logbox";
