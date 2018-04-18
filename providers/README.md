@@ -7,8 +7,9 @@ Let's get funky now! We have seen how to inject objects and how to scope objects
 * You need to access scoped objects that might need reconstruction. Maybe you want to check the cache first for existence or a ColdFusion scope in order to avoid scope widening injection.
 * You have some old legacy funkiness for building stuff that has to remain as its own factory.
 
-All of these areas are where WireBox Providers can really save the day. WireBox offers an automatic way to create providers for you by creating generic provider classes (`wirebox.system.ioc.Provider`) that will be configured to provide the mapping you want, then injected instead of the real object requested. 
+All of these areas are where WireBox Providers can really save the day. WireBox offers an automatic way to create providers for you by creating generic provider classes \(`wirebox.system.ioc.Provider`\) that will be configured to provide the mapping you want, then injected instead of the real object requested.
 
-This happens whenever you use the provider DSL injection namespace or annotate methods with a `provider` annotation. It also gives you an interface (`wirebox.system.ioc.IProvider`), which is very simple, which you can implement in order to register your own complex providers with WireBox. 
+This happens whenever you use the provider DSL injection namespace or annotate methods with a `provider` annotation. It also gives you an interface \(`wirebox.system.ioc.IProvider`\), which is very simple, which you can implement in order to register your own complex providers with WireBox.
 
 You would usually do the latter if you have legacy code you need to abstract out, had funky construction processes, etc. Let's start by looking at how registering custom providers works first and then how to use the automatic WireBox providers.
+
