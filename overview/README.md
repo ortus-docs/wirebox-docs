@@ -70,7 +70,7 @@ Here are a simple listing of features WireBox brings to the table:
 
 Our Wirebox RefCard will get you up and running in no time
 
-![](.gitbook/assets/overview_wireboxrefcard.png)
+![](../.gitbook/assets/overview_wireboxrefcard.png)
 
 
 ## Useful Resources
