@@ -24,6 +24,7 @@
 
 * [Configuring WireBox](configuring-wirebox/README.md)
   * [Binder Configuration Properties](configuring-wirebox/binder-configuration-properties.md)
+  * [Binder Environment Properties](configuring-wirebox/binder-environment-properties.md)
   * [ColdBox Enhanced Binder](configuring-wirebox/coldbox-enhanced-binder.md)
   * [Types & Scopes](configuring-wirebox/types-and-scopes.md)
   * [Implicit Configuration Settings](configuring-wirebox/implicit-configuration-settings.md)
