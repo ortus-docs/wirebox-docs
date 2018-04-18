@@ -2,6 +2,10 @@
 
 This release is part of the ColdBox 5.0.0 upgrade and it is a major release.  Below you will find the major areas of improvement for WireBox and the full release notes.
 
+## Error Reporting
+
+We have done greats strides in consistency of error reporting during the creation of objects and their wiring.  We have also added countermeasures for **rogue** mappings that could bring entire applications down.  You will now get more consistency and better error reporting overall.
+
 
 ## Release Notes
             
