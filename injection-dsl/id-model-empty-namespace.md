@@ -11,6 +11,7 @@ The default namespace is not specifying one. This namespace is used to retreive 
 | model | Get a mapped instance with the same name as defined in the property, argument or setter method. |
 | model:{name} | Get a mapped instance by using the second part of the DSL as the mapping name. |
 | model:{name}:{method} | Get the {name} instance object, call the {method} and inject the results |
+| @module| Get the object from a specific module. The name of the alias is from the property used |
 
 ```javascript
 // Let's assume we have mapped a few objects called: UserService, SecurityService and RoleService
@@ -27,5 +28,8 @@ property name="userService" inject="model:UserService";
 
 // Simple factory method
 property name="roles" inject="id:RoleService:getRoles";
+
+// Module Injection Shortcut
+property name="MyService" inject="@myModule";
 ```
 
