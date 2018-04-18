@@ -54,6 +54,7 @@ function onLoad(){
 * [<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-68'>WIREBOX-68</a>] - Virtual Inheritance now copies over properties and private functions with generic accessors
 * [<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-69'>WIREBOX-69</a>] - Module Injection Shortcut when the inject annotation is @moduleAdress
 * [<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-70'>WIREBOX-70</a>] - Add a new `onLoad()` method interceptor for WireBox configuration binder
+* [<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-72'>WIREBOX-72</a>] - Make the Binder also an interceptor
         
 ### Improvements
 
