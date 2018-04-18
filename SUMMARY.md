@@ -27,7 +27,7 @@
   * [Binder Environment Properties](configuring-wirebox/binder-environment-properties.md)
   * [ColdBox Enhanced Binder](configuring-wirebox/coldbox-enhanced-binder.md)
   * [Types & Scopes](configuring-wirebox/types-and-scopes.md)
-  * [Implicit Configuration Settings](configuring-wirebox/implicit-configuration-settings.md)
+  * [Data Configuration Settings](configuring-wirebox/implicit-configuration-settings.md)
   * [Method Configuration](mapping-dsl/wirebox-configuration.md)
 * [Mapping DSL](mapping-dsl/README.md)
   * [Mapping Initiators](mapping-dsl/mapping-initiators/README.md)
