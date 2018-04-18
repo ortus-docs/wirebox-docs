@@ -9,7 +9,7 @@ The best way to install LogBox is using **CommandBox CLI and package manager.**
 
 Our Wirebox RefCard will get you up and running in no time
 
-![](../.gitbook/assets/overview_wireboxrefcard.png)
+![](.gitbook/assets/overview_wireboxrefcard.png)
 
 
 
