@@ -11,14 +11,10 @@ Our Wirebox RefCard will get you up and running in no time
 
 ![](.gitbook/assets/overview_wireboxrefcard.png)
 
-
-
 ## System Requirements
 
 * Adobe ColdFusion 11+
 * Lucee 4.5+
-
-
 
 ## CommandBox Installation
 
