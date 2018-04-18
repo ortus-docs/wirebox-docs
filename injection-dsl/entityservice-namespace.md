@@ -1,5 +1,9 @@
 # EntityService Namespace
 
+{% hint style="warning" %}
+In order to use this namespace you will need the `cborm` module installed in your application: `install cborm`
+{% endhint %}
+
 Gives you the ability to easily inject base orm services or binded virtual entity services for you:
 
 | DSL | Description |
