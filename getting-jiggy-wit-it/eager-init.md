@@ -17,7 +17,9 @@ component extends = "wirebox.system.ioc.config.Binder" {
     
 }
 
-# Eager Component via Annotation
+/**
+ * Eager Component via Annotation
+ */
 component singleton eagerInit{
 
 }
