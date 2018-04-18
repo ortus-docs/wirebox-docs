@@ -25,9 +25,11 @@ We have also added the capability to inherit implicit getters and setters from p
 
 You now can register listeners on-demand with WireBox via the `registerListener( listener )` method in the Injector.  
 
-## New `onLoad()` Binder interceptor
+## New `onLoad(), onShutdown()` Binder Callbacks
 
-Any WireBox binder can now have a new interception method `onLoad()` which can guarantee you that the entire WireBox machinery is online.  You can use this for leveraging `mapDirectory()` calls which require the entire event system to be online.
+Any WireBox binder can now have two new callback methods `onLoad(), onShutdown()`.  The `onLoad()` is called once WireBox has loaded with logging, caching, and the `configure()` on the binder has been called.  You can use this for leveraging `mapDirectory()` calls which require the entire event system to be online or any other type of execution that leverages the entire machinery to be online.
+
+The `onShutdown()` callback is a nice way to shutdown services as you see fit.
 
 ```java
 function onLoad(){
@@ -59,6 +61,7 @@ The new WireBox Binder object is also an interceptor now.  So you can create fun
 * [<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-69'>WIREBOX-69</a>] - Module Injection Shortcut when the inject annotation is @moduleAdress
 * [<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-70'>WIREBOX-70</a>] - Add a new `onLoad()` method interceptor for WireBox configuration binder
 * [<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-72'>WIREBOX-72</a>] - Make the Binder also an interceptor
+* [<a href='https://ortussolutions.atlassian.net/browse/WIREBOX-73'>WIREBOX-73</a>] -         Add a new `onShutdown()` method interceptor for WireBox configuration binder
         
 ### Improvements
 
