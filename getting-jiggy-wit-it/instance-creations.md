@@ -30,7 +30,7 @@ map("CoolShop").to("model.CoffeeShop");
  **Explicit Creation**
 
 ```javascript
-injector = createObject("component","wirebox.system.ioc.Injector").init();
+injector = new wirebox.system.ioc.Injector();
 espresso = injector.getInstance("CoolShop").makeEspresso();
 ```
 
@@ -45,7 +45,8 @@ wirebox.scanLocations = ["model"];
  **Set Locations Creation**
 
 ```javascript
-injector = createObject("component","wirebox.system.ioc.Injector").init();
+injector = new wirebox.system.ioc.Injector();
+
 espresso = injector.getInstance("CoffeeShop").makeEspresso();;
 ```
 
