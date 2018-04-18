@@ -41,5 +41,8 @@ map("myWS")
     .into(this.SCOPES.APPLICATION);
 ```
 
-> **Caution** Please note that by leveraging scopes that can expire such as cachebox,request,session,applications,etc you must take into account the way they are injected into other objects. They can experience a DI side effect called scope widening injection that can link an object reference that expires into another object reference that does not expire \(like singleton\). This causes nasty side effects and issues, so please refer to the WireBox Providers section to find out how you can avoid this nasty pitfall by using WireBox providers.
+{% hint style="danger" %}
+**Caution** Please note that by leveraging scopes that can expire such as cachebox,request,session,applications,etc you must take into account the way they are injected into other objects. They can experience a DI side effect called scope widening injection that can link an object reference that expires into another object reference that does not expire \(like singleton\). This causes nasty side effects and issues, so please refer to the WireBox Providers section to find out how you can avoid this nasty pitfall by using WireBox providers.
+{% endhint %}
+
 
