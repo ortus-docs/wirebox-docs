@@ -57,6 +57,8 @@ Here are the internal scopes that ship with WireBox:
 
 This is cool! We can now have full control of how objects are persisted via the WireBox injector, we are not constricted to one type of persistence anymore.   
 
+{% hint style="danger" %}
+**Caution** If you use a persistence scope that expires after time like session, request, cachebox, etc, you will experience a side effect called scope widening injection. WireBox offers a solution to this side effect via WireBox Providers, which we will cover in detail.
+{% endhint %}
 
-> **Caution** If you use a persistence scope that expires after time like session, request, cachebox, etc, you will experience a side effect called scope widening injection. WireBox offers a solution to this side effect via WireBox Providers, which we will cover in detail.
 
