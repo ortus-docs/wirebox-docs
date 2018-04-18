@@ -17,7 +17,7 @@ component{
 
     function configure(){}
 
-    function beforeInjectorShutdown(event, interceptData){
+    function beforeInjectorShutdown(event, interceptData, buffer, rc, prc ){
         var injector = arguments.interceptData.injector;
         // Do my stuff here:
 
@@ -25,7 +25,7 @@ component{
         log.info("DUDE, I am going down!!!");
     }
 
-    function afterInstanceCreation(event, interceptData, buffer){
+    function afterInstanceCreation(event, interceptData, buffer, rc, prc ){
         var injector = arguments.interceptData.injector;
         var target = arguments.interceptData.target;
         var mapping = arguments.interceptData.mapping;
