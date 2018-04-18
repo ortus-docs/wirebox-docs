@@ -16,8 +16,3 @@ This release is part of the ColdBox 4.2.0 update and contains the following upda
 * \[[WIREBOX-3](https://ortussolutions.atlassian.net/browse/WIREBOX-3)\] -         Add better checks for file system write permissions
 * \[[WIREBOX-45](https://ortussolutions.atlassian.net/browse/WIREBOX-45)\] -         Update the documentation URL in box.json
 * \[[WIREBOX-50](https://ortussolutions.atlassian.net/browse/WIREBOX-50)\] -         Pass `injector` to closure-based providers
-
-{% hint style="danger" %}
-Hello
-{% endhint %}
-
