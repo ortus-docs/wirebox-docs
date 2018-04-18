@@ -1,6 +1,6 @@
 # Influence Instances at Runtime
 
-You can use our mapping DSL to register influence closures or functions on a per mapping basis. This will allow a developer to influence the requested instance of any object/data element and decorate objects or even return different objects.
+You can use our mapping DSL to register influence closures or lambdas on a per mapping basis. This will allow a developer to influence the requested instance of any object/data element and decorate objects or even return different objects.
 
 This is similar to object providers but instead of overriding the ENTIRE creation process of the object like a provider does, the user might want to simply influence the creation of a _normal_ mapping with some additional flair. This is accomplished via the `withInfluence` mapping DSL function. It receives a closure as an argument and the closure has the following signature:
 
