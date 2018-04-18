@@ -1,4 +1,4 @@
-# Implicit Configuration Settings
+# Data Configuration Settings
 
 In the `configure()` method you can create a structure called `wirebox` in the `variables` scope that will hold the configuration data for WireBox.
 
