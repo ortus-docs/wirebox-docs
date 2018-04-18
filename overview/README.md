@@ -5,7 +5,7 @@
 
 ![](../.gitbook/assets/overview_wireboxicon.png)
 
-WireBox alleviates the need for custom object factories or manual object creation in your ColdFusion (CFML) applications. It provides a standardized approach to object construction and assembling that will make your code easier to adapt to changes, easier to test, [mock](http://testbox.ortusbooks.com/content) and extend.
+WireBox alleviates the need for custom object factories or manual object creation in your ColdFusion (CFML) applications. It provides a **standardized** approach to object **construction** and **assembling** that will make your code easier to adapt to changes, easier to [test, mock](https://testbox.ortusbooks.com) and extend.
 
 As software developers we are always challenged with maintenance and one ever occurring annoyance,change. Therefore, the more sustainable and maintainable our software, the more we can concentrate on real problems and make our lives more productive. WireBox leverages an array of metadata annotations to make your object assembling, storage and creation easy as pie! We have leveraged the power of event driven architecture via object listeners or interceptors so you can extend not only WireBox but the way objects are analyzed, created, wired and much more. To the extent that our [AOP](../aspect-oriented-programming/) capabilities are all driven by our AOP listener which decouples itself from WireBox code and makes it extremely flexible.
 
