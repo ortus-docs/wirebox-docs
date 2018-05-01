@@ -18,7 +18,7 @@ Instead of declaring data structures you can use the methods in the binder to co
 
 ```javascript
 logBoxConfig( "config.LogBox" )
-    .scanLocations( getAppMappig() & ".includes.models" )
+    .scanLocations( getAppMapping() & ".includes.models" )
     .stopRecursions( "model.BaseService,model.BaseModel" )
     .mapScope( "Ortus", "model.scopes.Ortus" );
 ```
