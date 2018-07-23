@@ -1,0 +1,16 @@
+# Mapping Initiators
+
+Ok, now that we know how to configure WireBox, let's get into the fun stuff of object mapping. How do we do this? By using our DSL mapping initiators that tell WireBox how to start the object registration process. You will then concatenate the initiators with some DSL destinations methods, DI data, etc to tell WireBox all the information it might need to construct, wire and persist the object. Here are the DSL initiators:
+
+| Method Signature | Description |
+| --- | --- |
+| `map(alias)` | The method that starts the mapping process. You pass in a mapping name or a list of names to start registering |
+| `mapPath(path)` | Map a CFC instantiation path. This method internally delivers a two-fold punch of doing `map('CFCFileName').to(path)`. This is a quick way to map a CFC instantiation path that uses the name of the CFC as the mapping name |
+| `mapDirectory(packagePath,[include],[exclude], [influence], [filter], [ force] ])` | A cool method that tells WireBox to automatically register ALL the CFCs found recursively in that instantiation package path. All CFCs will be registered using their CFC names as the mapping names and WireBox will inspect all the CFCs immediately for DI metadata. The **include** and **exclude** arguments can be used for inclusions/exclusions lists via regex. The influence argument can be a UDF or closure that will affect the iterating registrations of objects. The filter argument can be a UDF or closure that will filter out or in the CFCs found, an include/exclude on steroids |
+| `unMap(alias)` | Unmap/delete a mapping in the binder |
+| `with(alias)` | This method is a utility method that retrieves the alias mapping so you can start concatenating methods for that specific mapping. Basically putting it into a workable context |
+
+{% hint style="danger" %}
+**Caution** From the methods we have seen above only the `map()` and `with()` methods require a DSL destination.
+{% endhint %}
+
