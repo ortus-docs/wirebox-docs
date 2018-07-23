@@ -134,7 +134,7 @@ The instantiation paths that this Injector will have registered to do object loc
 wirebox.scanLocations = ["models","com","org.majano"];
 ```
 
-> ** Note** Please note that order of declaration is the same as order of lookup, so it really matters. Also note that this setting only makes sense if you do not like to create mappings for objects and you just want WireBox to discover them for you.
+> **Note** Please note that order of declaration is the same as order of lookup, so it really matters. Also note that this setting only makes sense if you do not like to create mappings for objects and you just want WireBox to discover them for you.
 
 ## stopRecursions
 
