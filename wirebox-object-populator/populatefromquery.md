@@ -9,7 +9,7 @@ Populate a bean from a query
 ## Arguments
 
 | Key | Type | Required | Default | Description |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | target | any | Yes | --- | The target to populate |
 | qry | query | yes | --- | The query to populate the bean object with |
 | rowNumber | Numeric | No | 1 | The query row number to use for population |

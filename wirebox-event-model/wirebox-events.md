@@ -3,7 +3,7 @@
 WireBox's offers a wide gamut of life cycle events that are announced at certain points in execution time. Below are the current events announced by the Injector `wirebox.system.ioc.Injector`.
 
 | Event | Data | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | afterInjectorConfiguration | **injector** : The calling injector reference | Called right after the injector has been fully configured for operation. |
 | beforeInstanceCreation | **mapping** : The mapping called to be created | Called right before an object mapping is built via our internal object builders or custom scope builders. |
 | afterInstanceInitialized | **mapping** : The mapping called to be created | Called after an object mapping gets constructed and initialized. The mapping has NOT been placed on a scope yet and no DI/AOP has been performed yet |

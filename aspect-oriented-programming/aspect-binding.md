@@ -16,7 +16,7 @@ bindAspect(classes=match().mappings('UserService'),methods=match().methods('save
 What is up with that funky `match()`.... stuff? Well, the classes and methods arguments of the `bindAspect()` call uses our AOP funky matcher methods that exist in an object called: `wirebox.system.aop.Matcher`. This matcher object is used to match classes and methods to whatever criteria you like. The binder has a convenience method called `match()` that creates a new matcher object for you and returns it so you can configure it for classes and method matching. Here are the most common matching methods below:
 
 | Method | Class Matching | Method Matching | Description |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | any\(\) | true | true | Matches against any class path or method name |
 | returns\(type\) | false | true | Matches against the return type of methods |
 | annotatedWith\(annotation,\[value\]\) | true | true | Matches against the finding of an annotation in a cfcomponent or cffuntion or matches against the finding AND value of the annotation. |

@@ -9,7 +9,7 @@ Populate an object from an XML packet
 ## Arguments
 
 | Key | Type | Required | Default | Description |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | target | any | Yes | --- | The target to populate |
 | xml | any | Yes | --- | The XML string or packet |
 | root | string | No |  | The XML root element to start from |

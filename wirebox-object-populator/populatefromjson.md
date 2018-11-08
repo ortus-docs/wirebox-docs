@@ -9,7 +9,7 @@ Populate a bean from a JSON string
 ## Arguments
 
 | Key | Type | Required | Default | Description |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | target | any | Yes | --- | The target to populate |
 | JSONString | string | Yes | --- | The JSON string to populate the object with. It has to be valid JSON and also a structure with name-key value pairs. |
 | scope | string | No |  | Use scope injection instead of setters population. Ex: scope=variables.instance. |

@@ -5,7 +5,7 @@ The dependencies DSL methods are mostly used to define dependencies and also to 
 > **Note** Please note that you can concatenate more than one of these methods calls to dictate multiple constructor arguments, setter methods, cf properties, and more.
 
 | Method Signature | Description |
-| --- | --- |
+| :--- | :--- |
 | `constructor(constructor)` | Tells WireBox which constructor to call on the mapped object. By default if an object has an `init()` method, that will be used as the constructor |
 | `noInit()` | Tells WireBox that this mapped object will skip the constructor call for it. By default WireBox always calls object constructors |
 | `threadSafe()` | Tells WireBox that the mapped object should be constructed and then wired with a strict concurrency lock for property injections, setter injections and onDIComplete\(\). Please be aware that if you use this mode of construction, circular dependencies are not allowed. The default is that property and setter injections and onDIComplete\(\) are outside of the construction locks |

@@ -3,7 +3,7 @@
 Create a `methodMatcher` annotation on the component with the following DSL values:
 
 | DSL | Description |
-| --- | --- |
+| :--- | :--- |
 | any | Matches against any class path or method name |
 | annotatedWith:{annotation} | Matches against the finding of an annotation in a cfcomponent |
 | annotatedWith:{annotation}:{value} | Matches against the finding of an annotation value in a cfcomponent |

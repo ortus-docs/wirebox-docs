@@ -3,7 +3,7 @@
 The mapping destinations tell WireBox what type of object you are mapping to. You will usually use these methods by concatenating `map()` or `with()` initiator calls:
 
 | Method Signature | Description |
-| --- | --- |
+| :--- | :--- |
 | `to(path)` | Maps a name to a CFC instantiation path |
 | `toDSL(dsl)` | Maps a name to DSL builder string. Construction is done by using this DSL string \(Look at Injection DSL\) |
 | `toFactoryMethod(factory,method)` | Maps a name to another mapping \(factory\) and its method call. If you would like to pass in parameters to this factory method call you will use the `methodArg()` DSL method concatenated to this method call |
