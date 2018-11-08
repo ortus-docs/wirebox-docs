@@ -3,7 +3,7 @@
 The default namespace is not specifying one. This namespace is used to retreive either named mappings or full component paths.
 
 | DSL | Description |
-| --- | --- |
+| :--- | :--- |
 | empty | Same as saying id. Get a mapped instance with the same name as defined in the property, argument or setter method. |
 | id | Get a mapped instance with the same name as defined in the property, argument or setter method. |
 | id:{name} | Get a mapped instance by using the second part of the DSL as the mapping name. |
@@ -32,4 +32,16 @@ property name="roles" inject="id:RoleService:getRoles";
 // Module Injection Shortcut
 property name="MyService" inject="@myModule";
 ```
+
+## CFC Instantiation Order
+
+When WireBox builds CFC instances, it is important to know the order of operations.  This controls when injected dependencies are available for you to use.
+
+1. Component is instantiated with `createObject()`
+2. CF automatically runs the pseudo constructor \(any code outside the a method declaration\)
+3. The `init()` method is called \(if it exists\), passing any constructor args
+4. Property \(mixin\) and setting injection happens
+5. The `onDIComplete()` method is called \(if it exists\)
+
+Based on that order, you can see that injected dependencies \(except constructor ones\) are not available yet to use in the `init()` and you must wait to use them in the `onDIComplete()` method.
 

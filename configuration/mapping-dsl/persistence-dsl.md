@@ -14,7 +14,7 @@ this.SCOPES - Enum class (coldbox.system.ioc.Scopes)
 These classes have on themselves several public properties that are a cool shorthand way to link to construction types or persistence scopes
 
 | Method Signature | Description |
-| --- | --- |
+| :--- | :--- |
 | **asSingleton**\(\) | Maps an object to the WireBox internal Singleton scope |
 | **into**\(scope\) | Maps an object to a valid WireBox internal scope or any custom registered scopes by using the registered scope name. Valid internal WireBox scopes are:  NOSCOPE PROTOTYPE SINGLETON SESSION APPLICATION REQUEST SERVER  CACHEBOX |
 | **inCacheBox**\(\[key='mappingName'\],\[timeout\],\[lastAccessTimeout\],\[provider='default'\]\) | Maps an object to the integrated [CacheBox](https://github.com/ortus/wirebox-documentation/tree/b9a6ae3e91f7dcb74ec7e900e27243e19824cf27/mapping_dsl/wiki/CacheBox.cfm) instance |

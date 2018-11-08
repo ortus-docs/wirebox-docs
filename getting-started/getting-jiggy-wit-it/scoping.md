@@ -45,7 +45,7 @@ component extends="wirebox.system.ioc.config.Binder"{
 Here are the internal scopes that ship with WireBox:
 
 | Scope | Description |
-| --- | --- |
+| :--- | :--- |
 | `NOSCOPE` | A prototype object that gets created every time it is requested. |
 | `PROTOTYPE` | A prototype object that gets created every time it is requested. |
 | `SINGLETON` | Only one instance of the object exists |

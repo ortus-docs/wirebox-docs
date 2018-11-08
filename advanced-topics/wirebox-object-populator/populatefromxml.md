@@ -4,12 +4,12 @@ Populate an object from an XML packet
 
 ## Returns
 
- \* This function returns any
+\* This function returns any
 
 ## Arguments
 
 | Key | Type | Required | Default | Description |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | target | any | Yes | --- | The target to populate |
 | xml | any | Yes | --- | The XML string or packet |
 | root | string | No |  | The XML root element to start from |

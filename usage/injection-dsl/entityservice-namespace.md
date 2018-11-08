@@ -7,7 +7,7 @@ In order to use this namespace you will need the `cborm` module installed in you
 Gives you the ability to easily inject base orm services or binded virtual entity services for you:
 
 | DSL | Description |
-| --- | --- |
+| :--- | :--- |
 | entityService | Inject a BaseORMService object for usage as a generic service layer |
 | entityService:{entity} | Inject a VirtualEntityService object for usage as a service layer based off the name of the entity passed in. |
 

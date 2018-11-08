@@ -5,13 +5,13 @@ This namespace is a combination of namespaces that are only active when used wit
 ## Single Stage Injections
 
 | DSL | Description |  |
-| --- | --- |
+| :--- | :--- | :--- |
 | coldbox | Get the coldbox controller reference |  |
 
 ## Two Stage Injections
 
 | DSL | Description |
-| --- | --- |
+| :--- | :--- |
 | coldbox:configSettings | Get a reference to the application's configuration settings |
 | coldbox:dataMarshaller | Get a reference to the application's data marshaller |
 | coldbox:flash | Get a reference to the application's flash scope object |
@@ -29,7 +29,7 @@ This namespace is a combination of namespaces that are only active when used wit
 ## Three Stage Injections
 
 | DSL | Description |
-| --- | --- |
+| :--- | :--- |
 | coldbox:fwSetting:{setting} | Get a setting from the ColdBox settings instead of the Application settings |
 | coldbox:setting:{setting} | Get the coldbox application _{setting}_ setting and inject it |
 | coldbox:setting:{setting}@{module} | Get the coldbox application _{setting}_ from the _{module}_ and inject it |

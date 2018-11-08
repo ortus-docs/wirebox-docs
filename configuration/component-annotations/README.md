@@ -3,7 +3,7 @@
 A part from using the configuration binder, you can also leverage component annotations to dictate behavior on the object.
 
 | Annotation | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | **autowire** | boolean | All objects are marked as autowire=true, so if you want to disable autowiring, you can add this annotation as false. You do NOT need to add this annotation if you want to autowire it, it is redundant if you do. |
 | **alias** | string | A list of aliased names you can attach to a CFC instance apart from its Component name. This is great when using the `mapDirectory()` binder function. |
 | **eagerInit** | none | All objects are lazy loaded unless they are marked with this annotation or marked as eager init in the binder configuration. |

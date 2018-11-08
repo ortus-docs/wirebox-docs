@@ -1,4 +1,4 @@
-# populateFromQueryWithPrefix
+# populateFromQueryWithPreix
 
 Populates an Object using only specific columns from a query. Useful for performing a query with joins that needs to populate multiple objects.
 
@@ -11,7 +11,7 @@ Populates an Object using only specific columns from a query. Useful for perform
 The structure to populate the object with.
 
 | Key | Type | Required | Default | Description |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | target | any | Yes | --- | This can be an instantiated bean object or a bean instantiation path as a string. If you pass an instantiation path and the bean has an 'init' method. It will be executed. This method follows the bean contract \(set{property\_name}\). Example: setUsername\(\), setfname\(\) |
 | qry | query | yes | --- | The query to populate the bean object with |
 | rowNumber | Numeric | No | 1 | The query row number to use for population |

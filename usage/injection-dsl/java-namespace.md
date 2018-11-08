@@ -3,7 +3,7 @@
 Interact with Java directly
 
 | DSL | Description |
-| --- | --- |
+| :--- | :--- |
 | java:{class} | Get a reference or instantiate the java {class} for you. |
 
 ```javascript

@@ -3,7 +3,7 @@
 ![](../../../.gitbook/assets/coldboxlistener.jpg)
 
 | **Argument** | **Type** | **Execution Mode** | **Description** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | **event** | coldbox.system.web.context.RequestContext | **coldbox** | The request context of the running request |
 | **interceptData** | struct | **standalone-coldbox** | The data structure passed in the event |
 | **buffer** | coldbox.system.core.util.RequestBuffer | **ColdBox** | A request buffer object for producing elegant content in ColdBox applications |

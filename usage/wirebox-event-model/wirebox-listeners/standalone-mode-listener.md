@@ -3,7 +3,7 @@
 ![](../../../.gitbook/assets/standalonelistener.jpg)
 
 | **Argument** | **Type** | **Execution Mode** | **Description** |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | **interceptData** | struct | **standalone-coldbox** | The data structure passed in the event |
 
 ```javascript
