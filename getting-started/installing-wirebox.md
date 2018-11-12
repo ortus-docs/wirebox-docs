@@ -3,7 +3,7 @@
 WireBox can be downloaded as a standalone framework or it is included with the latest ColdBox Platform release, so no need to install it if you are within a ColdBox application.
 
 {% hint style="info" %}
-The best way to install LogBox is using **CommandBox CLI and package manager.**
+The best way to install WireBox is using **CommandBox CLI and package manager.**
 {% endhint %}
 
 ## System Requirements
