@@ -2,8 +2,10 @@
 
 To register a custom namespace in WireBox, place the following configuration in the `wirebox` struct defined within the `configure()` method of your WireBox binder CFC.  in a ColdBox app, this is `/config/WireBox.cfc`.  Alternatively, you can use the `mapDSL()` call in the `configure()` method.
 
+{% code-tabs %}
+{% code-tabs-item title="/config/WireBox.cfc" %}
 ```javascript
-component extends='coldbox.system.ioc.config.Binder' {
+component extends="coldbox.system.ioc.config.Binder" {
 
 	function configure(){
 		wirebox = {
@@ -18,6 +20,24 @@ component extends='coldbox.system.ioc.config.Binder' {
 	}
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+If you want to register a custom DSL namespace from a module, you can make the same call via the `binder` reference that is provided to your `ModuleConfig.cfc`.
+
+{% code-tabs %}
+{% code-tabs-item title="ModuleConfig.cfc" %}
+```javascript
+component {
+    function configuyre() {
+        binder.mapDSL("ortus","path.model.dsl.MyDSL");
+    }
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
 
 Now I can use the `ortus` DSL Namespace in my mappings DSL and even my annotations, isn't that cool!
 
