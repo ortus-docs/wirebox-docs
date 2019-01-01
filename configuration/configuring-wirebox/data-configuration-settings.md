@@ -2,7 +2,7 @@
 
 In the `configure()` method you can create a structure called `wirebox` in the `variables` scope that will hold the configuration data for WireBox. You can configure WireBox for operation using these structures or via [programmatic method calls](programmatic-configuration.md).
 
-```text
+```javascript
 /**
 * Configure WireBox
 */
@@ -87,7 +87,7 @@ wirebox.cacheBox = {
 
 This structure tells WireBox how to leach itself into any ColdFusion scope when initialized instead of you placing it in the scope.
 
-```text
+```javascript
 wirebox.scopeRegistration = {
     // activate scope registration
     enabled = true,
