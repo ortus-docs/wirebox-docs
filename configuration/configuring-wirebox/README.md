@@ -1,5 +1,7 @@
 # Configuring WireBox
 
+When using WireBox inside of ColdBox, the binder CFC is located by convention in `/config/WireBox.cfc`.  When using WireBox outside of ColdBox, you can create a binder CFC anywhere with any name using one of these two methods:
+
 1. Create a configuration CFC that extends the WireBox configuration object: `coldbox.system.ioc.config.Binder` and has a `configure()` method.
 
 ```javascript
@@ -19,7 +21,7 @@ component extends="coldbox.system.ioc.config.Binder"{
 }
 ```
 
-1. Create a simple configuration CFC that has a `configure( binder )` method that accepts a WireBox configuration binder object
+2. Or create a simple configuration CFC that has a `configure( binder )` method that accepts a WireBox configuration binder object
 
 ```javascript
 component{
@@ -48,4 +50,13 @@ From the `configure()` method you will be able to interact with the Binder metho
 {% hint style="info" %}
 Please also note that the Binder itself has a reference to the current Injector it belongs to \(`getInjector()`\).
 {% endhint %}
+
+When you instantiate the Wirebox injector, pass either the CFC path to your binder CFC or an instance of the CFC.
+
+```javascript
+new wirebox.system.ioc.Injector( 'path.to.my.Binder' );
+// or
+var oBinder = createObject( 'path.to.my.Binder' );
+new wirebox.system.ioc.Injector( oBinder );
+```
 
