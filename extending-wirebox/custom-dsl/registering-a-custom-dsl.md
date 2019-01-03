@@ -29,7 +29,7 @@ If you want to register a custom DSL namespace from a module, you can make the s
 {% code-tabs-item title="ModuleConfig.cfc" %}
 ```javascript
 component {
-    function configuyre() {
+    function configure() {
         binder.mapDSL("ortus","path.model.dsl.MyDSL");
     }
 }
