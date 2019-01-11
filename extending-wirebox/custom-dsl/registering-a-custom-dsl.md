@@ -1,23 +1,23 @@
 # Registering a Custom DSL
 
-To register a custom namespace in WireBox, place the following configuration in the `wirebox` struct defined within the `configure()` method of your WireBox binder CFC.  in a ColdBox app, this is `/config/WireBox.cfc`.  Alternatively, you can use the `mapDSL()` call in the `configure()` method.
+To register a custom namespace in WireBox, place the following configuration in the `wirebox` struct defined within the `configure()` method of your WireBox binder CFC. in a ColdBox app, this is `/config/WireBox.cfc`. Alternatively, you can use the `mapDSL()` call in the `configure()` method.
 
 {% code-tabs %}
 {% code-tabs-item title="/config/WireBox.cfc" %}
 ```javascript
 component extends="coldbox.system.ioc.config.Binder" {
 
-	function configure(){
-		wirebox = {
-			// DSL Namespace registrations
-			customDSL = {
-			    ortus = "path.model.dsl.MyDSL"
-			}
-		};
+    function configure(){
+        wirebox = {
+            // DSL Namespace registrations
+            customDSL = {
+                ortus = "path.model.dsl.MyDSL"
+            }
+        };
 
-		// Or here...		
-		mapDSL("ortus","path.model.dsl.MyDSL");		
-	}
+        // Or here...        
+        mapDSL("ortus","path.model.dsl.MyDSL");        
+    }
 }
 ```
 {% endcode-tabs-item %}
@@ -36,8 +36,6 @@ component {
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
-
-
 
 Now I can use the `ortus` DSL Namespace in my mappings DSL and even my annotations, isn't that cool!
 

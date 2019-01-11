@@ -9,7 +9,7 @@
      \/  \/   |_|_|  \___|____/ \___/_/\_\
 ```
 
-## WireBox Manual - Version 5.0.0
+## WireBox Manual - Version 5.x
 
 ![ColdBox Platform](.gitbook/assets/wirebox.png)
 
