@@ -23,7 +23,7 @@ property name="roles" inject="id:RoleService:getRoles" scope="instance";
 
 ## Constructor Argument Annotation
 
-You can also annotated constructor arguments with the inject annotation.
+You can also use annotated constructor arguments with the inject annotation.
 
 ```javascript
 <---  Via tag based annotations --->
