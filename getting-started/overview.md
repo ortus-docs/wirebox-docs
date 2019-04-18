@@ -7,7 +7,7 @@
 
 WireBox alleviates the need for custom object factories or manual object creation in your ColdFusion \(CFML\) applications. It provides a **standardized** approach to object **construction** and **assembling** that will make your code easier to adapt to changes, easier to [test, mock](https://testbox.ortusbooks.com) and extend.
 
-As software developers we are always challenged with maintenance and one ever occurring annoyance, **change**. Therefore, the more sustainable and maintainable our software, the more we can concentrate on real problems and make our lives more productive. WireBox leverages an array of metadata annotations to make your object assembling, storage and creation easy as pie! We have leveraged the power of event driven architecture via object listeners or interceptors so you can extend not only WireBox but the way objects are analyzed, created, wired and much more. To the extent that our [AOP]() capabilities are all driven by our AOP listener which decouples itself from WireBox code and makes it extremely flexible.
+As software developers we are always challenged with maintenance and one ever occurring annoyance, **change**. Therefore, the more sustainable and maintainable our software, the more we can concentrate on real problems and make our lives more productive. WireBox leverages an array of metadata annotations to make your object assembling, storage and creation easy as pie! We have leveraged the power of event driven architecture via object listeners or interceptors so you can extend not only WireBox but the way objects are analyzed, created, wired and much more. To the extent that our [AOP](overview.md) capabilities are all driven by our AOP listener which decouples itself from WireBox code and makes it extremely flexible.
 
 We have also seen the value of a central location for object configuration and behavior so we created our very own **WireBox Programmatic Mapping DSL** \([Domain Specific Language](http://en.wikipedia.org/wiki/Domain-specific_language)\) that you can use to define object construction, relationships, AOP, etc in pure ColdFusion \(No XML!\). We welcome you to stick around and read our documentation so you can see the true value of **WireBox** in your web applications.
 
@@ -62,14 +62,12 @@ Here are a simple listing of features WireBox brings to the table:
 * Object life cycle events via WireBox Listeners/Interceptors
 * Customizable injection DSL
 * WireBox object providers to avoid scope-widening issues on time/volatile persisted objects
-* [Aspect Oriented Programming]()
+* [Aspect Oriented Programming](overview.md)
 * [Standalone ORM Entity Injection](../advanced-topics/orm-entity-injection.md)
 
 ## WireBox RefCard
 
-Our Wirebox RefCard will get you up and running in no time
-[![](../.gitbook/assets/overview_wireboxrefcard.png)](https://github.com/ColdBox/cbox-refcards/raw/master/WireBox/WireBox-Refcard.pdf)
-
+Our Wirebox RefCard will get you up and running in no time [![](../.gitbook/assets/overview_wireboxrefcard.png)](https://github.com/ColdBox/cbox-refcards/raw/master/WireBox/WireBox-Refcard.pdf)
 
 ## Useful Resources
 
