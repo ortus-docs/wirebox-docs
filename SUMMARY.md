@@ -5,6 +5,7 @@
 ## Intro
 
 * [Introduction](intro/introduction/README.md)
+  * [What's New With 5.5.0](intro/introduction/whats-new-with-5.5.0.md)
   * [What's New With 5.4.0](intro/introduction/whats-new-with-5.4.0.md)
   * [What's New With 5.3.0](intro/introduction/whats-new-with-5.3.0.md)
   * [What's New With 5.0.0](intro/introduction/whats-new-with-5.0.0.md)
@@ -42,6 +43,7 @@
     * [Mapping Extra Attributes](configuration/mapping-dsl/dependencies-dsl/mapping-extra-attributes.md)
   * [Mapping DSL Examples](configuration/mapping-dsl/mapping-dsl-examples.md)
   * [Influence Instances at Runtime](configuration/mapping-dsl/influence-instances-at-runtime.md)
+  * [Processing Mappings](configuration/mapping-dsl/processing-mappings.md)
 * [Component Annotations](configuration/component-annotations/README.md)
   * [Persistence Annotations](configuration/component-annotations/persistence-annotations.md)
   * [CacheBox Annotations](configuration/component-annotations/cachebox-annotations.md)
