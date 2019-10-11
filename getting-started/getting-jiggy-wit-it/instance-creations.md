@@ -42,7 +42,7 @@ wirebox.scanLocations = ["model"];
 
 ```javascript
 injector = new wirebox.system.ioc.Injector();
-espresso = injector.getInstance("CoffeeShop").makeEspresso();;
+espresso = injector.getInstance("CoffeeShop").makeEspresso();
 ```
 
 {% hint style="info" %}
