@@ -17,7 +17,7 @@ component name="user" scope="session"{
 }
 ```
 
-So when the handler is created and persisted as a singleton, the user object get's created, stored in session and also referenced into the lifecycle of the handler object. So now, if the user expires from session, the handler does not know about it, because all it knows it that a direct reference to that out of context object still remains. So if the user needed things in session to exist, this will now fail. This problem is much how hibernate and detached objects works. Objects are no longer in session, they are detached. This scope widening issue is resolved by NOT injecting the user object directly into the handler but by using a provider.
+So when the handler is created and persisted as a singleton, the user object gets created, stored in session and also referenced into the lifecycle of the handler object. So now, if the user expires from session, the handler does not know about it, because all it knows it that a direct reference to that out of context object still remains. So if the user needed things in session to exist, this will now fail. This problem is much like how Hibernate and detached objects work. Objects are no longer in session, they are detached. This scope widening issue is resolved by NOT injecting the user object directly into the handler but by using a provider.
 
 ![](../../.gitbook/assets/scope_wideninginjectionsolution.jpg)
 
