@@ -54,6 +54,6 @@ map("Buffer").
 // Java integration with initWith() custom arguments and your own casting.
 map("Buffer").
     toJava("java.lang.StringBuffer").
-    initWit( javaCast("long",500) );
+    initWith( javaCast("long",500) );
 ```
 
