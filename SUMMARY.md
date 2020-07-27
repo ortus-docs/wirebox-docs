@@ -88,7 +88,7 @@
   * [populateFromXML](advanced-topics/wirebox-object-populator/populatefromxml.md)
   * [populateFromQuery](advanced-topics/wirebox-object-populator/populatefromquery.md)
   * [populateFromStruct](advanced-topics/wirebox-object-populator/populatefromstruct.md)
-  * [populateFromQueryWithPreix](advanced-topics/wirebox-object-populator/populatefromquerywithpreix.md)
+  * [populateFromQueryWithPrefix](advanced-topics/wirebox-object-populator/populatefromquerywithprefix.md)
   * [populateFromJSON](advanced-topics/wirebox-object-populator/populatefromjson.md)
 
 ## Extending WireBox
