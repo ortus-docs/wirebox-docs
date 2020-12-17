@@ -2,7 +2,7 @@
 
 This minor release brings in some major performance enhancements for the way WireBox maps and creates objects.  We highly encourage upgrading to it.
 
-{% embed url="https://coldbox.ortusbooks.com/intro/release-history/whats-new-with-6.2.0" caption="What\'s New With 6.2.0" %}
+{% embed url="https://coldbox.ortusbooks.com/intro/release-history/whats-new-with-6.2.0" caption="What\'s New With ColdBox 6.2.0" %}
 
 ## Release Notes
 
