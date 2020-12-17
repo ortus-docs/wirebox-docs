@@ -3,7 +3,7 @@
 > Dependency injection is the art of making work come home to you.  
 > Dhanji R. Prasanna
 
-![](../.gitbook/assets/overview_wireboxicon.png)
+![](../.gitbook/assets/overview_WireBoxIcon.png)
 
 WireBox alleviates the need for custom object factories or manual object creation in your ColdFusion \(CFML\) applications. It provides a **standardized** approach to object **construction** and **assembling** that will make your code easier to adapt to changes, easier to [test, mock](https://testbox.ortusbooks.com) and extend.
 
@@ -67,7 +67,7 @@ Here are a simple listing of features WireBox brings to the table:
 
 ## WireBox RefCard
 
-Our Wirebox RefCard will get you up and running in no time [![](../.gitbook/assets/overview_wireboxrefcard.png)](https://github.com/ColdBox/cbox-refcards/raw/master/WireBox/WireBox-Refcard.pdf)
+Our Wirebox RefCard will get you up and running in no time [![](../.gitbook/assets/overview_WireBoxRefCard.png)](https://github.com/ColdBox/cbox-refcards/raw/master/WireBox/WireBox-Refcard.pdf)
 
 ## Useful Resources
 

@@ -35,11 +35,11 @@ You can download the latest version of WireBox from [https://www.coldbox.org/dow
 
 `wirebox.system.ioc`
 
-![](../.gitbook/assets/installing_wireboxsystem.jpg)
+![](../.gitbook/assets/installing_WireBoxSystem.jpg)
 
 ### ColdBox Namespace
 
 `coldbox.system.ioc`
 
-![](../.gitbook/assets/installing_coldboxsystem.jpg)
+![](../.gitbook/assets/installing_ColdBoxSystem.jpg)
 

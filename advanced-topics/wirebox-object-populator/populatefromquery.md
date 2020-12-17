@@ -4,7 +4,7 @@ Populate a bean from a query
 
 ## Returns
 
- \* This function returns Any
+\* This function returns Any
 
 ## Arguments
 

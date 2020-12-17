@@ -1,6 +1,6 @@
 # Standalone Mode Listener
 
-![](../../../.gitbook/assets/standalonelistener.jpg)
+![](../../../.gitbook/assets/standAloneListener.jpg)
 
 | **Argument** | **Type** | **Execution Mode** | **Description** |
 | :--- | :--- | :--- | :--- |

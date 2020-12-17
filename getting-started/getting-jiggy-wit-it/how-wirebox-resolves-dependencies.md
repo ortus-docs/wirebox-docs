@@ -17,7 +17,7 @@ Most of the time we believe our DI engines should be black boxes, but we try to 
 
 ## Dependency Resolution
 
-![](../../.gitbook/assets/dependencies_dependencyresolution.jpg)
+![](../../.gitbook/assets/dependencies_DependencyResolution.jpg)
 
 1. Arrive at the desired injection point and get the injection DSL. If the DSL is empty, then it defaults to the id/model namespace. For this injection DSL Namespace we try to find a valid DSL builder for it. If none is found an exception is thrown. If we have a match, then the DSL builder is called with the DSL string to retrieve.
 2. The DSL builder then tries to parse and process the DSL string for object retrieval. If the DSL is a WireBox mapping then we try to retrieve the instance by name \(Refer back to Instance Creation\).

@@ -13,5 +13,5 @@ Here are a list of the most useful methods in this CFC
 
 The last method is the most important one as it tells WireBox AOP to continue executing either more aspects, the proxyed method or nothing at all.
 
-![](../../../.gitbook/assets/wireboxaop-methodproceed.jpg)
+![](../../../.gitbook/assets/WireBoxAOP-MethodProceed.jpg)
 

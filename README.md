@@ -1,3 +1,9 @@
+---
+description: >-
+  WireBox is an enterprise ColdFusion Dependency Injection and Aspect Oriented
+  Programing (AOP) framework
+---
+
 # Introduction
 
 ```text
@@ -9,11 +15,13 @@
      \/  \/   |_|_|  \___|____/ \___/_/\_\
 ```
 
-## WireBox Manual - Version 5.x
+## WireBox Manual - Version 6.x
 
-![ColdBox Platform](.gitbook/assets/wirebox.png)
+![ColdBox Platform](.gitbook/assets/WireBox.png)
 
-WireBox is an enterprise ColdFusion Dependency Injection and Aspect Oriented Programing \(AOP\) framework. This project has been part of ColdBox since its early version 2.0 releases but it is also a standalone library that can be used in ANY ColdFusion application or framework. WireBox's inspiration has been based on the idea of rapid workflows when building object oriented ColdFusion applications, programmatic configurations and simplicity. With that motivation we introduced dependency injection by annotations and conventions, which has been the core foundation of WireBox. We have definitely been influenced by great DI projects like Google Guice, Grails Framework, Spring and ColdSpring so we thank them for their contributions and inspiration
+WireBox is an enterprise ColdFusion Dependency Injection and Aspect Oriented Programing \(AOP\) framework. WireBox's inspiration has been based on the idea of rapid workflows when building object oriented ColdFusion applications, programmatic configurations and simplicity. With that motivation we introduced dependency injection by annotations and conventions, which has been the core foundation of WireBox. We have definitely been influenced by great DI projects like Google Guice, Grails Framework, Spring and ColdSpring so we thank them for their contributions and inspiration
+
+**WireBox is standalone framework for ColdFusion \(CFML\) applications and it is also bundled with the ColdBox Platform.**
 
 ## Versioning
 
@@ -34,9 +42,7 @@ And constructed with the following guidelines:
 The ColdBox Platform, WireBox is open source and licensed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0.html) License.
 
 * Copyright by Ortus Solutions, Corp
-* ColdBox is a registered trademark by Ortus Solutions, Corp
-
-> **Info**: The ColdBox Websites, Documentation, logo and content have a separate license and they are a separate entity.
+* ColdBox, CacheBox, Wirebox, LogBox are registered trademarks by Ortus Solutions, Corp
 
 ## Discussion & Help
 
@@ -46,12 +52,16 @@ The WireBox help and discussion group can be found here: [https://groups.google.
 
 We all make mistakes from time to time :\) So why not let us know about it and help us out. We also love pull requests, so please star us and fork us: [https://github.com/coldbox/coldbox-platform](https://github.com/coldbox/coldbox-platform)
 
-* By Email: [bugs@coldbox.org](mailto:bugs@coldbox.org)
-* By Jira: [https://ortussolutions.atlassian.net/browse/WIREBOX](https://ortussolutions.atlassian.net/browse/WIREBOX)
+### Jira Issue Tracking
+
+* [https://ortussolutions.atlassian.net/browse/COLDBOX](https://ortussolutions.atlassian.net/browse/COLDBOX)
+* [https://ortussolutions.atlassian.net/browse/WIREBOX](https://ortussolutions.atlassian.net/browse/WIREBOX)
+* [https://ortussolutions.atlassian.net/browse/LOGBOX](https://ortussolutions.atlassian.net/browse/LOGBOX)
+* [https://ortussolutions.atlassian.net/browse/CACHEBOX](https://ortussolutions.atlassian.net/browse/CACHEBOX)
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button.png)
+![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button%20%282%29.png)
 
 ColdBox is a professional open source software backed by Ortus Solutions, Corp offering services like:
 
@@ -66,11 +76,11 @@ ColdBox is a professional open source software backed by Ortus Solutions, Corp o
 ## Resources
 
 * Official Site: [https://www.coldbox.org](https://www.coldbox.org)
+* CFCasts Video Training: [http://ww.cfcasts.com](http://ww.cfcasts.com)
 * Source Code: [https://github.com/coldbox/coldbox-platform](https://github.com/coldbox/coldbox-platform)
 * Bug Tracker: [https://ortussolutions.atlassian.net/browse/WIREBOX](https://ortussolutions.atlassian.net/browse/WIREBOX)
 * Twitter: [@coldbox](http://www.twitter.com/coldbox)
 * Facebook: [https://www.facebook.com/coldboxplatform](https://www.facebook.com/coldboxplatform)
-* Google+: [https://www.google.com/+ColdboxOrg](https://www.google.com/+ColdboxOrg)
 * Vimeo Channel: [https://vimeo.com/channels/coldbox](https://vimeo.com/channels/coldbox)
 
 ### HONOR GOES TO GOD ABOVE ALL
