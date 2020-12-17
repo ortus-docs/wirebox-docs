@@ -9,7 +9,7 @@
      \/  \/   |_|_|  \___|____/ \___/_/\_\
 ```
 
-## WireBox Manual - Version 5.x
+## WireBox Manual - Version 4.3.0
 
 ![ColdBox Platform](.gitbook/assets/wirebox.png)
 
@@ -53,7 +53,7 @@ We all make mistakes from time to time :\) So why not let us know about it and h
 
 ![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button.png)
 
-ColdBox is a professional open source software backed by Ortus Solutions, Corp offering services like:
+ColdBox is a professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 
 * Custom Development
 * Professional Support & Mentoring
@@ -61,17 +61,17 @@ ColdBox is a professional open source software backed by Ortus Solutions, Corp o
 * Server Tuning
 * Security Hardening
 * Code Reviews
-* Much More
+* [Much More](http://www.ortussolutions.com/services)
 
 ## Resources
 
-* Official Site: [https://www.coldbox.org](https://www.coldbox.org)
+* Official Site: [http://www.coldbox.org](http://www.coldbox.org)
 * Source Code: [https://github.com/coldbox/coldbox-platform](https://github.com/coldbox/coldbox-platform)
 * Bug Tracker: [https://ortussolutions.atlassian.net/browse/WIREBOX](https://ortussolutions.atlassian.net/browse/WIREBOX)
 * Twitter: [@coldbox](http://www.twitter.com/coldbox)
 * Facebook: [https://www.facebook.com/coldboxplatform](https://www.facebook.com/coldboxplatform)
 * Google+: [https://www.google.com/+ColdboxOrg](https://www.google.com/+ColdboxOrg)
-* Vimeo Channel: [https://vimeo.com/channels/coldbox](https://vimeo.com/channels/coldbox)
+* Vimeo Channel: [http://vimeo.com/channels/coldbox](http://vimeo.com/channels/coldbox)
 
 ### HONOR GOES TO GOD ABOVE ALL
 
