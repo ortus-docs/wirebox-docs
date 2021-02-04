@@ -46,7 +46,7 @@ The ColdBox Platform, WireBox is open source and licensed under the [Apache 2](h
 
 ## Discussion & Help
 
-The WireBox help and discussion group can be found here: [https://groups.google.com/forum/\#!forum/coldbox](https://groups.google.com/forum/#!forum/coldbox)
+The WireBox help and discussion group can be found here: [https://community.ortussolutions.com/](https://community.ortussolutions.com/)
 
 ## Reporting a Bug
 
