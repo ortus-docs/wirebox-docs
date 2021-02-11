@@ -27,7 +27,7 @@ This will install Wirebox as a dependency in your application into a folder call
 
 ## Manual Download
 
-You can download the latest version of WireBox from [https://www.coldbox.org/download\#wirebox](https://www.coldbox.org/download#wirebox). Place in your webroot or create a `/wirebox` mapping in your system.
+You can download the latest version of WireBox from [https://www.forgebox.io/view/wirebox](https://www.forgebox.io/view/wirebox?filter=stable#versions). Place in your webroot or create a `/wirebox` mapping in your system.
 
 ## Namespaces
 
