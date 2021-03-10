@@ -4,7 +4,7 @@ WireBox fully supports [aspect-oriented programming](http://en.wikipedia.org/wik
 
 ## WireBox AOP RefCard
 
-![https://github.com/ColdBox/cbox-refcards/raw/master/WireBox%20AOP/WireBox-AOP-Refcard.pdf](../../.gitbook/assets/overview_WireBoxRefCard.png)
+![https://github.com/ColdBox/cbox-refcards/raw/master/WireBox%20AOP/WireBox-AOP-Refcard.pdf](../../.gitbook/assets/overview_wireboxrefcard.png)
 
 Our [WireBox AOP RefCard](https://github.com/ColdBox/cbox-refcards/raw/master/WireBox%20AOP/WireBox-AOP-Refcard.pdf) will get you up and running in no time.
 

@@ -1,6 +1,6 @@
 # WireBox Injector
 
-![](../../.gitbook/assets/injector_DIUniverse.jpg)
+![](../../.gitbook/assets/injector_diuniverse%20%281%29.jpg)
 
 WireBox bases itself on the idea of creating object injectors \(`wirebox.system.ioc.Injector`\) that in turn will produce and wire all your objects. You can create as many injector instances as you like in your applications, each with configurable differences or be linked hierarchically by setting each other as parent injectors.
 

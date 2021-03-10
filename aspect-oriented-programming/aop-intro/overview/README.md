@@ -30,5 +30,5 @@ There are multiple types of AOP advices like before, around, after, etc. We have
 
 So how does this magic happen? Well, our WireBox AOP engine will hijack your method \(join point\) and replace it with a new one, usually called an AOP proxy. This new method has all the plumbing already to allow you to apply as many aspects you like to that specific method. So as you can see from our diagram below, the save method is now decorated with our two aspects, but for all intent and purposes the outside world does not care about it, they just see the `save()` method.
 
-![](../../../.gitbook/assets/WireBoxAOP-MethodProxy.jpg)
+![](../../../.gitbook/assets/WireBoxAOP-MethodProxy%20%281%29.jpg)
 

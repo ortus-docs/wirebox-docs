@@ -17,7 +17,7 @@ description: >-
 
 ## WireBox Manual - Version 6.x
 
-![ColdBox Platform](.gitbook/assets/WireBox.png)
+![ColdBox Platform](.gitbook/assets/wirebox%20%281%29%20%281%29.png)
 
 WireBox is an enterprise ColdFusion Dependency Injection and Aspect Oriented Programing \(AOP\) framework. WireBox's inspiration has been based on the idea of rapid workflows when building object oriented ColdFusion applications, programmatic configurations and simplicity. With that motivation we introduced dependency injection by annotations and conventions, which has been the core foundation of WireBox. We have definitely been influenced by great DI projects like Google Guice, Grails Framework, Spring and ColdSpring so we thank them for their contributions and inspiration
 
@@ -61,7 +61,7 @@ We all make mistakes from time to time :\) So why not let us know about it and h
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button%20%282%29.png)
+![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button%20%282%29%20%281%29.png)
 
 ColdBox is a professional open source software backed by Ortus Solutions, Corp offering services like:
 

@@ -1,6 +1,6 @@
 # Instance Creations
 
-![](../../.gitbook/assets/instance_mappings%20%281%29.jpg)
+![](../../.gitbook/assets/instance_mappings%20%281%29%20%281%29.jpg)
 
 We have now coded our classes and unit tests with some cool annotations in record time, so what do we do next? Well, WireBox works on the idea of three ways to discover and create your classes:
 

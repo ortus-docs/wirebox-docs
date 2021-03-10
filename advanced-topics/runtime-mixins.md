@@ -1,6 +1,6 @@
 # Runtime Mixins\(\)
 
-![](../.gitbook/assets/runtime_Mixins.jpg)
+![](../.gitbook/assets/runtime_mixins.jpg)
 
 You can use the `mixins()` binder method or `mixins` annotation to define that a mapping should be mixed in with one or more set of templates. It will then at runtime inject all the methods in those templates and mix them into the target object as public methods.
 

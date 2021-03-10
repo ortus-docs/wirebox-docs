@@ -67,7 +67,7 @@ Here are a simple listing of features WireBox brings to the table:
 
 ## WireBox RefCard
 
-Our Wirebox RefCard will get you up and running in no time [![](../.gitbook/assets/overview_WireBoxRefCard.png)](https://github.com/ColdBox/cbox-refcards/raw/master/WireBox/WireBox-Refcard.pdf)
+Our Wirebox RefCard will get you up and running in no time [![](../.gitbook/assets/overview_wireboxrefcard.png)](https://github.com/ColdBox/cbox-refcards/raw/master/WireBox/WireBox-Refcard.pdf)
 
 ## Useful Resources
 
