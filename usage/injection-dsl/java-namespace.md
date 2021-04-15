@@ -1,12 +1,12 @@
 # Java Namespace
 
-Interact with Java directly
+You can also request Java objects from the injection dsl.
 
 | DSL | Description |
 | :--- | :--- |
-| java:{class} | Get a reference or instantiate the java {class} for you. |
+| `java:{class}` | Get a reference to the passed in `class` |
 
 ```javascript
-property name="builder" inject="java:java.lang.StringBuilder";
+property name="duration" inject="java:java.time.Duration";
 ```
 
