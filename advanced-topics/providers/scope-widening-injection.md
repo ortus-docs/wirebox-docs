@@ -1,6 +1,6 @@
 # Scope Widening Injection
 
-![](../../.gitbook/assets/scope_wideningInjection%20%281%29.jpg)
+![](../../.gitbook/assets/scope_wideningInjection%20%281%29%20%281%29.jpg)
 
 An object that is scoped into request, session, server, cachebox or application scopes and if wired into a persisted object will remain around even when this object has expired from the scope. This is called scope-widening injection and is a problem that must be addressed by NOT injecting them into persisted objects directly but by using WireBox's provider approach. This guarantees that the object's scope lifecycle will be maintained and your singleton or other persistent objects will be decoupled from the scope by accessing the target object via its provider.
 

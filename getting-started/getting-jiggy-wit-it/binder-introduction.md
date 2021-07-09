@@ -1,6 +1,6 @@
 # Binder Introduction
 
-![](../../.gitbook/assets/binderIntro_WireBoxBinder.jpg)
+![](../../.gitbook/assets/binderIntro_WireBoxBinder%20%281%29.jpg)
 
 In all reality we could be building our objects and its dependencies, [object graph](http://en.wikipedia.org/wiki/Object_graph), without any configuration just plain **location** and **implicit** conventions. This is great but not very flexible for refactoring, so let's do the best practice of defining a mapping or an alias to a real object.
 
