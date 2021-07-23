@@ -16,7 +16,7 @@ containsInstance(name)
 getBinder()
 
 // The main method that asks the injector for an object instance by name or by autowire DSL string.
-getInstance([name],[dsl],[initArguments])
+getInstance([name],[initArguments],[dsl],[targetObject])
 
 // Retrieve the ColdBox object populator that can populate objects from JSON, XML, structures and much more.
 getObjectPopulator()
