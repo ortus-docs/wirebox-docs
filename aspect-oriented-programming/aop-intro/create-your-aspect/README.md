@@ -13,7 +13,7 @@ Now that we have activated the AOP engine, let's build a simple method logger as
 </cfinterface>
 ```
 
-This means, that we must create a CFC that implements the `invokeMethod` method with our own custom code. It also receives 1 argument called `invocation` that maps to a CFC called `wirebox.system.aop.MethodInvocation` that you can learn from our cool [API](http://www.coldbox.org/api).
+This means, that we must create a CFC that implements the `invokeMethod` method with our own custom code. It also receives 1 argument called `invocation` that maps to a CFC called `wirebox.system.aop.MethodInvocation` that you can learn from our cool [API](https://s3.amazonaws.com/apidocs.ortussolutions.com/wirebox/current/index.html).
 
 Our approach to AOP is simplicity, therefore this `invokeMethod` implements the most powerful advice called around advice, so you will always do an around advice, but it will be up to your custom code to decide what it does before \(**beforeAdvice**\), around \(**aroundAdvice**\) and after \(**afterAdvice**\) the method call.
 
