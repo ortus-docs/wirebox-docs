@@ -18,4 +18,3 @@ map( "Luis" )
     .asEagerInit()
     .asSingleton();
 ```
-

@@ -14,4 +14,3 @@ component scope="request"{}
 
 component singleton threadsafe{}
 ```
-

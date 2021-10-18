@@ -48,4 +48,3 @@ These methods must be called sequentially in order to avoid circular reference l
 ```
 
 > **Caution** Always make sure that you use the `buildInstance` method and then store the results in the scope before wiring is done to avoid endless loops errors.
-

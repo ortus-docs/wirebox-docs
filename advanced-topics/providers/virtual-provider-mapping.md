@@ -20,4 +20,3 @@ You can use the following mapping methods to map to virtual providers by using t
 * `property(name="",dsl="")`
 * `setter(name="",dsl="")`
 * `methodArg(name="",dsl="")`
-

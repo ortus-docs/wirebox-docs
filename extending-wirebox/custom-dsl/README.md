@@ -4,4 +4,3 @@ WireBox allows you to create your own DSL object builders and then register them
 
 1. Create a CFC that implements `wirebox.system.ioc.dsl.IDSLBuilder`
 2. Register your custom DSL builder in your configuration binder
-

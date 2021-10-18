@@ -8,7 +8,7 @@ The best way to install WireBox is using **CommandBox CLI and package manager.**
 
 ## System Requirements
 
-* Adobe ColdFusion 11+
+* Adobe ColdFusion 2016+
 * Lucee 4.5+
 
 ## CommandBox Installation
@@ -35,11 +35,10 @@ You can download the latest version of WireBox from [https://www.forgebox.io/vie
 
 `wirebox.system.ioc`
 
-![](../.gitbook/assets/installing_WireBoxSystem.jpg)
+![](<../.gitbook/assets/installing\_WireBoxSystem (1).jpg>)
 
 ### ColdBox Namespace
 
 `coldbox.system.ioc`
 
-![](../.gitbook/assets/installing_ColdBoxSystem.jpg)
-
+![](../.gitbook/assets/installing\_ColdBoxSystem.jpg)

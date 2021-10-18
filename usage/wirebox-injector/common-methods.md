@@ -30,4 +30,3 @@ getScope(name)
 // Set a parent injector into the target injector to create hierarchies
 setParent(injector)
 ```
-

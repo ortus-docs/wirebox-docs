@@ -52,4 +52,3 @@ mapAspect(aspect="TransactionAspect",autoBind=false).to("model.aspects.MyTransac
 // match only methods that start with the regex ^save
 bindAspect(classes=match().any(),methods=match().regex("^save"),aspects="TransactionAspect");
 ```
-

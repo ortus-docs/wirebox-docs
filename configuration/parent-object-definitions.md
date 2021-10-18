@@ -24,4 +24,3 @@ map("ConcreteService").to("#myPath#.parent.SomeConcreteService")
     .property(name:"someCharlieDAO", ref:"someCharlieDAO")
     .property(name:"someDeltaDAO", ref:"someDeltaDAO");;
 ```
-

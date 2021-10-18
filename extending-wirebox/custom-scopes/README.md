@@ -6,4 +6,3 @@ WireBox allows you to create your own object persistence scopes so you can have 
 2. Register your custom scope in your configuration binder
 
 You can create your own persistence scope or if you are getting funky, override the internal persistence scopes with your own logic.
-

@@ -64,4 +64,3 @@ function setService(required service) inject="UserService"{
 ```
 
 WireBox offers a wide gamut of annotation namespaces you can use in your CFML applications and ColdBox applications. However, we took it a step further and allowed you to create your own custom DSL namespaces making your annotations come alive!
-

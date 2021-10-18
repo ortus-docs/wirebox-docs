@@ -1,4 +1,4 @@
-# MapDirectory\(\) Influence & Filters
+# MapDirectory() Influence & Filters
 
 The `mapDirectory()` allows you to leverage closures or lambdas to influence and filter mappings. The arguments are `filter` to add a filter that MUST return boolean in order to process the mapping and `influence` that can influence the created mapping with any custom bindings.
 
@@ -15,4 +15,3 @@ mapDirectory(packagePath="coldbox.testing.testModel.ioc", filter=function(path){
     return ( findNoCase( "simple", arguments.path ) ? false : true );
 });
 ```
-

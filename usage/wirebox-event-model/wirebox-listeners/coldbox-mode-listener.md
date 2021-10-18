@@ -1,14 +1,14 @@
 # ColdBox Mode Listener
 
-![](../../../.gitbook/assets/coldboxlistener.jpg)
+![](../../../.gitbook/assets/coldBoxListener.jpg)
 
-| **Argument** | **Type** | **Execution Mode** | **Description** |
-| :--- | :--- | :--- | :--- |
-| **event** | coldbox.system.web.context.RequestContext | **coldbox** | The request context of the running request |
-| **interceptData** | struct | **standalone-coldbox** | The data structure passed in the event |
-| **buffer** | coldbox.system.core.util.RequestBuffer | **ColdBox** | A request buffer object for producing elegant content in ColdBox applications |
-| **rc** | struct | **coldbox** | Reference to the `rc` scope |
-| **prc** | struct | **coldbox** | Reference to the `prc` scope |
+| **Argument**      | **Type**                                  | **Execution Mode**     | **Description**                                                               |
+| ----------------- | ----------------------------------------- | ---------------------- | ----------------------------------------------------------------------------- |
+| **event**         | coldbox.system.web.context.RequestContext | **coldbox**            | The request context of the running request                                    |
+| **interceptData** | struct                                    | **standalone-coldbox** | The data structure passed in the event                                        |
+| **buffer**        | coldbox.system.core.util.RequestBuffer    | **ColdBox**            | A request buffer object for producing elegant content in ColdBox applications |
+| **rc**            | struct                                    | **coldbox**            | Reference to the `rc` scope                                                   |
+| **prc**           | struct                                    | **coldbox**            | Reference to the `prc` scope                                                  |
 
 So let's say that we want to listen on the beforeInjectorShutdown and on the afterInstanceCreation event in our listener.
 
@@ -37,4 +37,3 @@ component{
     }
 }
 ```
-

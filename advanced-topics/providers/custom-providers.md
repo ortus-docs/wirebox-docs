@@ -1,6 +1,6 @@
 # Custom Providers
 
-If you need to abstract old legacy code or have funky construction processes, we would recommend you build your own provider objects. This means that you will create a component that implements `wirebox.system.ioc.IProvider` \(one `get()` method\) and then you can map it. Once mapped, you can use it anywhere WireBox listens for providers:
+If you need to abstract old legacy code or have funky construction processes, we would recommend you build your own provider objects. This means that you will create a component that implements `wirebox.system.ioc.IProvider` (one `get()` method) and then you can map it. Once mapped, you can use it anywhere WireBox listens for providers:
 
 * The Injection DSL →
 
@@ -17,8 +17,8 @@ map("MyCFC").toProvider('name or injectionDSL')
 setter,property,methodArg,initArg(name="",dsl="provider:{name or injectionDSL}");
 ```
 
-  
- Here is the interface you need to implement:
+\
+&#x20;Here is the interface you need to implement:
 
 ```javascript
 <cfinterface hint="The WireBox Provider Interface that follows the provider pattern">
@@ -50,8 +50,8 @@ component name="FunkyEspressoProvider" implements="coldbox.system.ioc.IProvider"
 }
 ```
 
-  
- Finally we map to the provider using the `.toProvider()` mapping method in the binder so anytime somebody requests an Espresso we can get it from our funky provider. Please note that I also map the provider because it also has some DI needed.
+\
+&#x20;Finally we map to the provider using the `.toProvider()` mapping method in the binder so anytime somebody requests an Espresso we can get it from our funky provider. Please note that I also map the provider because it also has some DI needed.
 
 ```javascript
 component extends="coldbox.system.ioc.config.Binder"{
@@ -68,6 +68,5 @@ component extends="coldbox.system.ioc.config.Binder"{
 }
 ```
 
-  
- Cool! That's it, anytime you request an `Espresso`, WireBox will direct its construction to the provider you registered it with.
-
+\
+&#x20;Cool! That's it, anytime you request an `Espresso`, WireBox will direct its construction to the provider you registered it with.

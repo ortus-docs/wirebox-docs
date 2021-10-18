@@ -56,4 +56,3 @@ map("Buffer").
     toJava("java.lang.StringBuffer").
     initWith( javaCast("long",500) );
 ```
-

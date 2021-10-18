@@ -96,7 +96,7 @@ And our invokeMethod implementation:
 </cffunction>
 ```
 
-As you can see, the before advice part is what happens before the execution of the real method \(or more aspects\) occurrs. So everything before the call to `arguments.invocation.proceed()`:
+As you can see, the before advice part is what happens before the execution of the real method (or more aspects) occurrs. So everything before the call to `arguments.invocation.proceed()`:
 
 ```javascript
 var refLocal = {};
@@ -106,7 +106,7 @@ var debugString = "target: #arguments.invocation.getTargetName()#,method: #argum
 log.debug(debugString);
 ```
 
-Then we execute the real method or more aspects \(we do not do anything around the method call\):
+Then we execute the real method or more aspects (we do not do anything around the method call):
 
 ```javascript
 // proceed execution
@@ -126,4 +126,3 @@ if( structKeyExists(refLocal,"results") ){
 ```
 
 That's it. I have succesfully created an aspect. What's next!
-

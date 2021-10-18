@@ -53,4 +53,3 @@ Injectors allow you to register custom DSLs at runtime by using the `registerDSL
 controller.getWireBox()
     .registerDSL( namespace="javaloader", path="app.model.JavaLoaderDSL" );
 ```
-

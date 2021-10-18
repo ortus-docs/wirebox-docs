@@ -9,4 +9,3 @@ populator = injector.getObjectPopulator();
 
 property name="populator" inject="wirebox:populator";
 ```
-

@@ -1,6 +1,6 @@
 # Virtual Provider Injection DSL
 
-You can inject automatic object providers by using the provider injection DSL namespace. This will inject a WireBox provider class \(`wirebox.system.ioc.Provider`\) that follows our [Provider pattern](http://en.wikipedia.org/wiki/Provider_model) with one method on it: `get()` that will provide you with the requested mapped object.
+You can inject automatic object providers by using the provider injection DSL namespace. This will inject a WireBox provider class (`wirebox.system.ioc.Provider`) that follows our [Provider pattern](http://en.wikipedia.org/wiki/Provider\_model) with one method on it: `get()` that will provide you with the requested mapped object.
 
 The difference between custom providers here is that WireBox will create a virtual provider object for you dynamically at runtime, configure it to retrieve a specific type of mapping and then use that for you. The **provider** namespace will take everything after it and evaluate it as either a named mapping or a full injection DSL string.
 
@@ -23,6 +23,5 @@ searchCriteria.get().getCriteria();
 coolObjectProvider.get().executeSomeMethod();
 ```
 
-  
- That's it! You basically use the `provider:{mapping}` injection DSL to tell a property, setter or argument that you want a provider object instead of the real deal. This will allow you to delay construction of such an object or avoid the nasty pitfall of scope widening injection.
-
+\
+&#x20;That's it! You basically use the `provider:{mapping}` injection DSL to tell a property, setter or argument that you want a provider object instead of the real deal. This will allow you to delay construction of such an object or avoid the nasty pitfall of scope widening injection.

@@ -1,10 +1,10 @@
 # Standalone Mode Listener
 
-![](../../../.gitbook/assets/standalonelistener%20%281%29%20%281%29.jpg)
+![](../../../.gitbook/assets/standalonelistener.jpg)
 
-| **Argument** | **Type** | **Execution Mode** | **Description** |
-| :--- | :--- | :--- | :--- |
-| **interceptData** | struct | **standalone-coldbox** | The data structure passed in the event |
+| **Argument**      | **Type** | **Execution Mode**     | **Description**                        |
+| ----------------- | -------- | ---------------------- | -------------------------------------- |
+| **interceptData** | struct   | **standalone-coldbox** | The data structure passed in the event |
 
 ```javascript
 component{
@@ -43,4 +43,3 @@ Please note the `configure()` method in the standalone listener. This is necessa
 As you can see from the examples above, each Listener component can listen to multiple events. Now you might be asking yourself, in what order are these listeners executed in? Well, they are executed in the order they are declared in either the ColdBox configuration file as interceptors or the WireBox configuration file as listeners.
 
 > **Caution** Order is EXTREMELY important for interceptors/listeners. So please make sure you order them in the declaration file.
-

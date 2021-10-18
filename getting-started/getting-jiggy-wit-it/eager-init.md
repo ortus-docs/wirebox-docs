@@ -24,4 +24,3 @@ component singleton eagerInit{
 
 }
 ```
-

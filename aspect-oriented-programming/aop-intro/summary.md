@@ -25,4 +25,3 @@ So, easy as 1-2-3! AOP is powerful and extermely flexible. Hopefully, your imagi
 * method security
 * cache method results
 * etc.
-

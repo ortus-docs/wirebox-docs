@@ -33,11 +33,10 @@ We also provide an interface to create objects that adhere to our injector inter
 </cfinterface>
 ```
 
-![](../.gitbook/assets/injectorinterface_hierarchies.jpg)
+![](../.gitbook/assets/injectorInterface\_hierarchies.jpg)
 
 Once you create this CFC that implements this interface then you can call on the injector's `setParent()` method and you are ready to roll.
 
 ```javascript
 injector.setParent( myCustomInjector );
 ```
-

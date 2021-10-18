@@ -6,4 +6,3 @@ Whether you use WireBox standalone or within a ColdBox context a Binder gets a s
 * `getProperties()` : Get all the properties structure
 * `propertyExists(name)` : Check if a property exists
 * `setProperty(name,value)` : Dynamically add properties to the structure
-

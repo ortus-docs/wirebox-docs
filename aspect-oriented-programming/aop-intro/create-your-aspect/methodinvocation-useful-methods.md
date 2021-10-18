@@ -2,8 +2,8 @@
 
 Here are a list of the most useful methods in this CFC
 
-* `getMethod()` : Get the name of the method \(join point\) that we are proxying and is being executed
-* `getMethodMetadata()` : Get the metadata structure of the current executing method. A great way to check for annotations on the method \(join point\)
+* `getMethod()` : Get the name of the method (join point) that we are proxying and is being executed
+* `getMethodMetadata()` : Get the metadata structure of the current executing method. A great way to check for annotations on the method (join point)
 * `getArgs()` : Get the argument collection of the method call
 * `setArgs()` : Override the argument collection of the method call
 * `getTarget()` : Get the object reference to the target object
@@ -14,4 +14,3 @@ Here are a list of the most useful methods in this CFC
 The last method is the most important one as it tells WireBox AOP to continue executing either more aspects, the proxyed method or nothing at all.
 
 ![](../../../.gitbook/assets/WireBoxAOP-MethodProceed.jpg)
-

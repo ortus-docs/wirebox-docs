@@ -27,4 +27,3 @@ These two classes contain static public members in the this scope that facilitat
 * `REQUEST` : ColdFusion request scope based objects
 * `SERVER` : ColdFusion server scope based objects
 * `CACHEBOX` : CacheBox scoped objects
-

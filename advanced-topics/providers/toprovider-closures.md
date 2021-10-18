@@ -1,8 +1,8 @@
-# toProvider\(\) closures
+# toProvider() closures
 
 The mapping destination `toProvider()` can also take a closure that will be executed whenever that mapping is requested. This allows you to add your own custom provider construction code inline without creating a standalone provider object that implements our provider interface. By leveraging closures you can really get funky and more concise in your coding. This closure will have the following signature and it must return the instance requested:
 
-```text
+```
 /**
 * Create an instance of an object
 * @injector The WireBox injector reference
@@ -21,4 +21,3 @@ map("MyEspresso").toProvider( function( injector ){
     return espresso;
 } );
 ```
-

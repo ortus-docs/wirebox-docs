@@ -5,4 +5,3 @@ The WireBox binder will also be injected with 3 methods that will allow you to t
 * `getEnv( key, [defaultValue] )` - Get a Java system environment value
 * `getSystemProperty( key, [defaultValue] )` - Get a Java system property value
 * `getSystemSetting( key, [defaultValue] )` - This method will retrieve a key from the Java system properties and if it does not exist, then it checks the system environment.
-

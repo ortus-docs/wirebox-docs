@@ -32,4 +32,3 @@ function afterInstanceAutowire(event, interceptData){
 ```
 
 As you can see from this sample, the extra attributes are incredibly essential, as the listener just sends the target object. It would take lots of introspection and metadata inspections in order to determine certain metadata about an object. However, with the extra attributes, it is just a snap!
-

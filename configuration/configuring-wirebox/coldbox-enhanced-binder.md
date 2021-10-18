@@ -9,4 +9,3 @@ If you are using your configuration binder within a ColdBox application you will
 // map the model folder
 mapDirectory( getAppMapping() & ".model" );
 ```
-

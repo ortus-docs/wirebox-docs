@@ -4,7 +4,7 @@ Most of the time we believe our DI engines should be black boxes, but we try to 
 
 ## Instance Creation
 
-![](../../.gitbook/assets/dependencies_creationlifecycle.jpg)
+![](../../.gitbook/assets/dependencies\_CreationLifeCycle.jpg)
 
 1. Object is requested by name and the Injector tries to check if the mapping exists for that name. If no mapping is found then it tries to locate the object by using the internal scan locations to try to find it. If it cannot find it and there is a parent injector defined, then the request is funneled to the parent injector and we start our process again. If no parent injector is declared and no localization, then we throw a not located exception.
 2. If the object was found via the scan locations, then we register a new mapping according to its location and discover all the metadata out of the object in preparation for construction and DI
@@ -17,13 +17,12 @@ Most of the time we believe our DI engines should be black boxes, but we try to 
 
 ## Dependency Resolution
 
-![](../../.gitbook/assets/dependencies_dependencyresolution%20%281%29.jpg)
+![](<../../.gitbook/assets/dependencies\_dependencyresolution (1).jpg>)
 
 1. Arrive at the desired injection point and get the injection DSL. If the DSL is empty, then it defaults to the id/model namespace. For this injection DSL Namespace we try to find a valid DSL builder for it. If none is found an exception is thrown. If we have a match, then the DSL builder is called with the DSL string to retrieve.
-2. The DSL builder then tries to parse and process the DSL string for object retrieval. If the DSL is a WireBox mapping then we try to retrieve the instance by name \(Refer back to Instance Creation\).
+2. The DSL builder then tries to parse and process the DSL string for object retrieval. If the DSL is a WireBox mapping then we try to retrieve the instance by name (Refer back to Instance Creation).
 3. If the builder could not produce an instance, it is logged and DI is skipped on it.
 
 {% hint style="danger" %}
 **Caution** Circular dependencies are supported in all injection styles within WireBox. With one caveat, if you choose constructor arguments with circular dependencies, you must use object providers.
 {% endhint %}
-

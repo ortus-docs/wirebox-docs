@@ -6,7 +6,7 @@ description: >-
 
 # Introduction
 
-```text
+```
  __          ___          ____
  \ \        / (_)        |  _ \
   \ \  /\  / / _ _ __ ___| |_) | _____  __
@@ -17,24 +17,24 @@ description: >-
 
 ## WireBox Manual - Version 6.x
 
-![ColdBox Platform](.gitbook/assets/wirebox%20%281%29%20%282%29%20%281%29.png)
+![ColdBox Platform](<.gitbook/assets/wirebox (1) (2) (2).png>)
 
-WireBox is an enterprise ColdFusion Dependency Injection and Aspect Oriented Programing \(AOP\) framework. WireBox's inspiration has been based on the idea of rapid workflows when building object oriented ColdFusion applications, programmatic configurations and simplicity. With that motivation we introduced dependency injection by annotations and conventions, which has been the core foundation of WireBox. We have definitely been influenced by great DI projects like Google Guice, Grails Framework, Spring and ColdSpring so we thank them for their contributions and inspiration
+WireBox is an enterprise ColdFusion Dependency Injection and Aspect Oriented Programing (AOP) framework. WireBox's inspiration has been based on the idea of rapid workflows when building object oriented ColdFusion applications, programmatic configurations and simplicity. With that motivation we introduced dependency injection by annotations and conventions, which has been the core foundation of WireBox. We have definitely been influenced by great DI projects like Google Guice, Grails Framework, Spring and ColdSpring so we thank them for their contributions and inspiration
 
-**WireBox is standalone framework for ColdFusion \(CFML\) applications and it is also bundled with the ColdBox Platform.**
+**WireBox is standalone framework for ColdFusion (CFML) applications and it is also bundled with the ColdBox Platform.**
 
 ## Versioning
 
 WireBox is maintained under the [Semantic Versioning](http://semver.org) guidelines as much as possible.Releases will be numbered with the following format:
 
-```text
+```
 <major>.<minor>.<patch>
 ```
 
 And constructed with the following guidelines:
 
-* Breaking backward compatibility bumps the major \(and resets the minor and patch\)
-* New additions without breaking backward compatibility bumps the minor \(and resets the patch\)
+* Breaking backward compatibility bumps the major (and resets the minor and patch)
+* New additions without breaking backward compatibility bumps the minor (and resets the patch)
 * Bug fixes and misc changes bumps the patch
 
 ## License
@@ -46,11 +46,11 @@ The ColdBox Platform, WireBox is open source and licensed under the [Apache 2](h
 
 ## Discussion & Help
 
-The WireBox help and discussion group can be found here: [https://community.ortussolutions.com/](https://community.ortussolutions.com/)
+The WireBox help and discussion group can be found here: [https://community.ortussolutions.com/](https://community.ortussolutions.com)
 
 ## Reporting a Bug
 
-We all make mistakes from time to time :\) So why not let us know about it and help us out. We also love pull requests, so please star us and fork us: [https://github.com/coldbox/coldbox-platform](https://github.com/coldbox/coldbox-platform)
+We all make mistakes from time to time :) So why not let us know about it and help us out. We also love pull requests, so please star us and fork us: [https://github.com/coldbox/coldbox-platform](https://github.com/coldbox/coldbox-platform)
 
 ### Jira Issue Tracking
 
@@ -61,7 +61,7 @@ We all make mistakes from time to time :\) So why not let us know about it and h
 
 ## Professional Open Source
 
-![Ortus Solutions, Corp](.gitbook/assets/ortussolutions_button%20%282%29%20%282%29%20%281%29.png)
+![Ortus Solutions, Corp](<.gitbook/assets/ortussolutions\_button (2) (2) (2).png>)
 
 ColdBox is a professional open source software backed by Ortus Solutions, Corp offering services like:
 
@@ -88,4 +88,3 @@ ColdBox is a professional open source software backed by Ortus Solutions, Corp o
 Because of His grace, this project exists. If you don't like this, then don't read it, its not for you.
 
 > "Therefore being justified by \*\*faith\*\*, we have peace with God through our Lord Jesus Christ: By whom also we have access by \*\*faith\*\* into this \*\*grace\*\* wherein we stand, and rejoice in hope of the glory of God." Romans 5:5
-

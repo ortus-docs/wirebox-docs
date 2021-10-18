@@ -21,4 +21,3 @@ map("Luis")
     .to("model.path.LuisService")
     .into("Ortus");
 ```
-
