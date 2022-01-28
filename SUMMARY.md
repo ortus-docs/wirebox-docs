@@ -5,6 +5,7 @@
 ## Intro
 
 * [Release History](intro/introduction/README.md)
+  * [What's New With 6.6.0](intro/introduction/whats-new-with-6.6.0.md)
   * [What's New With 6.5.0](intro/introduction/whats-new-with-6.5.0.md)
   * [What's New With 6.4.0](intro/introduction/whats-new-with-6.4.0.md)
   * [What's New With 6.3.0](intro/introduction/whats-new-with-6.3.0.md)
@@ -12,7 +13,7 @@
   * [What's New With 6.1.0](intro/introduction/whats-new-with-5.4.0.md)
   * [What's New With 6.0.0](intro/introduction/whats-new-with-5.3.0.md)
 
----
+***
 
 * [About This Book](about-this-book.md)
 * [Author](author.md)
@@ -40,7 +41,7 @@
 * [Mapping DSL](configuration/mapping-dsl/README.md)
   * [Mapping Initiators](configuration/mapping-dsl/mapping-initiators.md)
   * [Mapping Destinations](configuration/mapping-dsl/mapping-destinations.md)
-  * [MapDirectory\(\) Influence & Filters](configuration/mapping-dsl/mapdirectory-influence-and-filters.md)
+  * [MapDirectory() Influence & Filters](configuration/mapping-dsl/mapdirectory-influence-and-filters.md)
   * [Persistence DSL](configuration/mapping-dsl/persistence-dsl.md)
   * [Dependencies DSL](configuration/mapping-dsl/dependencies-dsl/README.md)
     * [Mapping Extra Attributes](configuration/mapping-dsl/dependencies-dsl/mapping-extra-attributes.md)
@@ -78,14 +79,14 @@
 
 * [Providers](advanced-topics/providers/README.md)
   * [Custom Providers](advanced-topics/providers/custom-providers.md)
-  * [toProvider\(\) closures](advanced-topics/providers/toprovider-closures.md)
+  * [toProvider() closures](advanced-topics/providers/toprovider-closures.md)
   * [Virtual Provider Injection DSL](advanced-topics/providers/virtual-provider-injection-dsl.md)
   * [Virtual Provider Mapping](advanced-topics/providers/virtual-provider-mapping.md)
   * [Virtual Provider Lookup Methods](advanced-topics/providers/virtual-provider-lookup-methods.md)
   * [Provider onMissingMethod Proxy](advanced-topics/providers/provider-onmissingmethod-proxy.md)
   * [Scope Widening Injection](advanced-topics/providers/scope-widening-injection.md)
 * [Virtual Inheritance](advanced-topics/virtual-inheritance.md)
-* [Runtime Mixins\(\)](advanced-topics/runtime-mixins.md)
+* [Runtime Mixins()](advanced-topics/runtime-mixins.md)
 * [Object Persistence & Thread Safety](advanced-topics/object-persistence-and-thread-safety.md)
 * [ORM Entity Injection](advanced-topics/orm-entity-injection.md)
 * [WireBox Object Populator](advanced-topics/wirebox-object-populator/README.md)
@@ -125,4 +126,3 @@
     * [HibernateTransaction](aspect-oriented-programming/aop-intro/included-aspects/hibernatetransaction.md)
     * [MethodLogger](aspect-oriented-programming/aop-intro/included-aspects/methodlogger.md)
   * [Summary](aspect-oriented-programming/aop-intro/summary.md)
-
