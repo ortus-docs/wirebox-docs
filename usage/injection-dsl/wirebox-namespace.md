@@ -25,6 +25,7 @@ Talk and get objects from the current WireBox injector.
 
 | DSL                       | Description                                                  |
 | ------------------------- | ------------------------------------------------------------ |
+| `wirebox:child:{name}`    | Inject a child injector by name                              |
 | `wirebox:property:{name}` | Retrieve one key of the properties structure                 |
 | `wirebox:scope:{scope}`   | Get a direct reference to an internal or custom scope object |
 
@@ -34,4 +35,19 @@ property name="settings" inject="wirebox:properties";
 property name="singletonCache" inject="wirebox:scope:singleton";
 property name="populator" inject="wirebox:populator";
 property name="binder" inject="wirebox:binder";
+
+// Child Injectors
+property name="categoryService" inject="wirebox:child:childInjector"
+```
+
+### 4th Level DSL
+
+| DSL                          | Description                                      |
+| ---------------------------- | ------------------------------------------------ |
+| `wirebox:child:{name}:{id}`  | Inject the `id` from the `named` child injector  |
+| `wirebox:child:{name}:{dsl}` | Inject the `dsl` from the `named` child injector |
+
+```javascript
+property name="categoryService" inject="wirebox:child:childInjector:CategoryService"
+property name="categoryService" inject="wirebox:child:childInjector:{DSL}"
 ```

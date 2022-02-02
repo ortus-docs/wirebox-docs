@@ -2,9 +2,13 @@
 
 The following chart shows you the most common methods when dealing with the WireBox Injector. This doesn't mean there are no other methods on the Injector that are of value, so please check out the CFC Docs for more in-depth knowledge.
 
+{% embed url="https://s3.amazonaws.com/apidocs.ortussolutions.com/wirebox/current/index.html" %}
+CFC Docs
+{% endembed %}
+
 ```javascript
 // A method you can use to send objects to get autowired by convention or mapping lookups
-autowire(target,[mapping],[targetID],[annotationCheck]) </td>
+autowire(target,[mapping],[targetID],[annotationCheck])
 
 // A utility method that clears all the singletons from the singleton persistence scope. Great to do in development.
 clearSingletons()

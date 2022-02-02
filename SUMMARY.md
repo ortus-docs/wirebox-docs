@@ -77,6 +77,9 @@
 
 ## Advanced Topics
 
+* [Child Injectors](advanced-topics/child-injectors.md)
+* [Object Persistence & Thread Safety](advanced-topics/object-persistence-and-thread-safety.md)
+* [ORM Entity Injection](advanced-topics/orm-entity-injection.md)
 * [Providers](advanced-topics/providers/README.md)
   * [Custom Providers](advanced-topics/providers/custom-providers.md)
   * [toProvider() closures](advanced-topics/providers/toprovider-closures.md)
@@ -85,16 +88,14 @@
   * [Virtual Provider Lookup Methods](advanced-topics/providers/virtual-provider-lookup-methods.md)
   * [Provider onMissingMethod Proxy](advanced-topics/providers/provider-onmissingmethod-proxy.md)
   * [Scope Widening Injection](advanced-topics/providers/scope-widening-injection.md)
-* [Virtual Inheritance](advanced-topics/virtual-inheritance.md)
 * [Runtime Mixins()](advanced-topics/runtime-mixins.md)
-* [Object Persistence & Thread Safety](advanced-topics/object-persistence-and-thread-safety.md)
-* [ORM Entity Injection](advanced-topics/orm-entity-injection.md)
 * [WireBox Object Populator](advanced-topics/wirebox-object-populator/README.md)
   * [populateFromXML](advanced-topics/wirebox-object-populator/populatefromxml.md)
   * [populateFromQuery](advanced-topics/wirebox-object-populator/populatefromquery.md)
   * [populateFromStruct](advanced-topics/wirebox-object-populator/populatefromstruct.md)
   * [populateFromQueryWithPrefix](advanced-topics/wirebox-object-populator/populatefromquerywithprefix.md)
   * [populateFromJSON](advanced-topics/wirebox-object-populator/populatefromjson.md)
+* [Virtual Inheritance](advanced-topics/virtual-inheritance.md)
 
 ## Extending WireBox
 

@@ -9,3 +9,18 @@ The injector can be constructed with three optional arguments:
 | **coldbox**    | `coldbox.system.web.Controller` | false    | null                                      | A reference to the ColdBox application context you will be linking the Injector to.                                               |
 
 If you are using WireBox within a ColdBox application, you don't even need to do any of this, we do it for you by using some configuration data in your ColdBox configuration file or conventions.
+
+{% hint style="info" %}
+By default, WireBox when constructed is automatically stored in application scope as `application.wirebox`
+{% endhint %}
+
+```javascript
+// Simple Creation - automatically stored in application.wirebox
+new coldbox.system.ioc.Injector()
+
+// Custom Binder
+new coldbox.system.ioc.Injector( "config.MyBinder" )
+
+// Custome Binder + Properties
+new coldbox.system.ioc.Injector( "config.MyBinder", { props } )
+```
