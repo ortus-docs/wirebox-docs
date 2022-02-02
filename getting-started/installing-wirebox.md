@@ -8,8 +8,9 @@ The best way to install WireBox is using **CommandBox CLI and package manager.**
 
 ## System Requirements
 
-* Adobe ColdFusion 2016+
-* Lucee 4.5+
+* Adobe ColdFusion 2016 (Deprecated)
+* Adobe ColdFusion 2018+
+* Lucee 5+
 
 ## CommandBox Installation
 
@@ -23,7 +24,7 @@ box install wirebox
 box install wirebox@be
 ```
 
-This will install Wirebox as a dependency in your application into a folder called `wirebox`. You can then leverage the standalone namespace within your application: `wirebox.system.ioc`.
+This will install WireBox as a dependency in your application into a folder called `wirebox`. You can then leverage the standalone namespace within your application: `wirebox.system.ioc`.
 
 ## Manual Download
 

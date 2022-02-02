@@ -1,6 +1,6 @@
 # Processing Mappings
 
-Since version 5.5.0 all mappings in WireBox will only be processed when they are requested for the very first time.  This is to enhance performance and increase startup times.  Processing means that the object's and its inheritance trail are inspected for metadata, which can be a very time consuming process.
+Since version 5.5.0 all mappings in WireBox will **only** be processed when they are requested for the very first time.  This is to enhance performance and increase startup times.  Processing means that the object's and its inheritance trail are inspected for metadata, which can be a very time consuming process.
 
 ### process()
 

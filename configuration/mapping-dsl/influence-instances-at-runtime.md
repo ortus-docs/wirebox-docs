@@ -4,7 +4,7 @@ You can use our mapping DSL to register influence closures or lambdas on a per m
 
 This is similar to object providers but instead of overriding the ENTIRE creation process of the object like a provider does, the user might want to simply influence the creation of a _normal_ mapping with some additional flair. This is accomplished via the `withInfluence` mapping DSL function. It receives a closure as an argument and the closure has the following signature:
 
-```
+```javascript
 /**
 * Influence an instance of an object
 * @injector The WireBox injector reference
@@ -15,7 +15,7 @@ function( injector, object ){}
 
 Here is an example of adding some nice pizzazz to an object:
 
-```
+```javascript
 map( 'myObject' )
    .toPath( 'com.foo.bar' )
    .withInfluence( function( injector, object ) {
