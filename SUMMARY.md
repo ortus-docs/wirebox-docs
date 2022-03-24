@@ -28,6 +28,7 @@
   * [Scoping](getting-started/getting-jiggy-wit-it/scoping.md)
   * [Eager Init](getting-started/getting-jiggy-wit-it/eager-init.md)
   * [How WireBox Resolves Dependencies](getting-started/getting-jiggy-wit-it/how-wirebox-resolves-dependencies.md)
+* [Migrating From ColdSpring](getting-started/migrating-from-coldspring.md)
 
 ## Configuration
 
