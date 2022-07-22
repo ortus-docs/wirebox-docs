@@ -46,7 +46,7 @@ The ColdBox Platform, WireBox is open source and licensed under the [Apache 2](h
 
 ## Discussion & Help
 
-The WireBox help and discussion group can be found here: [https://community.ortussolutions.com/](https://community.ortussolutions.com)
+The WireBox help and discussion group can be found here: [https://community.ortussolutions.com/](https://community.ortussolutions.com/)
 
 ## Reporting a Bug
 
@@ -63,7 +63,9 @@ We all make mistakes from time to time :) So why not let us know about it and he
 
 ![Ortus Solutions, Corp](<.gitbook/assets/ortussolutions\_button (2) (2) (2).png>)
 
-ColdBox is a professional open source software backed by Ortus Solutions, Corp offering services like:
+
+
+WireBox is a professional open source library supported by [Ortus Solutions](https://www.ortussolutions.com). If you are interested in support please consider our [Ninja Subscription Support](https://www.ortussolutions.com/services/support) or if you need consulting please purchase on of our [Consulting Plans](https://www.ortussolutions.com/services/support). Here are some areas that we can assist you with:
 
 * Custom Development
 * Professional Support & Mentoring
