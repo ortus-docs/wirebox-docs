@@ -13,11 +13,8 @@
   * [What's New With 6.2.0](intro/introduction/whats-new-with-5.5.0.md)
   * [What's New With 6.1.0](intro/introduction/whats-new-with-5.4.0.md)
   * [What's New With 6.0.0](intro/introduction/whats-new-with-5.3.0.md)
-
-***
-
-* [About This Book](about-this-book.md)
-* [Author](author.md)
+* [About This Book](intro/about-this-book/README.md)
+  * [Author](intro/about-this-book/author.md)
 
 ## Getting Started
 

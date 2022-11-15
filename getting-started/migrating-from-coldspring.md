@@ -64,7 +64,7 @@ new wirebox.system.ioc.Injector( "tests/WireBox" );
 application.wirebox.getInstance( "MyOldBean" );
 ```
 
-Right now would be a great time to create some canary integration tests using [TestBox](https://testbox.ortusbooks.com) which can verify that your objects can be created and wired up correctly. This will be a huge help to get you started on the road to better test coverage and migrating your legacy elephant to modern times:
+Right now would be a great time to create some canary integration tests using [TestBox](https://testbox.ortusbooks.com/) which can verify that your objects can be created and wired up correctly. This will be a huge help to get you started on the road to better test coverage and migrating your legacy elephant to modern times:
 
 {% code title="UserServiceSpec.cfc" %}
 ```javascript
