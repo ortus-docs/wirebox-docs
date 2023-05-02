@@ -68,6 +68,7 @@
   * [Models Namespace](usage/injection-dsl/id-model-empty-namespace.md)
   * [Provider Namespace](usage/injection-dsl/provider-namespace.md)
   * [WireBox Namespace](usage/injection-dsl/wirebox-namespace.md)
+* [WireBox Delegators](usage/wirebox-delegators.md)
 * [WireBox Event Model](usage/wirebox-event-model/README.md)
   * [WireBox Events](usage/wirebox-event-model/wirebox-events.md)
   * [WireBox Listeners](usage/wirebox-event-model/wirebox-listeners/README.md)
@@ -77,6 +78,7 @@
 ## Advanced Topics
 
 * [Child Injectors](advanced-topics/child-injectors.md)
+* [Lazy Properties](advanced-topics/lazy-properties.md)
 * [Object Persistence & Thread Safety](advanced-topics/object-persistence-and-thread-safety.md)
 * [ORM Entity Injection](advanced-topics/orm-entity-injection.md)
 * [Providers](advanced-topics/providers/README.md)
@@ -87,6 +89,7 @@
   * [Virtual Provider Lookup Methods](advanced-topics/providers/virtual-provider-lookup-methods.md)
   * [Provider onMissingMethod Proxy](advanced-topics/providers/provider-onmissingmethod-proxy.md)
   * [Scope Widening Injection](advanced-topics/providers/scope-widening-injection.md)
+* [Property Observers](advanced-topics/property-observers.md)
 * [Runtime Mixins()](advanced-topics/runtime-mixins.md)
 * [WireBox Object Populator](advanced-topics/wirebox-object-populator/README.md)
   * [populateFromXML](advanced-topics/wirebox-object-populator/populatefromxml.md)
