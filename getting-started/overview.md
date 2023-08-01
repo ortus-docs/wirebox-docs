@@ -1,3 +1,7 @@
+---
+description: What is dependency injection?
+---
+
 # Overview
 
 > Dependency injection is the art of making work come home to you.\
