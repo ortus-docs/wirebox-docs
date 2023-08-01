@@ -4,15 +4,7 @@
 
 ## Intro
 
-* [Release History](intro/introduction/README.md)
-  * [What's New With 6.7.0](intro/introduction/whats-new-with-6.7.0.md)
-  * [What's New With 6.6.0](intro/introduction/whats-new-with-6.6.0.md)
-  * [What's New With 6.5.0](intro/introduction/whats-new-with-6.5.0.md)
-  * [What's New With 6.4.0](intro/introduction/whats-new-with-6.4.0.md)
-  * [What's New With 6.3.0](intro/introduction/whats-new-with-6.3.0.md)
-  * [What's New With 6.2.0](intro/introduction/whats-new-with-5.5.0.md)
-  * [What's New With 6.1.0](intro/introduction/whats-new-with-5.4.0.md)
-  * [What's New With 6.0.0](intro/introduction/whats-new-with-5.3.0.md)
+* [Release History](intro/introduction.md)
 * [About This Book](intro/about-this-book/README.md)
   * [Author](intro/about-this-book/author.md)
 

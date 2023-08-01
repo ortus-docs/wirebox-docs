@@ -44,16 +44,7 @@ component extends="wirebox.system.ioc.config.Binder"{
 
 Here are the internal scopes that ship with WireBox:
 
-| Scope         | Description                                                                                       |
-| ------------- | ------------------------------------------------------------------------------------------------- |
-| `NOSCOPE`     | A prototype object that gets created every time it is requested.                                  |
-| `PROTOTYPE`   | A prototype object that gets created every time it is requested.                                  |
-| `SINGLETON`   | Only one instance of the object exists                                                            |
-| `SESSION`     | The object will exist in the session scope                                                        |
-| `APPLICATION` | The object will exist in the application scope                                                    |
-| `REQUEST`     | The object will exist in the request scope                                                        |
-| `SERVER`      | The object will exist in the server scope                                                         |
-| `CACHEBOX`    | A object will be time persisted in any [CacheBox](https://cachebox.ortusbooks.com) cache provider |
+<table data-header-hidden><thead><tr><th width="150">Scope</th><th>Description</th></tr></thead><tbody><tr><td>Scope</td><td>Description</td></tr><tr><td><code>NOSCOPE</code></td><td>A prototype object that gets created every time it is requested.</td></tr><tr><td><code>PROTOTYPE</code></td><td>A prototype object that gets created every time it is requested.</td></tr><tr><td><code>SINGLETON</code></td><td>Only one instance of the object exists</td></tr><tr><td><code>SESSION</code></td><td>The object will exist in the session scope</td></tr><tr><td><code>APPLICATION</code></td><td>The object will exist in the application scope</td></tr><tr><td><code>REQUEST</code></td><td>The object will exist in the request scope</td></tr><tr><td><code>SERVER</code></td><td>The object will exist in the server scope</td></tr><tr><td><code>CACHEBOX</code></td><td>A object will be time persisted in any <a href="https://cachebox.ortusbooks.com">CacheBox</a> cache provider</td></tr></tbody></table>
 
 This is cool! We can now have full control of how objects are persisted via the WireBox injector, we are not constricted to one type of persistence anymore.
 
