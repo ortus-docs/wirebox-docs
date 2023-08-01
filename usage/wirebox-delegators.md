@@ -8,7 +8,7 @@ description: Object Composition Elevated!
 
 WireBox supports the concept of [object delegation](https://en.wikipedia.org/wiki/Delegation\_\(object-oriented\_programming\)) in a simple, expressive DSL. In object-oriented programming, delegation refers to evaluating a member (property or method) of one object (the receiver) in the context of another object (the sender). Basically, a way to proxy calls from one object to the other and, avoid the [overuse of inheritance](https://en.wikipedia.org/wiki/Composition\_over\_inheritance), avoid runtime mixins or traits. WireBox provides a set of rules for method lookup and dispatching that will allow you to provide delegation easily in your CFML applications.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 > This pattern is also known as "proxy chains". Several other design patterns use delegation - the State, Strategy and Visitor Patterns depend on it.
 
@@ -22,7 +22,7 @@ In object-oriented programming, there are three ways for classes to work togethe
 
 With [inheritance](https://stackify.com/oop-concept-inheritance/), you create families of objects or hierarchies where a parent component shares functions, properties, and instance data with any component that extends it (derived class). It’s a great way to provide reuse but also one of the most widely abused approaches to reuse. It’s easy and powerful but with much power comes great responsibility. For example, you create a base `Animal` class and then derived classes like: `Cat`, `Dog`, `Bird`, etc. You can say: A `Cat` **IS An** `Animal`, A `Dog` **IS An** `Animal`. You wouldn’t say, a `Cat` has an `Animal`.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
 With [composition](https://en.wikipedia.org/wiki/Object\_composition) a component will either create or have dependencies injected into them (via WireBox), which it can then use these objects to delegate work to them. This follows the `has a` relationship, like A Car has Wheels, a Computer has Memory, etc. The major premise of WireBox is to assist with composition.
 
@@ -416,3 +416,26 @@ Binder function property(
 )
 ```
 
+### Core Delegates
+
+Now that we have seen what delegators are, WireBox offers core delegators to your application via the `@coreDelegates` namespace
+
+* **Async** - This delegate is useful to interact with the AsyncManager and is the most used functionality for asynchronous programming.
+* **DateTime** - Leverage the date time helper
+* **Env** - Talk to environment variables
+* **Flow** - Several fluent flow methods
+* **JsonUtil** - JSON utilities
+* **StringUtil** - String utilities
+* **Population** - Population utilities
+
+{% embed url="https://s3.amazonaws.com/apidocs.ortussolutions.com/coldbox/7.0.0/coldbox/system/core/delegates/package-summary.html" %}
+API Docs
+{% endembed %}
+
+So let's say you have a service that needs to populate objects and work with the system environment:
+
+```javascript
+component 
+    delegates="population@coreDelegates, Env@coreDelegates"{
+}
+```

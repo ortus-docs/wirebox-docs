@@ -1,12 +1,12 @@
 # Table of contents
 
 * [Introduction](README.md)
-
-## Intro
-
-* [Release History](intro/introduction.md)
-* [About This Book](intro/about-this-book/README.md)
-  * [Author](intro/about-this-book/author.md)
+  * [Contributing Guide](master/contributing-guide.md)
+  * [Release History](master/introduction/README.md)
+    * [What's New With 7.0.0](master/introduction/whats-new-with-7.0.0.md)
+  * [Upgrading to WireBox 7](master/upgrading-to-wirebox-7.md)
+  * [About This Book](master/about-this-book/README.md)
+    * [Author](master/about-this-book/author.md)
 
 ## Getting Started
 

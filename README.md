@@ -15,7 +15,7 @@ description: >-
      \/  \/   |_|_|  \___|____/ \___/_/\_\
 ```
 
-## WireBox Manual - Version 6.x
+## WireBox Manual - Version 7.x
 
 ![ColdBox Platform](<.gitbook/assets/wirebox (1) (2) (2).png>)
 
