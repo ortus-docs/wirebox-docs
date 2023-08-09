@@ -6,11 +6,30 @@ description: Object Composition Elevated!
 
 ### What is Delegation?
 
-WireBox supports the concept of [object delegation](https://en.wikipedia.org/wiki/Delegation\_\(object-oriented\_programming\)) in a simple, expressive DSL. In object-oriented programming, delegation refers to evaluating a member (property or method) of one object (the receiver) in the context of another object (the sender). Basically, a way to proxy calls from one object to the other and, avoid the [overuse of inheritance](https://en.wikipedia.org/wiki/Composition\_over\_inheritance), avoid runtime mixins or traits. WireBox provides a set of rules for method lookup and dispatching that will allow you to provide delegation easily in your CFML applications.
+WireBox supports the concept of [object delegation](https://en.wikipedia.org/wiki/Delegation\_\(object-oriented\_programming\)) in a simple, expressive DSL.&#x20;
+
+Object delegation, also known as delegation design pattern, is a technique in object-oriented programming where one object delegates certain responsibilities to another object. Instead of inheriting behavior from a superclass (class inheritance), an object obtains behavior by delegating tasks to another object.&#x20;
+
+WireBox provides a set of rules for method lookup and dispatching, allowing you to provide delegation easily in your CFML applications.
 
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 > This pattern is also known as "proxy chains". Several other design patterns use delegation - the State, Strategy and Visitor Patterns depend on it.
+
+Let's discover some benefits of Delegators:
+
+1. **Code Reusability:** Delegation promotes code reuse by allowing you to compose and reuse existing objects, enhancing modular design. You can create specialized delegate objects and reuse them in various contexts, avoiding the limitations of single inheritance.
+2. **Separation of Concerns:** Delegation helps separate concerns and maintain a clear separation of responsibilities between objects. Each object focuses on its core functionality, and the delegated object handles specific tasks or services.
+3. **Flexibility and Extensibility:** Delegation allows you to change behavior at runtime by switching delegate objects. You can introduce or modify new behavior without altering the main object's structure or functionality.
+4. **Reduced Coupling:** Delegation reduces tight coupling between objects, leading to a more maintainable and loosely coupled codebase. Changes to the delegate object's implementation don't affect the main object, and vice versa.
+5. **Better Composition:** Delegation supports a more flexible and fine-grained approach to combining behavior rather than class inheritance. You can compose objects with various delegate objects to achieve different combinations of features.
+6. **Single Responsibility Principle (SRP):** Delegation aligns with the SRP, as each object focuses on a single responsibility. This promotes cleaner, more maintainable, and testable code.
+7. **Encapsulation and Information Hiding:** Delegation allows encapsulation of internal behavior within the delegate object. The main object can provide a simplified interface, hiding complex implementation details.
+8. **Dynamic Behavior:** Delegation facilitates dynamic behavior changes during runtime, making it suitable for scenarios where behavior needs to change based on different conditions or contexts.
+9. **Easier Testing:** Delegation can lead to more focused and isolated unit tests. You can test delegate objects independently and mock them when testing the main object.
+10. **Avoiding Fragile Base Class Problem:** Delegation helps avoid issues related to the fragile base class problem, which can occur when modifying superclass behavior affects subclasses.
+
+It's important to note that while delegation offers these benefits, it might introduce some additional complexity to the codebase, especially when managing interactions between objects. Careful design and consideration are necessary to leverage delegation effectively.
 
 ### Why use Delegation?
 
