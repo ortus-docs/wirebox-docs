@@ -47,7 +47,13 @@ function configure(){
         // Register all event listeners here, they are created in the specified order
         listeners = [
             // { class="", name="", properties={} }
-        ]
+        ],
+        
+        // Register all your custom listeners
+        // A list or an array of names
+        // customListeners = [ "onPreProcess", "preFormSave", "postFormSave" ] 
+        // customListeners = "onPreProcess, preFormSave, postFormSave";
+        customListeners = [ ]
     };
 
     // Map Bindings below
