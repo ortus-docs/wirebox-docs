@@ -1,18 +1,13 @@
 # Installing WireBox
 
-WireBox can be downloaded as a standalone framework or it is included with the latest ColdBox Platform release, so no need to install it if you are within a ColdBox application.
-
-{% hint style="info" %}
-The best way to install WireBox is using **CommandBox CLI and package manager.**
-{% endhint %}
+WireBox can be installed as a standalone framework or included with the latest ColdBox Platform release, so it is unnecessary if you are within a ColdBox application.
 
 ## System Requirements
 
-* Adobe ColdFusion 2016 (Deprecated)
 * Adobe ColdFusion 2018+
 * Lucee 5+
 
-## CommandBox Installation
+## Standalone Installation
 
 You can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) to install the standalone version of WireBox with a simple command:
 
@@ -25,6 +20,23 @@ box install wirebox@be
 ```
 
 This will install WireBox as a dependency in your application into a folder called `wirebox`. You can then leverage the standalone namespace within your application: `wirebox.system.ioc`.
+
+### Mappings
+
+You will need the following mappings that all point to the folder you installed `wirebox` into:
+
+```cfscript
+this.mappings[ "/wirebox" ] = 
+    this.mappings[ "/cachebox" ] = 
+    this.mappings[ "/logbox" ] =  
+    "path.to.wirebox";
+```
+
+This will ensure that the appropriate libraries can find each other.
+
+{% hint style="danger" %}
+Remember that this only applies to the standalone approach.
+{% endhint %}
 
 ## Manual Download
 
