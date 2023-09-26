@@ -2,7 +2,7 @@
 
 WireBox's offers a wide gamut of life cycle events that are announced at certain points in execution time. Below are the current events announced by the Injector `wirebox.system.ioc.Injector`.
 
-| Event                      | Data                                                     | Description                                                                                                                                                                               |
+| **Event**                  | **Data**                                                 | **Description**                                                                                                                                                                           |
 | -------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | afterInjectorConfiguration | **injector** : The calling injector reference            | Called right after the injector has been fully configured for operation.                                                                                                                  |
 | beforeInstanceCreation     | **mapping** : The mapping called to be created           | Called right before an object mapping is built via our internal object builders or custom scope builders.                                                                                 |
@@ -15,4 +15,6 @@ WireBox's offers a wide gamut of life cycle events that are announced at certain
 | beforeInstanceAutowire     | **injector** : The calling injector reference            | Called right after the instance has been created and initialized, but before DI wiring is done.                                                                                           |
 | afterInstanceAutowire      | **injector** : The calling injector reference            | Called right after the instance has been created, initialized and DI has been completed on it.                                                                                            |
 
-> **Note** Please see our [CacheBox](http://cachebox.ortusbooks.com) documentation to see all of CacheBox's events.
+{% hint style="info" %}
+Please see our [CacheBox](http://cachebox.ortusbooks.com) documentation to see all of CacheBox's events.
+{% endhint %}
