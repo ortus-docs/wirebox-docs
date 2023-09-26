@@ -49,11 +49,11 @@ function configure(){
             // { class="", name="", properties={} }
         ],
         
-        // Register all your custom listeners
+        // Register all your custom events
         // A list or an array of names
-        // customListeners = [ "onPreProcess", "preFormSave", "postFormSave" ] 
-        // customListeners = "onPreProcess, preFormSave, postFormSave";
-        customListeners = [ ]
+        // customEvents = [ "onPreProcess", "preFormSave", "postFormSave" ] 
+        // customEvents = "onPreProcess, preFormSave, postFormSave";
+        customEvents = [ ]
     };
 
     // Map Bindings below
@@ -66,7 +66,7 @@ Please note that it is completely optional to use the implicit structure configu
 
 ## logBoxConfig
 
-The path to the LogBox Configuration object to use. By default it uses the one displayed below. If you are using WireBox within a ColdBox application, the LogBox configuration is taken from the ColdBox application.
+The path to the LogBox Configuration object to use. By default, it uses the one displayed below. If you are using WireBox within a ColdBox application, the LogBox configuration is taken from the ColdBox application.
 
 ```javascript
 wirebox.logBoxConfig = "wirebox.system.ioc.config.LogBox";
@@ -74,7 +74,7 @@ wirebox.logBoxConfig = "wirebox.system.ioc.config.LogBox";
 
 ## cachebox
 
-If you are using WireBox within a ColdBox application this setting is ignored and it will use the ColdBox application's CacheBox configuration. The following are the keys for this configuration structure:
+If you are using WireBox within a ColdBox application, this setting is ignored, and it will use the ColdBox application's CacheBox configuration. The following are the keys for this configuration structure:
 
 ```javascript
 wirebox.cacheBox = {
@@ -105,12 +105,12 @@ wirebox.scopeRegistration = {
 ```
 
 {% hint style="danger" %}
-**Caution** Scope registration must be enabled in order for Providers to work.
+**Caution:** Scope registration must be enabled for Providers to work.
 {% endhint %}
 
 ## customDSL
 
-Please refer to the [Custom DSL](../../extending-wirebox/custom-dsl/) section to find out more about custom DSLs, the following are just the way you declare them:
+Please refer to the [Custom DSL](../../extending-wirebox/custom-dsl/) section to find out more about custom DSLs; the following are just the way you declare them:
 
 ```javascript
 wirebox.customDSL = {
@@ -187,5 +187,5 @@ wirebox.listeners = [
 ```
 
 {% hint style="danger" %}
-**Caution** Please note that order of declaration is the same as order of execution, so it really matters, just like ColdBox Interceptors. Please note that if you are using WireBox within a ColdBox application, you can also register listeners as interceptors in your ColdBox configuration file.
+**Caution:** Please note that the order of declaration is the same as the order of execution, so it matters, just like ColdBox Interceptors. Please note that if you use WireBox within a ColdBox application, you can also register listeners as interceptors in your ColdBox configuration file.
 {% endhint %}
