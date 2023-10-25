@@ -23,13 +23,10 @@ This will install WireBox as a dependency in your application into a folder call
 
 ### Mappings
 
-You will need the following mappings that all point to the folder you installed `wirebox` into:
+You will need the following mapping that points to the folder you installed `wirebox` into:
 
 ```cfscript
-this.mappings[ "/wirebox" ] = 
-    this.mappings[ "/cachebox" ] = 
-    this.mappings[ "/logbox" ] =  
-    "path.to.wirebox";
+this.mappings[ "/wirebox" ] = "path.to.wirebox";
 ```
 
 This will ensure that the appropriate libraries can find each other.
@@ -37,10 +34,6 @@ This will ensure that the appropriate libraries can find each other.
 {% hint style="danger" %}
 Remember that this only applies to the standalone approach.
 {% endhint %}
-
-## Manual Download
-
-You can download the latest version of WireBox from [https://www.forgebox.io/view/wirebox](https://www.forgebox.io/view/wirebox?filter=stable#versions). Place in your webroot or create a `/wirebox` mapping in your system.
 
 ## Namespaces
 
