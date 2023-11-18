@@ -3,6 +3,7 @@
 * [Introduction](README.md)
   * [Contributing Guide](master/contributing-guide.md)
   * [Release History](master/introduction/README.md)
+    * [What's New With 7.2.0](master/introduction/whats-new-with-7.2.0.md)
     * [What's New With 7.1.0](master/introduction/whats-new-with-7.1.0.md)
     * [What's New With 7.0.0](master/introduction/whats-new-with-7.0.0.md)
   * [Upgrading to WireBox 7](master/upgrading-to-wirebox-7.md)
