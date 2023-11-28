@@ -18,7 +18,7 @@ Here is an example of adding some nice pizzazz to an object:
 ```javascript
 map( 'myObject' )
    .toPath( 'com.foo.bar' )
-   .withInfluence( function( injector, object ) {
+   .withInfluence( function( object, injector ) {
       object.customSettings( true );
       object.pizzazz = 'Oh, yes!';
       return object;
