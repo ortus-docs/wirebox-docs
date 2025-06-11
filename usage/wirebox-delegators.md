@@ -45,7 +45,13 @@ With [inheritance](https://stackify.com/oop-concept-inheritance/), you create fa
 
 With [composition](https://en.wikipedia.org/wiki/Object\_composition) a component will either create or have dependencies injected into them (via WireBox), which it can then use these objects to delegate work to them. This follows the `has a` relationship, like A Car has Wheels, a Computer has Memory, etc. The major premise of WireBox is to assist with composition.
 
-Mixins allow you to do runtime injections of user-defined functions (UDFs) and helpers from reusable objects. However, this can lead to method explosion on injected classes, collisions, and not a lot of great organization as you are just packing a class with tons of functions to reuse behavior. Composition is the preferred approach and the less decoupled approach. Delegation is a step further. So let’s explore it with a simple example.
+Mixins allow you to do runtime injections of user-defined functions (UDFs) and helpers from reusable objects. However, this can lead to method explosion on injected classes, collisions, and not a lot of great organization as you are just packing a class with tons of functions to reuse behavior. Composition is the preferred approach and the less decoupled approach. Delegation is a step further. 
+
+Composition means your object contains other objects and uses them internally, but their methods aren’t automatically exposed on the parent.
+
+Delegation automates the exposure of delegate methods, so the parent object can "act as" the delegate for those methods, reducing boilerplate and increasing expressiveness
+
+Let’s explore it with a simple example.
 
 ### Delegation by Example
 
