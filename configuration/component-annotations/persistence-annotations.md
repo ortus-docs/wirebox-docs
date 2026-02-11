@@ -4,6 +4,7 @@ The following annotations can be placed in the component declaration to tell the
 
 * `singleton` - A singleton object that persists for the entire life-time of the application
 * `scope="registered_scope"` : Persist in a registered scope: session, request, singleton, custom, etc.
+* `transientCache` : Enable/disable per-request transient injection caching for this mapping (defaults to true)
 
 ```javascript
 component singleton{}
@@ -13,4 +14,6 @@ component scope="singleton"{}
 component scope="request"{}
 
 component singleton threadsafe{}
+
+component transientCache="false"{}
 ```

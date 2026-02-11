@@ -48,12 +48,15 @@ function configure(){
         listeners = [
             // { class="", name="", properties={} }
         ],
-        
+
         // Register all your custom events
         // A list or an array of names
-        // customEvents = [ "onPreProcess", "preFormSave", "postFormSave" ] 
+        // customEvents = [ "onPreProcess", "preFormSave", "postFormSave" ]
         // customEvents = "onPreProcess, preFormSave, postFormSave";
-        customEvents = [ ]
+        customEvents = [ ],
+
+        // Transient injection cache (per-request)
+        transientInjectionCache = true
     };
 
     // Map Bindings below
@@ -189,3 +192,11 @@ wirebox.listeners = [
 {% hint style="danger" %}
 **Caution:** Please note that the order of declaration is the same as the order of execution, so it matters, just like ColdBox Interceptors. Please note that if you use WireBox within a ColdBox application, you can also register listeners as interceptors in your ColdBox configuration file.
 {% endhint %}
+
+## transientInjectionCache
+
+Enable or disable the per-request cache of transient injections and delegations. When enabled, WireBox reuses the already-resolved dependencies for a transient mapping during the same request, reducing repeated wiring work. Default is `true`.
+
+```javascript
+wirebox.transientInjectionCache = true;
+```

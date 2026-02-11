@@ -23,3 +23,7 @@
 - Overview page structure and front matter: getting-started/overview.md
 - GitBook hint blocks and code fences: configuration/configuring-wirebox/README.md
 - Navigation structure: SUMMARY.md
+
+## MCP For GitBook Formatting
+
+https://gitbook.com/docs/~gitbook/mcp
