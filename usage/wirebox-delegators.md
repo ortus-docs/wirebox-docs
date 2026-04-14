@@ -145,15 +145,15 @@ component name="computer" delegates="Memory"{
 
 computer = getInstance( "Computer" )
 computer.read( index )
-computer.write( data ) 
+computer.write( data )
 ```
 
 This annotation can be one or more delegates, and you can use either a WireBox ID or a full classpath:
 
 ```jsx
 // Multiple Delegates by WireBox ID
-component 
-   name="computer" 
+component
+   name="computer"
    delegates="Memory,FlowHelpers"{
 
    // code
@@ -161,8 +161,8 @@ component
 }
 
 // Delegates by Class Paths
-component 
-   name="computer" 
+component
+   name="computer"
    delegates="models.system.Ram,
               models.util.FlowHelpers"{
 
@@ -300,7 +300,7 @@ component name="computer"
 
 }
 
-// Kaboom: DelegateMethodDuplicateException 
+// Kaboom: DelegateMethodDuplicateException
 computer = getInstance( "Computer" )
 // We can't even reach here.
 computer.read( index )
@@ -369,7 +369,7 @@ component name="computer"
 
 component name="computer"{
 
-   property name="authorizable." 
+   property name="authorizable."
 		inject="provider:Authorizable@cbsecurity"
 		delegate;
 
@@ -422,7 +422,7 @@ You can also use the `property` binder method as well to explicitly define the d
  * @delegatePrefix   If the property has a delegate prefix, else null
  * @delegateSuffix   If the property has a delegate suffix, else null
  * @delegateExcludes If the property has a delegate exclusion list, else null
- * @delegateIncludes 
+ * @delegateIncludes
  */
 Binder function property(
 	required name,
