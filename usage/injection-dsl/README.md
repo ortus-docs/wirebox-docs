@@ -15,7 +15,7 @@ Every property can be annotated with our injection annotations:
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 property name="service" inject="id:MyService";
 
 property name="TYPES" inject="id:CustomTypes" scope="this";
@@ -40,7 +40,7 @@ You can also annotate constructor arguments with the inject annotation:
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 /**
  * @myService.inject UserService
  * @cache.inject    cachebox:default
@@ -67,7 +67,7 @@ You can also annotate setter methods with the inject annotation to provide injec
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 function setService( required service ) inject="UserService" {
     variables.service = arguments.service
 }

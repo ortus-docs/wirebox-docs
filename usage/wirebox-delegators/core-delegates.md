@@ -28,7 +28,7 @@ Use the `delegates` component annotation for a concise declaration:
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 // Single delegate
 class delegates="Flow@coreDelegates" {
 }
@@ -55,7 +55,7 @@ Or use individual `property` injections when you need prefixes/suffixes or targe
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 class {
 
     property name="flow"       inject="Flow@coreDelegates"       delegate;
@@ -99,7 +99,7 @@ Provides access to the ColdBox `AsyncManager` and its most common utilities for 
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 class delegates="Async@coreDelegates" {
 
     function process() {
@@ -155,7 +155,7 @@ Since all methods come from `DateTimeHelper`, refer to its [API docs](https://s3
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 class delegates="DateTime@coreDelegates" {
 
     function getNextWeek() {
@@ -208,7 +208,7 @@ Provides utilities for reading Java system properties and OS environment variabl
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 class delegates="Env@coreDelegates" {
 
     function getDatabaseUrl() {
@@ -280,7 +280,7 @@ Provides fluent flow-control methods modeled after functional programming patter
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 class delegates="Flow@coreDelegates" {
 
     function save( required struct data ) {
@@ -347,7 +347,7 @@ Provides opinionated JSON serialization utilities. The `toJson`, `prettyJson`, a
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 class delegates="JsonUtil@coreDelegates" {
 
     function toApiResponse( required struct data ) {
@@ -419,7 +419,7 @@ All methods accept the following common arguments:
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 class delegates="Population@coreDelegates" {
 
     function update( required struct data ) {
@@ -498,7 +498,7 @@ Provides string manipulation and formatting utilities covering case conversion, 
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 class delegates="StringUtil@coreDelegates" {
 
     function getPageSlug( required string title ) {

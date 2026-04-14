@@ -8,7 +8,7 @@ CFC Docs
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 // Send an object to WireBox for autowiring by convention or mapping lookups
 autowire( target, [mapping], [targetID], [annotationCheck] )
 
@@ -126,7 +126,7 @@ The `injector` argument lets you route a creation request directly to a register
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 // Create 'MyService' using the child injector named 'plugins'
 var svc = wirebox.getInstance( name : "MyService", injector : "plugins" )
 ```
@@ -145,7 +145,7 @@ Child injectors allow you to create isolated DI scopes nested within a parent in
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 // Bootstrap a child injector with its own binder
 var child = new coldbox.system.ioc.Injector( "plugins.PluginsBinder" )
 

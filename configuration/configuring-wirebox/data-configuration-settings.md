@@ -4,7 +4,7 @@ In the `configure()` method you can create a structure called `wirebox` in the `
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 /**
  * Configure WireBox
  */

@@ -6,7 +6,7 @@ When using WireBox inside of ColdBox, the binder CFC is located by convention in
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 // config/WireBox.bx
 class extends="coldbox.system.ioc.config.Binder" {
 
@@ -50,7 +50,7 @@ component extends="coldbox.system.ioc.config.Binder" {
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 // config/WireBox.bx
 class {
 
@@ -105,7 +105,7 @@ When you instantiate the WireBox injector, pass either the class path to your bi
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 // Path-based
 new coldbox.system.ioc.Injector( "path.to.my.Binder" )
 

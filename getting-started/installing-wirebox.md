@@ -37,7 +37,7 @@ You will need the following mapping that points to the folder you installed `wir
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```bx
+```java
 // Application.bx
 this.mappings[ "/wirebox" ] = expandPath( "path/to/wirebox" );
 ```
