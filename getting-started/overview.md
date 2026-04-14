@@ -9,7 +9,11 @@ description: What is dependency injection?
 
 ![](<../.gitbook/assets/overview_WireBoxIcon (1) (1).png>)
 
-WireBox alleviates the need for custom object factories or manual object creation in your ColdFusion (CFML) applications. It provides a **standardized** approach to object **construction** and **assembling** that will make your code easier to adapt to changes, easier to [test, mock](https://testbox.ortusbooks.com) and extend.
+WireBox alleviates the need for custom object factories or manual object creation in your **BoxLang** and **ColdFusion (CFML)** applications. It provides a **standardized** approach to object **construction** and **assembling** that will make your code easier to adapt to changes, easier to [test, mock](https://testbox.ortusbooks.com) and extend.
+
+{% hint style="success" %}
+**BoxLang is the preferred language** for WireBox applications. BoxLang is a modern JVM language owned and directed by the Ortus Solutions team that powers ColdBox. Full CFML support is retained for existing applications.
+{% endhint %}
 
 As software developers we are always challenged with maintenance and one ever occurring annoyance, **change**. Therefore, the more sustainable and maintainable our software, the more we can concentrate on real problems and make our lives more productive. WireBox leverages an array of metadata annotations to make your object assembling, storage and creation easy as pie! We have leveraged the power of event driven architecture via object listeners or interceptors so you can extend not only WireBox but the way objects are analyzed, created, wired and much more. To the extent that our [AOP](overview.md) capabilities are all driven by our AOP listener which decouples itself from WireBox code and makes it extremely flexible.
 
@@ -39,9 +43,10 @@ Compared to manual Dependency Injection (DI), using WireBox can lead to the foll
 Here are a simple listing of features WireBox brings to the table:
 
 * Annotation driven dependency injection
-* 0 configuration mode or a programmatic binder configuration approach via ColdFusion (No XML!)
+* BoxLang and CFML support (BoxLang preferred)
+* 0 configuration mode or a programmatic binder configuration approach via BoxLang/CFML (No XML!)
 * Creation and Wiring of or by:
-  * ColdFusion Components
+  * BoxLang Classes (`.bx`) and ColdFusion Components (`.cfc`)
   * Java Classes
   * RSS Feeds
   * WebService objects
@@ -50,7 +55,7 @@ Here are a simple listing of features WireBox brings to the table:
   * Factory Methods
   * Providers
 * Multiple Injection Styles: Property, Setter, Method, Constructor
-* Automatic Package/Directory object scanning and registration
+* Automatic Package/Directory object scanning and registration (`.bx` and `.cfc` files)
 * Multiple object life cycle persistence scopes:
   * No Scope (Transients)
   * Singletons
@@ -67,6 +72,7 @@ Here are a simple listing of features WireBox brings to the table:
 * Customizable injection DSL
 * WireBox object providers to avoid scope-widening issues on time/volatile persisted objects
 * [Aspect Oriented Programming](overview.md)
+* [Object Delegators](../usage/wirebox-delegators.md) — compose behavior without inheritance
 * [Standalone ORM Entity Injection](../advanced-topics/orm-entity-injection.md)
 
 ## WireBox RefCard

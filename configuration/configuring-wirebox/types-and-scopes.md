@@ -5,7 +5,7 @@ Each configuration binder has two public properties accessible in the `this` sco
 1. `this.TYPES` : A reference to `wirebox.system.ioc.Types` used to declare what type of object you are registering for construction or wiring
 2. `this.SCOPES` : A reference to `wirebox.system.ioc.Scopes` used to declare in what life cycle scope the object will be stored under
 
-These two classes contain static public members in the this scope that facilitate the declaration of persistence scopes and construction types for object mappings. Below are the valid enumerations for these two classes:
+These two classes contain static public members in the this scope that facilitate the declaration of persistence scopes and construction types for object mappings. Both BoxLang (`.bx`) and CFML (`.cfc`) components are supported in all type declarations. Below are the valid enumerations for these two classes:
 
 **this.TYPES**
 
@@ -16,6 +16,7 @@ These two classes contain static public members in the this scope that facilitat
 * `DSL` : Construction by DSL string
 * `CONSTANT` : A constant value
 * `FACTORY` : Construction by factory method
+* `PROVIDER` : Construction by a provider object or closure
 
 **this.SCOPES**
 

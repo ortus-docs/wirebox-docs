@@ -2,6 +2,68 @@
 
 In the `configure()` method you can create a structure called `wirebox` in the `variables` scope that will hold the configuration data for WireBox. You can configure WireBox for operation using these structures or via [programmatic method calls](programmatic-configuration.md).
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```bx
+/**
+ * Configure WireBox
+ */
+function configure(){
+
+    // The WireBox configuration structure DSL
+    wireBox = {
+
+        // LogBox Config: instantiation path
+        logBoxConfig : "wirebox.system.ioc.config.LogBox",
+
+        // CacheBox
+        cacheBox : { enabled : true },
+
+        // Scope registration: automatically put the injector in a CF scope on startup
+        // Default: application scope
+        scopeRegistration : {
+            enabled : true,
+            scope   : "application", // server, session, application
+            key     : "wireBox"
+        },
+
+        // DSL Namespace registrations
+        customDSL : {
+            // namespace : "mapping name"
+        },
+
+        // Custom Storage Scopes
+        customScopes : {
+            // annotationName : "mapping name"
+        },
+
+        // Package scan locations
+        scanLocations : [],
+
+        // Stop Recursions
+        stopRecursions : [],
+
+        // Parent Injector (object reference)
+        parentInjector : "",
+
+        // Register all event listeners (in execution order)
+        listeners : [
+            // { class : "", name : "", properties : {} }
+        ],
+
+        // Automatically process all mappings on startup for metadata inspection.
+        // Default: false (lazy load for performance)
+        autoProcessMappings : false,
+
+        // Transient injection cache (per-request)
+        transientInjectionCache : true
+    }
+
+    // Map Bindings below
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```javascript
 /**
 * Configure WireBox
@@ -49,11 +111,9 @@ function configure(){
             // { class="", name="", properties={} }
         ],
 
-        // Register all your custom events
-        // A list or an array of names
-        // customEvents = [ "onPreProcess", "preFormSave", "postFormSave" ]
-        // customEvents = "onPreProcess, preFormSave, postFormSave";
-        customEvents = [ ],
+        // Automatically process all mappings on startup for metadata inspection.
+        // Default: false (lazy load for performance)
+        autoProcessMappings = false,
 
         // Transient injection cache (per-request)
         transientInjectionCache = true
@@ -62,6 +122,8 @@ function configure(){
     // Map Bindings below
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 Please note that it is completely optional to use the implicit structure configuration. You can use the programmatic methods instead. Each configuration key has the same method in the binder for programmatic configuration.
@@ -200,3 +262,15 @@ Enable or disable the per-request cache of transient injections and delegations.
 ```javascript
 wirebox.transientInjectionCache = true;
 ```
+
+## autoProcessMappings
+
+When set to `true`, all mappings registered in the binder will be **eagerly processed for metadata inspection** at injector startup. By default (when `false`), WireBox uses lazy loading — mappings are only inspected for DI metadata the first time they are requested. Enabling this option increases startup time but ensures all annotation errors are caught at boot.
+
+```javascript
+wirebox.autoProcessMappings = false; // default — lazy load for performance
+```
+
+{% hint style="warning" %}
+Only enable `autoProcessMappings` when you have a specific need to catch metadata errors at startup. For most applications the default lazy processing is recommended.
+{% endhint %}

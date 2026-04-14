@@ -443,24 +443,24 @@ Binder function property(
 
 ### Core Delegates
 
-Now that we have seen what delegators are, WireBox offers core delegators to your application via the `@coreDelegates` namespace
+WireBox ships with a set of built-in delegates available via the `@coreDelegates` namespace. Simply reference them by their short name in a `delegates` annotation or `property` injection:
 
-* **Async** - This delegate is useful to interact with the AsyncManager and is the most used functionality for asynchronous programming.
-* **DateTime** - Leverage the date time helper
-* **Env** - Talk to environment variables
-* **Flow** - Several fluent flow methods
-* **JsonUtil** - JSON utilities
-* **StringUtil** - String utilities
-* **Population** - Population utilities
+| WireBox ID                 | Description                                              |
+| -------------------------- | -------------------------------------------------------- |
+| `Async@coreDelegates`      | Async/parallel programming via the ColdBox AsyncManager  |
+| `DateTime@coreDelegates`   | Date and time utilities via DateTimeHelper               |
+| `Env@coreDelegates`        | Java system properties and OS environment variables      |
+| `Flow@coreDelegates`       | Fluent flow-control methods for expressive chaining      |
+| `JsonUtil@coreDelegates`   | JSON serialization utilities                             |
+| `Population@coreDelegates` | Object population from structs, JSON, XML, and queries   |
+| `StringUtil@coreDelegates` | String manipulation and formatting utilities             |
 
-{% embed url="https://s3.amazonaws.com/apidocs.ortussolutions.com/coldbox/7.0.0/coldbox/system/core/delegates/package-summary.html" %}
-API Docs
-{% endembed %}
-
-So let's say you have a service that needs to populate objects and work with the system environment:
-
-```javascript
-component 
-    delegates="population@coreDelegates, Env@coreDelegates"{
+```cfscript
+// Mix and match as many as you need
+component delegates="Population@coreDelegates, Env@coreDelegates, Flow@coreDelegates" {
 }
 ```
+
+{% hint style="info" %}
+See the [Core Delegates](core-delegates.md) page for detailed method references and usage examples for each delegate.
+{% endhint %}

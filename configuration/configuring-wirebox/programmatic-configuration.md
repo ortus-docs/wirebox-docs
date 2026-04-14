@@ -5,6 +5,7 @@ Instead of declaring data structures you can use the methods in the binder to co
 | Method Signature | Description |
 | --- | --- |
 | **cacheBox**([configFile],[cacheFactory],[enabled],[classNamespace]) | The method used to configure the injector's CacheBox integration. Ignored in an application context |
+| `autoProcessMappings( boolean )` | Enable or disable eager processing of all mappings at injector startup. Default is `false` (lazy load). |
 | `customListeners( list or array )` | Append custom event listeners to the event manager. |
 | **listener**(class,[properties],[name]) | The method used to register a new listener within the injector's event manager |
 | **logBoxConfig**(config) | The method used to tell the injector which [LogBox](https://github.com/ortus/wirebox-documentation/tree/b9a6ae3e91f7dcb74ec7e900e27243e19824cf27/mapping_dsl/wiki/LogBox.cfm) configuration file to use for logging operations. Ignored in an application context |

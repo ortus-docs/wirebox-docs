@@ -2,10 +2,20 @@
 
 WireBox can be installed as a standalone framework or included with the latest ColdBox Platform release, so it is unnecessary if you are within a ColdBox application.
 
+## Supported Languages
+
+WireBox supports both **BoxLang** (preferred) and **CFML** (ColdFusion Markup Language):
+
+| Language | Extensions | Notes |
+| --- | --- | --- |
+| **BoxLang** | `.bx`, `.bxm`, `.bxs` | Preferred — modern JVM language, owned by the ColdBox team |
+| **CFML** | `.cfc`, `.cfm` | Fully supported for existing applications |
+
 ## System Requirements
 
-* Adobe ColdFusion 2018+
-* Lucee 5+
+* **BoxLang** 1+ (Preferred)
+* **Adobe ColdFusion** 2023+
+* **Lucee** 6+
 
 ## Standalone Installation
 
@@ -25,9 +35,20 @@ This will install WireBox as a dependency in your application into a folder call
 
 You will need the following mapping that points to the folder you installed `wirebox` into:
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```bx
+// Application.bx
+this.mappings[ "/wirebox" ] = expandPath( "path/to/wirebox" );
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
+// Application.cfc
 this.mappings[ "/wirebox" ] = "path.to.wirebox";
 ```
+{% endtab %}
+{% endtabs %}
 
 This will ensure that the appropriate libraries can find each other.
 
