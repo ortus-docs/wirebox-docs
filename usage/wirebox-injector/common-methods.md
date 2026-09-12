@@ -139,6 +139,113 @@ var svc = wirebox.getInstance( name="MyService", injector="plugins" );
 {% endtab %}
 {% endtabs %}
 
+## Instance Location & Construction
+
+These methods are the lower-level building blocks that `getInstance()` uses internally. You normally won't need them, but they are handy when you need finer control over how an object gets located or built (e.g. custom factories, tooling, or dynamic mapping registration).
+
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+// Scan all configured scan locations (and full namespace) for a CFC/class matching `name`.
+// Returns the instantiation path if found, or an empty string if it can't be located.
+locateInstance( name )
+
+// Thread-safely register a brand new mapping for `name` pointing to `instancePath` (type: CFC).
+// Used internally by getInstance() the first time it sees a convention-based name; returns the Mapping.
+registerNewInstance( name, instancePath )
+
+// Build (construct + influence) an object instance from an already-processed Mapping.
+// This is normally only called by a persistence Scope (Singleton, Request, etc.) since scopes
+// provide the locking/transaction semantics around construction - call it directly only if you
+// already have a fully processed Mapping and know what you are doing.
+buildInstance( mapping, [initArguments] )
+```
+{% endtab %}
+{% tab title="CFML" %}
+```cfscript
+// Scan all configured scan locations (and full namespace) for a CFC/class matching `name`.
+// Returns the instantiation path if found, or an empty string if it can't be located.
+locateInstance(name)
+
+// Thread-safely register a brand new mapping for `name` pointing to `instancePath` (type: CFC).
+// Used internally by getInstance() the first time it sees a convention-based name; returns the Mapping.
+registerNewInstance(name, instancePath)
+
+// Build (construct + influence) an object instance from an already-processed Mapping.
+// This is normally only called by a persistence Scope (Singleton, Request, etc.) since scopes
+// provide the locking/transaction semantics around construction - call it directly only if you
+// already have a fully processed Mapping and know what you are doing.
+buildInstance(mapping, [initArguments])
+```
+{% endtab %}
+{% endtabs %}
+
+## Injector State & Hierarchy Checks
+
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+// Does this injector have a parent injector assigned via setParent()?
+hasParent()
+
+// Does this injector have a root injector reference? Module injectors get this set to the
+// application's root WireBox injector when they are built by the ModuleService.
+hasRoot()
+
+// Is this injector linked to a running ColdBox application context?
+isColdBoxLinked()
+
+// Is this injector linked to a CacheBox factory (either via ColdBox or standalone configuration)?
+isCacheBoxLinked()
+
+// Remove this injector's own scope registration (if scope registration is enabled). Called
+// automatically during shutdown(); rarely needed to call directly.
+removeFromScope()
+
+// Clear only the app-level singletons from the Singleton scope, leaving framework singletons intact.
+clearAppSingletons()
+```
+{% endtab %}
+{% tab title="CFML" %}
+```cfscript
+// Does this injector have a parent injector assigned via setParent()?
+hasParent()
+
+// Does this injector have a root injector reference? Module injectors get this set to the
+// application's root WireBox injector when they are built by the ModuleService.
+hasRoot()
+
+// Is this injector linked to a running ColdBox application context?
+isColdBoxLinked()
+
+// Is this injector linked to a CacheBox factory (either via ColdBox or standalone configuration)?
+isCacheBoxLinked()
+
+// Remove this injector's own scope registration (if scope registration is enabled). Called
+// automatically during shutdown(); rarely needed to call directly.
+removeFromScope()
+
+// Clear only the app-level singletons from the Singleton scope, leaving framework singletons intact.
+clearAppSingletons()
+```
+{% endtab %}
+{% endtabs %}
+
+## Other Notable Methods
+
+A handful of remaining public methods are mostly used internally (bootstrap, DSL plumbing, provider bookkeeping) but are worth knowing about:
+
+| Method                          | Description                                                                                                                                                                                                     |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `getScopeRegistration()`         | Returns the struct describing this injector's scope registration (`enabled`, `key`, `scope`). Bubbles up to the parent injector if this injector doesn't have scope registration enabled.                     |
+| `locateScopedSelf()`             | Returns this injector's own scoped-registration reference (mostly used internally by providers/scope-widening objects). Throws if scope registration isn't enabled.                                           |
+| `registerListener( listener )`   | Programmatically registers a single WireBox/ColdBox listener struct (`{ class, name, properties }`) at runtime, the same way listeners declared in your binder's `listeners` array are registered on startup. |
+| `registerDSL( namespace, path )` | Registers a custom injection DSL namespace directly on a live injector. See [Registering a Custom DSL](../../extending-wirebox/custom-dsl/registering-a-custom-dsl.md) for the full walkthrough and example.  |
+
+{% hint style="info" %}
+`configure()`, `getTransientCache()`, `registerInjectorReference()`, `getInjectorReference()`, and `getInjectorReferenceNames()` are internal bootstrap/bookkeeping methods (binder loading, per-request transient DI caching, and named-injector lookup for providers). They're public for framework/internal reasons, but application code should not need to call them directly.
+{% endhint %}
+
 ## Child Injectors
 
 Child injectors allow you to create isolated DI scopes nested within a parent injector. A child inherits parent lookups but its own mappings are isolated.
