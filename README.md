@@ -15,13 +15,17 @@ description: >-
      \/  \/   |_|_|  \___|____/ \___/_/\_\
 ```
 
-## WireBox Manual - Version 7.x
+## WireBox Manual - Version 8.x
 
 ![ColdBox Platform](<.gitbook/assets/wirebox (1) (2) (2) (1).png>)
 
-WireBox is an enterprise ColdFusion Dependency Injection and Aspect Oriented Programing (AOP) framework. WireBox's inspiration has been based on the idea of rapid workflows when building object oriented ColdFusion applications, programmatic configurations and simplicity. With that motivation we introduced dependency injection by annotations and conventions, which has been the core foundation of WireBox. We have definitely been influenced by great DI projects like Google Guice, Grails Framework, Spring and ColdSpring so we thank them for their contributions and inspiration
+WireBox is a **BoxLang** and CFML Dependency Injection and Aspect Oriented Programing (AOP) framework. WireBox's inspiration has been based on the idea of rapid workflows when building object oriented applications, programmatic configurations and simplicity. With that motivation we introduced dependency injection by annotations and conventions, which has been the core foundation of WireBox. We have definitely been influenced by great DI projects like Google Guice, Grails Framework, Spring and ColdSpring so we thank them for their contributions and inspiration
 
-**WireBox is standalone framework for ColdFusion (CFML) applications and it is also bundled with the ColdBox Platform.**
+**WireBox is a standalone framework for BoxLang and CFML applications, and it is also bundled with the ColdBox Platform.**
+
+### Explore WireBox
+
+<table data-view="cards" data-full-width="false"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>💉 <strong>Dependency Injection</strong></td><td>Constructor, setter, and property injection by convention or annotation</td><td><a href="getting-started/getting-jiggy-wit-it/README.md">README.md</a></td></tr><tr><td>🗺️ <strong>Fluent Binder DSL</strong></td><td>Map classes, DSLs, providers, and factory methods with a readable, programmatic API</td><td><a href="configuration/configuring-wirebox/README.md">README.md</a></td></tr><tr><td>🧵 <strong>Scopes &#x26; Lifecycle</strong></td><td>Singletons, prototypes, request/session scoping, and eager initialization</td><td><a href="getting-started/getting-jiggy-wit-it/scoping.md">scoping.md</a></td></tr><tr><td>🎭 <strong>Aspect-Oriented Programming</strong></td><td>Intercept and enhance method calls with matchers and advice, no boilerplate</td><td><a href="advanced-topics/aop-aspect-oriented-programming/README.md">README.md</a></td></tr><tr><td>🧩 <strong>Delegates</strong></td><td>Compose reusable behavior (Async, DateTime, JSON, Population, and more) into any class</td><td><a href="usage/wirebox-delegators.md">wirebox-delegators.md</a></td></tr></tbody></table>
 
 ## Versioning
 
