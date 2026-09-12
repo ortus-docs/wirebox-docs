@@ -203,7 +203,7 @@ wirebox.customScopes = {
 
 ## scanLocations
 
-The instantiation paths that this Injector will have registered to do object locations in order. So if you request an object called `Service` and no mapping has been configured for it, then WireBox will search all these scan locations for a `Service.cfc` in the specified order. The last lookup is the no namespace lookup which basically represents a `createObject("component","Service")` call. If you are using WireBox within a ColdBox application, ColdBox will register the `models` convention folder for you.
+The instantiation paths that this Injector will have registered to do object locations in order. So if you request an object called `Service` and no mapping has been configured for it, then WireBox will search all these scan locations for a `Service.bx` (or `.cfc` for CFML) in the specified order. The last lookup is the no namespace lookup which basically represents a `createObject("component","Service")` call. If you are using WireBox within a ColdBox application, ColdBox will register the `models` convention folder for you.
 
 ```javascript
 wirebox.scanLocations = ["models","com","org.majano"];

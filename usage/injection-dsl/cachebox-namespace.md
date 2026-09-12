@@ -26,7 +26,7 @@ Whenever your models need anything from the ColdBox application then you can lev
 | `coldbox:renderer`           | Get the ColdBox rendering engine reference                            |
 | `coldbox:requestService`     | Get a reference to the request service                                |
 | `coldbox:requestContext`     | Get a reference to the current request context object in the request. |
-| `coldbox:router`             | Get a reference to the application global router.cfc                  |
+| `coldbox:router`             | Get a reference to the application global router.bx (or .cfc for CFML) |
 | `coldbox:routingService`     | Get a reference to the Routing Service                                |
 | `coldbox:schedulerService`   | Get a reference to the Scheduler Service                              |
 

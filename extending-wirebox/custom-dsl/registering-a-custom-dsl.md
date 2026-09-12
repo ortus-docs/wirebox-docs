@@ -1,6 +1,6 @@
 # Registering a Custom DSL
 
-To register a custom namespace in WireBox, place the following configuration in the `wirebox` struct defined within the `configure()` method of your WireBox binder class. in a ColdBox app, this is `/config/WireBox.cfc`. Alternatively, you can use the `mapDSL()` call in the `configure()` method.
+To register a custom namespace in WireBox, place the following configuration in the `wirebox` struct defined within the `configure()` method of your WireBox binder class. in a ColdBox app, this is `/config/WireBox.bx` (or `.cfc` for CFML). Alternatively, you can use the `mapDSL()` call in the `configure()` method.
 
 {% tabs %}
 {% tab title="BoxLang" %}
@@ -45,7 +45,7 @@ component extends="coldbox.system.ioc.config.Binder" {
 {% endtab %}
 {% endtabs %}
 
-If you want to register a custom DSL namespace from a module, you can make the same call via the `binder` reference that is provided to your `ModuleConfig.cfc`.
+If you want to register a custom DSL namespace from a module, you can make the same call via the `binder` reference that is provided to your `ModuleConfig.bx` (or `.cfc` for CFML).
 
 {% tabs %}
 {% tab title="BoxLang" %}
