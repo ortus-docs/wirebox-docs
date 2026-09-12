@@ -55,6 +55,7 @@
 * [Injection DSL](usage/injection-dsl/README.md)
   * [ColdBox Namespace](usage/injection-dsl/coldbox-namespace.md)
   * [CacheBox Namespace](usage/injection-dsl/cachebox-namespace.md)
+  * [ByType Namespace](usage/injection-dsl/bytype-namespace.md)
   * [EntityService Namespace](usage/injection-dsl/entityservice-namespace.md)
   * [Executor Namespace](usage/injection-dsl/executor-namespace.md)
   * [Java Namespace](usage/injection-dsl/java-namespace.md)

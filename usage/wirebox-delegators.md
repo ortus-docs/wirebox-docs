@@ -39,11 +39,11 @@ In object-oriented programming, there are three ways for classes to work togethe
 2. Composition (HAS A relationships)
 3. Runtime Mixins or Traits
 
-With [inheritance](https://stackify.com/oop-concept-inheritance/), you create families of objects or hierarchies where a parent component shares functions, properties, and instance data with any component that extends it (derived class). It’s a great way to provide reuse but also one of the most widely abused approaches to reuse. It’s easy and powerful but with much power comes great responsibility. For example, you create a base `Animal` class and then derived classes like: `Cat`, `Dog`, `Bird`, etc. You can say: A `Cat` **IS An** `Animal`, A `Dog` **IS An** `Animal`. You wouldn’t say, a `Cat` has an `Animal`.
+With [inheritance](https://stackify.com/oop-concept-inheritance/), you create families of objects or hierarchies where a parent class shares functions, properties, and instance data with any class that extends it (derived class). It’s a great way to provide reuse but also one of the most widely abused approaches to reuse. It’s easy and powerful but with much power comes great responsibility. For example, you create a base `Animal` class and then derived classes like: `Cat`, `Dog`, `Bird`, etc. You can say: A `Cat` **IS An** `Animal`, A `Dog` **IS An** `Animal`. You wouldn’t say, a `Cat` has an `Animal`.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
-With [composition](https://en.wikipedia.org/wiki/Object_composition) a component will either create or have dependencies injected into them (via WireBox), which it can then use these objects to delegate work to them. This follows the `has a` relationship, like A Car has Wheels, a Computer has Memory, etc. The major premise of WireBox is to assist with composition.
+With [composition](https://en.wikipedia.org/wiki/Object_composition) a class will either create or have dependencies injected into them (via WireBox), which it can then use these objects to delegate work to them. This follows the `has a` relationship, like A Car has Wheels, a Computer has Memory, etc. The major premise of WireBox is to assist with composition.
 
 Mixins allow you to do runtime injections of user-defined functions (UDFs) and helpers from reusable objects. However, this can lead to method explosion on injected classes, collisions, and not a lot of great organization as you are just packing a class with tons of functions to reuse behavior. Composition is the preferred approach and the less decoupled approach. Delegation is a step further.
 
@@ -61,6 +61,33 @@ A `Computer` is made from many parts, and each part does one thing really well. 
 
 **Memory**
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="Memory"{
+
+	function init(){
+		return reset()
+  }
+
+	function reset(){
+		variables.data = []
+		return this;
+  }
+
+  function read( index ){
+		return variables.data[ arguments.index ]
+  }
+
+  function write( data ){
+	  variables.data.append( arguments.data )
+  }
+
+}
+
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="Memory"{
 
@@ -84,9 +111,34 @@ component name="Memory"{
 }
 
 ```
+{% endtab %}
+{% endtabs %}
 
 **Computer**
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer"{
+
+	// Inject a memory object via WireBox
+  property name="memory" inject;
+
+	// read delegator proxy method
+  function read( index ){
+		return variables.memory.read( argumentCollection = arguments )
+  }
+
+	// write delegator proxy method
+  function write( data ){
+		return variables.memory.read( argumentCollection = arguments )
+  }
+
+}
+
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer"{
 
@@ -106,6 +158,8 @@ component name="computer"{
 }
 
 ```
+{% endtab %}
+{% endtabs %}
 
 As you can see, we pass along the requests to the `Memory` object, and we satisfy our requirements. We can decorate these proxy methods if we want to as well to add behavior. However, imagine if you had many methods or many compositions and needed to do this for all those methods. As you can see, it can get very very tedious writing simple delegation methods. Here is where WireBox can assist.
 
@@ -117,6 +171,22 @@ As you can see, we pass along the requests to the `Memory` object, and we satisf
 
 You can annotate an injection with the `delegate` annotation and WireBox will inspect the delegate object for all its _public_ functions and create those functions at runtime for you in the target. This way, you don’t have to write all those delegation functions. Let’s look at our `Computer` again:f
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer"{
+
+	// Inject and use as a delegate
+  property name="memory" inject delegate
+
+}
+
+computer = getInstance( "Computer" )
+computer.read( index )
+computer.write( data )
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer"{
 
@@ -129,13 +199,30 @@ computer = getInstance( "Computer" )
 computer.read( index )
 computer.write( data )
 ```
+{% endtab %}
+{% endtabs %}
 
 As you can see, the computer will magically have those `memory` delegation methods of `read() and write()` and will forward correctly to the `memory` module. This is great if you are using a full injection approach; not only do you get delegation but also a reference to the memory module via `variables.memory`.
 
-### Component `Delegates` Annotation
+### Class `Delegates` Annotation
 
-However, we also have a shorthand annotation that you can use if you really don’t care about the injection but just about the delegations to happen. This is done by annotating your component with a `delegates` annotation.
+However, we also have a shorthand annotation that you can use if you really don’t care about the injection but just about the delegations to happen. This is done by annotating your class with a `delegates` annotation.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer" delegates="Memory"{
+
+   // code
+
+}
+
+computer = getInstance( "Computer" )
+computer.read( index )
+computer.write( data )
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer" delegates="Memory"{
 
@@ -147,10 +234,36 @@ computer = getInstance( "Computer" )
 computer.read( index )
 computer.write( data )
 ```
+{% endtab %}
+{% endtabs %}
 
 This annotation can be one or more delegates, and you can use either a WireBox ID or a full classpath:
 
-```jsx
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+// Multiple Delegates by WireBox ID
+class
+   name="computer"
+   delegates="Memory,FlowHelpers"{
+
+   // code
+
+}
+
+// Delegates by Class Paths
+class
+   name="computer"
+   delegates="models.system.Ram,
+              models.util.FlowHelpers"{
+
+   // code
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
+```cfscript
 // Multiple Delegates by WireBox ID
 component
    name="computer"
@@ -170,6 +283,8 @@ component
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="danger" %}
 **IMPORTANT** Please note that if you define multiple delegates and they have the same method names, the first defined delegate in the list will win unless you define specific prefixes or suffixes to distinguish the injections.
@@ -179,6 +294,29 @@ component
 
 If you need to prefix your delegate methods, then you can use the `delegatePrefix` annotation on your property injections. If you don’t give it a value, we will use the property's name as the prefix, or you can give it a value and be very explicit. Every method injected from the delegate will have that prefix.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer"
+
+  property name="memory" inject delegate delegatePrefix
+  property name="memory" inject delegate delegatePrefix="ram"
+
+}
+
+computer = getInstance( "Computer" )
+
+// Implicit prefix
+computer.memoryRead( index )
+computer.memoryWrite( data )
+
+// Explicit prefix
+computer.ramRead( index )
+computer.ramWrite( data )
+
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer"
 
@@ -198,6 +336,8 @@ computer.ramRead( index )
 computer.ramWrite( data )
 
 ```
+{% endtab %}
+{% endtabs %}
 
 This is great as you can be more expressive with the way those methods are delegated to.
 
@@ -211,6 +351,17 @@ delegates="[prefix>]WireBoxID|classPath"
 
 This will allow you to add specific prefixes to distinguish the injections.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer" delegates="ram>Memory,FlowHelpers"{
+
+   // code
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer" delegates="ram>Memory,FlowHelpers"{
 
@@ -218,11 +369,24 @@ component name="computer" delegates="ram>Memory,FlowHelpers"{
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 The `Memory` object’s methods will be prefixed with `ram: ramRead(), ramWrite()`
 
 You can also leave the prefix EMPTY, and we will use the object's name as the prefix.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer" delegates=">Memory,FlowHelpers"{
+
+   // code
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer" delegates=">Memory,FlowHelpers"{
 
@@ -230,6 +394,8 @@ component name="computer" delegates=">Memory,FlowHelpers"{
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 Since the `>Memory` is defined, then we will use `Memory` as the prefix.
 
@@ -237,6 +403,28 @@ Since the `>Memory` is defined, then we will use `Memory` as the prefix.
 
 If you need to suffix your delegate methods, then you can use the `delegateSuffix` Annotation. If you don’t give it a value, we will use the property's name as the suffix or you can give it a value and be very explicit. Every method injected from the delegate will have that suffix.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer"
+
+  property name="memory" inject delegate delegateSuffix
+  property name="memory" inject delegate delegateSuffix="RAM"
+
+}
+
+computer = getInstance( "Computer" )
+// Implicit
+computer.readMemory( index )
+computer.writeMemory( data )
+
+// Explicit
+computer.readRAM( index )
+computer.writeRAM( data )
+
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer"
 
@@ -255,6 +443,8 @@ computer.readRAM( index )
 computer.writeRAM( data )
 
 ```
+{% endtab %}
+{% endtabs %}
 
 #### Simple Shorthand Approach
 
@@ -266,6 +456,17 @@ delegates="[suffix<]WireBoxID|classPath"
 
 This will allow you to add specific suffixes to distinguish the injections.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer" delegates="Ram<Memory,FlowHelpers"{
+
+   // code
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer" delegates="Ram<Memory,FlowHelpers"{
 
@@ -273,11 +474,24 @@ component name="computer" delegates="Ram<Memory,FlowHelpers"{
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 The `Memory` object’s methods will be suffixed with `ram: readRam(), writeRam()`
 
 You can also leave the suffix EMPTY and we will use the name of the object as the suffix.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer" delegates="<Memory,FlowHelpers"{
+
+   // code
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer" delegates="<Memory,FlowHelpers"{
 
@@ -285,6 +499,8 @@ component name="computer" delegates="<Memory,FlowHelpers"{
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 Since the `>Memory` is defined, then we will use `Memory` as the suffix.
 
@@ -292,6 +508,25 @@ Since the `>Memory` is defined, then we will use `Memory` as the suffix.
 
 You can declare multiple delegates with no problem at all. All discovered public methods would be injected and delegated. However, if there is a case where each delegate has the same method name WireBox will throw a `DelegateMethodDuplicateException`. To avoid this side-effect, you will have to use suffixes or prefixes to remove the ambiguity.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer"
+
+  property name="memory" inject delegate
+  property name="disk" inject delegate
+
+}
+
+// Kaboom: DelegateMethodDuplicateException
+computer = getInstance( "Computer" )
+// We can't even reach here.
+computer.read( index )
+computer.write( data )
+
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer"
 
@@ -307,9 +542,36 @@ computer.read( index )
 computer.write( data )
 
 ```
+{% endtab %}
+{% endtabs %}
 
 To avoid conflicts, we recommend you use the suffixes and prefixes so the delegate methods are more expressive:
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+// Injection Approach
+class name="computer"
+
+  property name="memory" inject delegate delegatePrefix
+  property name="disk" inject delegate delegateSuffix
+
+}
+
+// Shorthand Approach
+class name="computer" delegates=">memory,<disk"
+
+}
+
+computer = getInstance( "Computer" )
+
+// Using expressive delegation
+computer.diskRead( index )
+computer.writeMemory( data )
+
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 // Injection Approach
 component name="computer"
@@ -331,11 +593,32 @@ computer.diskRead( index )
 computer.writeMemory( data )
 
 ```
+{% endtab %}
+{% endtabs %}
 
 ### Targeted Method Delegation
 
 If you want to delegate to _only_ a few methods and not all public methods of an object, then you can use the `delegate` annotation and pass in a list of those methods you can to include in the delegation.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer"
+
+  property name="memory" inject delegate delegatePrefix
+  property name="disk" inject delegate="read,sleep" delegateSuffix
+	property name="flow" inject="coldbox.system.util.core.Flow" delegate
+
+}
+
+computer = getInstance( "Computer" )
+computer.diskRead()
+computer.diskSleep()
+computer.diskWrite() => Will FAIL!!!
+
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer"
 
@@ -351,6 +634,8 @@ computer.diskSleep()
 computer.diskWrite() => Will FAIL!!!
 
 ```
+{% endtab %}
+{% endtabs %}
 
 #### Simple Shorthand Approach
 
@@ -362,6 +647,23 @@ delegates="[prefix|suffix><]WireBoxID|ClassPath[=methods]
 
 You basically add the name of the methods by using a =`method` pattern.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="computer"
+	delegates=">Memory, <Disk=read,sleep"
+}
+
+class name="computer"{
+
+   property name="authorizable."
+		inject="provider:Authorizable@cbsecurity"
+		delegate;
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component name="computer"
 	delegates=">Memory, <Disk=read,sleep"
@@ -375,6 +677,8 @@ component name="computer"{
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ### Delegate $parent Injection
 
@@ -382,6 +686,20 @@ Every delegate, once it’s used on a target, will get a `$parent` injection ava
 
 > **Important:** Please note that if your Delegate is a singleton, this can cause issues as it can be potentially injected into many parents. Therefore, we suggest that if you create Delegates that use the `$parent` approach, they remain as transients.
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class{
+
+	function populate( memento ){
+		// Populate the injected parent
+	       return populateFromStruct( target : $parent, memento : arguments.memento );
+	}
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component{
 
@@ -392,10 +710,12 @@ component{
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ### Binder Delegates Support
 
-You can also explicitly set the `delegates` shorthand expression for a component via the binder’s `delegates()` method.
+You can also explicitly set the `delegates` shorthand expression for a class via the binder’s `delegates()` method.
 
 ```jsx
 map( "Computer" )
@@ -455,11 +775,22 @@ WireBox ships with a set of built-in delegates available via the `@coreDelegates
 | `Population@coreDelegates` | Object population from structs, JSON, XML, and queries   |
 | `StringUtil@coreDelegates` | String manipulation and formatting utilities             |
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+// Mix and match as many as you need
+class delegates="Population@coreDelegates, Env@coreDelegates, Flow@coreDelegates" {
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 // Mix and match as many as you need
 component delegates="Population@coreDelegates, Env@coreDelegates, Flow@coreDelegates" {
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 See the [Core Delegates](core-delegates.md) page for detailed method references and usage examples for each delegate.

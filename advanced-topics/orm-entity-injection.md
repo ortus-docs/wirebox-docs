@@ -24,7 +24,30 @@ this.ormSettings = {
 
 Then you can create the custom event handler with a custom `postLoad()` function where you will leverage WireBox for DI.
 
-```javascript
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class implements="CFIDE.orm.IEventHandler"{
+
+{% hint style="info" %}
+WireBox uses a per-request transient injection cache by default, so repeated `autowire()` calls for the same entity mapping during a request reuse the resolved injections and delegations. You can disable this globally via `transientInjectionCache` or per-entity with the `transientCache="false"` annotation.
+{% endhint %}
+
+    /**
+    * postLoad called by hibernate which in turn announces a coldbox interception: ORMPostLoad
+    */
+    public void function postLoad(any entity){
+        application.wirebox.autowire(
+            target=arguments.entity,
+            targetID="ORMEntity-#getMetadata( arguments.entity ).name#"
+        );
+    }
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
+```cfscript
 component implements="CFIDE.orm.IEventHandler"{
 
 {% hint style="info" %}
@@ -43,3 +66,5 @@ WireBox uses a per-request transient injection cache by default, so repeated `au
 
 }
 ```
+{% endtab %}
+{% endtabs %}

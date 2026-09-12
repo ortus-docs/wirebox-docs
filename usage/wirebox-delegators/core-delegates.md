@@ -7,7 +7,7 @@ description: Built-in delegates shipped with ColdBox/WireBox for common everyday
 WireBox ships with a set of built-in **core delegates** that you can drop into any object in your application. They are registered under the `@coreDelegates` WireBox namespace, so you only need to reference them by their short name.
 
 {% hint style="success" %}
-Core delegates work in both **BoxLang** and **CFML** and can be composed using the `delegates` component annotation or individual `property` injections.
+Core delegates work in both **BoxLang** and **CFML** and can be composed using the `delegates` class annotation or individual `property` injections.
 {% endhint %}
 
 ## Available Core Delegates
@@ -24,7 +24,7 @@ Core delegates work in both **BoxLang** and **CFML** and can be composed using t
 
 ## How to Use Core Delegates
 
-Use the `delegates` component annotation for a concise declaration:
+Use the `delegates` class annotation for a concise declaration:
 
 {% tabs %}
 {% tab title="BoxLang" %}
@@ -261,7 +261,7 @@ component delegates="Env@coreDelegates" {
 Provides fluent flow-control methods modeled after functional programming patterns. All methods return the parent object so you can chain calls expressively.
 
 {% hint style="warning" %}
-`Flow` is a **transient** delegate. If you inject it into a **singleton**, WireBox will correctly handle the `$parent` reference per-injection, but be aware that shared state issues can arise. Prefer using the component `delegates` annotation so WireBox manages the lifecycle.
+`Flow` is a **transient** delegate. If you inject it into a **singleton**, WireBox will correctly handle the `$parent` reference per-injection, but be aware that shared state issues can arise. Prefer using the class `delegates` annotation so WireBox manages the lifecycle.
 {% endhint %}
 
 ### Methods

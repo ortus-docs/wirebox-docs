@@ -66,8 +66,42 @@ application.wirebox.getInstance( "MyOldBean" );
 
 Right now would be a great time to create some canary integration tests using [TestBox](https://testbox.ortusbooks.com/) which can verify that your objects can be created and wired up correctly. This will be a huge help to get you started on the road to better test coverage and migrating your legacy elephant to modern times:
 
+{% tabs %}
+{% tab title="BoxLang" %}
 {% code title="UserServiceSpec.cfc" %}
-```javascript
+```boxlang
+class extends="testbox.system.BaseSpec"{
+
+     // executes before all suites
+     function beforeAll(){
+          wirebox = new wirebox.system.ioc.Injector( "path.to.Binder" );
+     }
+
+     // executes after all suites
+     function afterAll(){
+          structDelete( application, "wirebox" );
+     }
+
+     // All suites go in here
+     function run( testResults, testBox ){
+          describe( "UserService", () => {
+
+               it( "can be created and wired", () => {
+                    var target = wirebox.getInstance( "UserService" );
+                    expect( target ).toBeComponent();
+                    expect( target.getUserDAO() ).toBeComponent();
+               } );
+
+          } );
+     }
+
+}
+```
+{% endcode %}
+{% endtab %}
+{% tab title="CFML" %}
+{% code title="UserServiceSpec.cfc" %}
+```cfscript
 component extends="testbox.system.BaseSpec"{
 
      // executes before all suites
@@ -96,3 +130,5 @@ component extends="testbox.system.BaseSpec"{
 }
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}

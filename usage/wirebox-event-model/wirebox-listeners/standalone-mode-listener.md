@@ -10,6 +10,38 @@ In standalone mode, the listener is a simple CFC with a `configure()` method and
 
 ### Example:
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class{
+
+    function configure( injector,properties ){
+        variables.injector = arguments.injector;
+        variables.properties = arguments.properties;
+
+        log = variables.injector.getLogBox().getLogger( this );
+    }
+
+    function beforeInjectorShutdown( data ){
+        // Do my stuff here:
+
+        // I can use a log object because ColdBox is cool and injects one for me already.
+        log.info("DUDE, I am going down!!!");
+    }
+
+    function afterInstanceCreation( data ){
+        var target = arguments.data.target;
+        var mapping = arguments.data.mapping;
+
+        log.info("The object #mapping.getName()# has just been built, performing my awesome AOP processing on it.");
+
+        // process awesome AOP on this target
+        processAwesomeAOP( target );
+    }
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component{
 
@@ -38,13 +70,15 @@ component{
     }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 Please note the `configure()` method in the standalone listener. This is necessary when using Wirebox listeners outside of a ColdBox application. The `configure()` method receives two parameters:
 
 * `injector` : An instance reference to the calling Injector with which this listener will be registered.
 * `properties` : A structure of properties that passes through from the configuration file.
 
-As you can see from the examples above, each component can listen to multiple events.&#x20;
+As you can see from the examples above, each class can listen to multiple events.&#x20;
 
 ### Order of Execution
 

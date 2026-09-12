@@ -6,7 +6,7 @@ When using WireBox inside of ColdBox, the binder CFC is located by convention in
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```java
+```boxlang
 // config/WireBox.bx
 class extends="coldbox.system.ioc.config.Binder" {
 
@@ -26,7 +26,7 @@ class extends="coldbox.system.ioc.config.Binder" {
 ```
 {% endtab %}
 {% tab title="CFML" %}
-```javascript
+```cfscript
 // config/WireBox.cfc
 component extends="coldbox.system.ioc.config.Binder" {
 
@@ -50,7 +50,7 @@ component extends="coldbox.system.ioc.config.Binder" {
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```java
+```boxlang
 // config/WireBox.bx
 class {
 
@@ -70,7 +70,7 @@ class {
 ```
 {% endtab %}
 {% tab title="CFML" %}
-```javascript
+```cfscript
 // config/WireBox.cfc
 component {
 
