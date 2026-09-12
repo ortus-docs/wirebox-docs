@@ -6,7 +6,7 @@ By default all objects are created **ONLY** when they are requested, in other wo
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class extends = "wirebox.system.ioc.config.Binder" {
 
     function configure(){

@@ -63,7 +63,7 @@ A `Computer` is made from many parts, and each part does one thing really well. 
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="Memory"{
 
 	function init(){
@@ -118,7 +118,7 @@ component name="Memory"{
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer"{
 
 	// Inject a memory object via WireBox
@@ -173,7 +173,7 @@ You can annotate an injection with the `delegate` annotation and WireBox will in
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer"{
 
 	// Inject and use as a delegate
@@ -210,7 +210,7 @@ However, we also have a shorthand annotation that you can use if you really donâ
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer" delegates="Memory"{
 
    // code
@@ -241,7 +241,7 @@ This annotation can be one or more delegates, and you can use either a WireBox I
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 // Multiple Delegates by WireBox ID
 class
    name="computer"
@@ -296,7 +296,7 @@ If you need to prefix your delegate methods, then you can use the `delegatePrefi
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer"
 
   property name="memory" inject delegate delegatePrefix
@@ -353,7 +353,7 @@ This will allow you to add specific prefixes to distinguish the injections.
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer" delegates="ram>Memory,FlowHelpers"{
 
    // code
@@ -378,7 +378,7 @@ You can also leave the prefix EMPTY, and we will use the object's name as the pr
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer" delegates=">Memory,FlowHelpers"{
 
    // code
@@ -405,7 +405,7 @@ If you need to suffix your delegate methods, then you can use the `delegateSuffi
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer"
 
   property name="memory" inject delegate delegateSuffix
@@ -458,7 +458,7 @@ This will allow you to add specific suffixes to distinguish the injections.
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer" delegates="Ram<Memory,FlowHelpers"{
 
    // code
@@ -483,7 +483,7 @@ You can also leave the suffix EMPTY and we will use the name of the object as th
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer" delegates="<Memory,FlowHelpers"{
 
    // code
@@ -510,7 +510,7 @@ You can declare multiple delegates with no problem at all. All discovered public
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer"
 
   property name="memory" inject delegate
@@ -549,7 +549,7 @@ To avoid conflicts, we recommend you use the suffixes and prefixes so the delega
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 // Injection Approach
 class name="computer"
 
@@ -602,7 +602,7 @@ If you want to delegate to _only_ a few methods and not all public methods of an
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer"
 
   property name="memory" inject delegate delegatePrefix
@@ -649,7 +649,7 @@ You basically add the name of the methods by using a =`method` pattern.
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="computer"
 	delegates=">Memory, <Disk=read,sleep"
 }
@@ -688,7 +688,7 @@ Every delegate, once itâ€™s used on a target, will get a `$parent` injection ava
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 
 	function populate( memento ){
@@ -777,7 +777,7 @@ WireBox ships with a set of built-in delegates available via the `@coreDelegates
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 // Mix and match as many as you need
 class delegates="Population@coreDelegates, Env@coreDelegates, Flow@coreDelegates" {
 }

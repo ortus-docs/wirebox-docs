@@ -14,7 +14,7 @@ You will accomplish this by tagging a property with an annotation called `observ
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 
 	property name="data" observed;
@@ -59,7 +59,7 @@ If you don’t like the convention and want to name the function as you see fit,
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 
 class{
 

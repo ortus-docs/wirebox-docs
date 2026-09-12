@@ -5,7 +5,7 @@ To register a custom namespace in WireBox, place the following configuration in 
 {% tabs %}
 {% tab title="BoxLang" %}
 {% code title="/config/WireBox.cfc" %}
-```boxlang
+```js
 class extends="coldbox.system.ioc.config.Binder" {
 
     function configure(){
@@ -50,7 +50,7 @@ If you want to register a custom DSL namespace from a module, you can make the s
 {% tabs %}
 {% tab title="BoxLang" %}
 {% code title="ModuleConfig.cfc" %}
-```boxlang
+```js
 class {
     function configure() {
         binder.mapDSL("ortus","path.model.dsl.MyDSL");

@@ -69,7 +69,7 @@ Right now would be a great time to create some canary integration tests using [T
 {% tabs %}
 {% tab title="BoxLang" %}
 {% code title="UserServiceSpec.cfc" %}
-```boxlang
+```js
 class extends="testbox.system.BaseSpec"{
 
      // executes before all suites

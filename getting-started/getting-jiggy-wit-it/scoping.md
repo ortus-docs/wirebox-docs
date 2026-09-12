@@ -14,7 +14,7 @@ Scopes allow you to customize the object's life span and duration. The **singlet
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class extends="wirebox.system.ioc.config.Binder"{
 
     function configure(){

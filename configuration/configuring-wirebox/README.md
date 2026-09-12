@@ -6,7 +6,7 @@ When using WireBox inside of ColdBox, the binder class is located by convention 
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 // config/WireBox.bx
 class extends="coldbox.system.ioc.config.Binder" {
 
@@ -50,7 +50,7 @@ component extends="coldbox.system.ioc.config.Binder" {
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 // config/WireBox.bx
 class {
 

@@ -16,7 +16,7 @@ Internally, we will generate a _getter_ method for you that will make sure to co
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 	
 	// Lazy property: Constructed by convention via the buildUtil() method
@@ -69,7 +69,7 @@ If you want to use **ANY** method in your class to build the property, then use 
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 	
 	property name="data" lazy="constructData";
@@ -102,7 +102,7 @@ By default, WireBox will lock the construction of the property. If you do not wa
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 	
 	property name="util" lazyNoLock;

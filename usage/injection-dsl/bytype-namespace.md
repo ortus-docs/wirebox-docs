@@ -16,7 +16,7 @@ The `type` isn't part of the `inject` value itself - it's the normal `type` attr
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 // Property injection: WireBox will look up a mapping named "UserService"
 property name="userService" type="UserService" inject="bytype";
 

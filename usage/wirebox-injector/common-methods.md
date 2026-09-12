@@ -145,7 +145,7 @@ These methods are the lower-level building blocks that `getInstance()` uses inte
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 // Scan all configured scan locations (and full namespace) for a CFC/class matching `name`.
 // Returns the instantiation path if found, or an empty string if it can't be located.
 locateInstance( name )
@@ -184,7 +184,7 @@ buildInstance(mapping, [initArguments])
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 // Does this injector have a parent injector assigned via setParent()?
 hasParent()
 

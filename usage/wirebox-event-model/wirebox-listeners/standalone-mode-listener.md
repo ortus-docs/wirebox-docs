@@ -6,13 +6,15 @@ In standalone mode, the listener is a simple class with a `configure()` method a
 
 
 
-<table data-header-hidden><thead><tr><th width="149">Argument</th><th width="92.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>Argument</strong></td><td><strong>Type</strong></td><td><strong>Description</strong></td></tr><tr><td><strong>data</strong></td><td>struct</td><td>The data structure passed in the event</td></tr></tbody></table>
+| Argument | Type   | Description                             |
+| -------- | ------ | ---------------------------------------- |
+| `data`   | struct | The data structure passed in the event   |
 
 ### Example:
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 
     function configure( injector,properties ){

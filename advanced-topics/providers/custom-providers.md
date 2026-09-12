@@ -32,7 +32,7 @@ The class you build will need to be mapped so it can be retrieved by name and al
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="FunkyEspressoProvider" implements="coldbox.system.ioc.IProvider" singleton{
 
     property name="log" inject="logbox:logger:FunkyEspressoProvider";
@@ -80,7 +80,7 @@ component name="FunkyEspressoProvider" implements="coldbox.system.ioc.IProvider"
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class extends="coldbox.system.ioc.config.Binder"{
     function configure(){
         // map the provider first, so it can be constructed and DI performed on it.

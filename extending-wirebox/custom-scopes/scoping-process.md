@@ -9,7 +9,7 @@ These methods must be called sequentially in order to avoid circular reference l
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 /**
  * Copyright Since 2005 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
  * www.ortussolutions.com

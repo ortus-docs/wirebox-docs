@@ -8,7 +8,7 @@ The following annotations can be placed in the class declaration to tell the Wir
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class singleton{}
 
 class scope="singleton"{}

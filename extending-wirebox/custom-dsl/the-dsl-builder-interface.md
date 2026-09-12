@@ -48,7 +48,7 @@ Here is a sample DSL builder:
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 /**
  * Copyright Since 2005 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
  * www.ortussolutions.com
@@ -257,7 +257,7 @@ Here is another one that you can find in the ColdBox ORM module: [https://github
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 /**
  * Copyright Since 2005 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
  * www.ortussolutions.com

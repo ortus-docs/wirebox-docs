@@ -10,7 +10,7 @@ If you don't like annotations because you feel they are too intrusive to your ta
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="CoffeeShop" singleton{
 
 // define a property and tell WireBox to inject it
@@ -100,7 +100,7 @@ So let's build our unit test (Please note we use our base ColdBox testing classe
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class extends="coldbox.system.testing.BaseModelTest"{
 
     function setup(){

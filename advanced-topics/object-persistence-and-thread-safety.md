@@ -11,7 +11,7 @@ The following object is to be guaranteed to be locked when created and wired wit
 {% tabs %}
 
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 
      /**
@@ -53,7 +53,7 @@ An example of a flawed object could be the following:
 {% tabs %}
 
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 
      @inject( "id:MyDAO" )
@@ -96,7 +96,7 @@ WireBox, can help you lock and provide thread safety to setter and property inje
 {% tabs %}
 
 {% tab title="BoxLang" %}
-```boxlang
+```js
 @threadSafe
 class{
 
@@ -162,7 +162,7 @@ You can also disable the cache on a per-class basis:
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class transientCache="false"{
 }
 ```
@@ -186,7 +186,7 @@ Because the cache reuses injection and delegation results per Class definition, 
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class name="Transient" transientCache="false"{
      // This will become a singleton within the request if caching is enabled
      property name="transient2" inject="t2";

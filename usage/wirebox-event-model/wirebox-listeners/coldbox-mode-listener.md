@@ -16,7 +16,7 @@ So, let's say we want to listen to the `beforeInjectorShutdown` and the `afterIn
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```boxlang
+```js
 class{
 
     function configure(){}
