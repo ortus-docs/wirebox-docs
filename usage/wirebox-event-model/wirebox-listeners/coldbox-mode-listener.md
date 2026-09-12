@@ -14,7 +14,36 @@ In ColdBox, you will create [ColdBox Interceptors](https://coldbox.ortusbooks.co
 
 So, let's say we want to listen to the `beforeInjectorShutdown` and the `afterInstanceCreation` event in our listener.
 
-```javascript
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class{
+
+    function configure(){}
+
+    function beforeInjectorShutdown(event, data, buffer, rc, prc ){
+        var injector = arguments.data.injector;
+        // Do my stuff here:
+
+        // I can use a log object because ColdBox is cool and injects one for me already.
+        log.info("DUDE, I am going down!!!");
+    }
+
+    function afterInstanceCreation(event, data, buffer, rc, prc ){
+        var injector = arguments.data.injector;
+        var target = arguments.data.target;
+        var mapping = arguments.data.mapping;
+
+        log.info("The object #mapping.getName()# has just been built, performing my awesome AOP processing on it.");
+
+        // process awesome AOP on this target
+        processAwesomeAOP( target );
+    }
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
+```cfscript
 component{
 
     function configure(){}
@@ -39,3 +68,5 @@ component{
     }
 }
 ```
+{% endtab %}
+{% endtabs %}

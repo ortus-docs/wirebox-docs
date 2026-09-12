@@ -4,7 +4,7 @@ description: Observe any property and react!
 
 # Property Observers
 
-WireBox supports the concepts of component property observers. Meaning that you can define a function that will be called for you when the `setter` for that property has been called and thus observe the property changes within a component.
+WireBox supports the concepts of class property observers. Meaning that you can define a function that will be called for you when the `setter` for that property has been called and thus observe the property changes within a class.
 
 You will accomplish this by tagging a property with an annotation called `observed` and created a function called: `{propertyName}Observer` by convention. This function will receive three arguments:
 
@@ -12,6 +12,28 @@ You will accomplish this by tagging a property with an annotation called `observ
 * `oldValue` : The old value of the property, including `null`
 * `property` : The name of the property
 
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class{
+
+	property name="data" observed;
+
+	/**
+	 * Observer for data changes.  Anytime data is set, it will be called
+   	 *
+	 * @new The new value
+	 * @old The old value
+	 * @property The name of the property observed
+	 */
+	function dataObserver( newValue, oldValue, property ){
+		// Execute after data is set
+	}
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
 ```cfscript
 component{
 
@@ -30,10 +52,35 @@ component{
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 If you don’t like the convention and want to name the function as you see fit, then you can place the value of the `observed` annotation as the name of the function to call.
 
-```jsx
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+
+class{
+
+	property name="data" observed="myObserver";
+
+	/**
+	 * Observer for data changes.  Anytime data is set, it will be called
+  	 *
+	 * @new The new value
+	 * @old The old value
+	 * @property The name of the property observed
+	 */
+	function myObserver( newValue, oldValue, property ){
+		// Execute after data is set
+	}
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
+```cfscript
 
 component{
 
@@ -52,5 +99,7 @@ component{
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 Please note that the observer will be called **AFTER** the property has been set.  That's it, enjoy!

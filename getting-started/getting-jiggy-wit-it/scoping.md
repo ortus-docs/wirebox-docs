@@ -6,13 +6,44 @@ Scopes allow you to customize the object's life span and duration. The **singlet
 
 ## Scope Annotations
 
-* You can tag a `cfcomponent` tag or component declaration with a `scope={named scope}` annotation that tells WireBox what scope to use
-* You can have nothing on the `cfcomponent` tag or component declaration which denotes the **NO SCOPE**
-* You can tag a `cfcomponent` tag or component declaration with a **singleton** annotation
+* You can tag a `cfcomponent` tag or class declaration with a `scope={named scope}` annotation that tells WireBox what scope to use
+* You can have nothing on the `cfcomponent` tag or class declaration which denotes the **NO SCOPE**
+* You can tag a `cfcomponent` tag or class declaration with a **singleton** annotation
 
 ## Scope Configuration Binder
 
-```javascript
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class extends="wirebox.system.ioc.config.Binder"{
+
+    function configure(){
+
+        // map with shorthand or full scope notation
+        mapPath("model.CoffeeShop").asSingleton();
+        mapPath("model.CoffeeShop").into(this.SCOPES.SINGLETON);
+
+        // map some long espresso into request scope
+        map("longEspress")
+            .to("model.Espresso")
+            .into(this.SCOPES.REQUEST);
+
+        // cache some tea
+        map("GreenTea")
+            .to("model.Tea")
+            .inCacheBox(timeout=20,provider="ehCache");
+
+        // cache some google news that refresh themselves every 40 minutes or after 20 minutes of inactivity
+        map("latestNews")
+            .inCacheBox(timeout=40,lastAccessTimeout=20,provider="ehCache");
+            .toRSS("http://news.google.com/news?output=rss")
+    }
+
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
+```cfscript
 component extends="wirebox.system.ioc.config.Binder"{
 
     function configure(){
@@ -39,6 +70,8 @@ component extends="wirebox.system.ioc.config.Binder"{
 
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ### Internal Scopes
 

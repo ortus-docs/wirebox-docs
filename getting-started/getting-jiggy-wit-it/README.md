@@ -8,7 +8,36 @@ What it injects depends on the contents of this annotation that leverages our [i
 
 If you don't like annotations because you feel they are too intrusive to your taste, don't worry, we also have a programmatic configuration binder you can use to define all your objects and their dependencies. We will discuss object mappings and our configuration binders later on, so let's look at how cool this is by checking out our Coffee Shop sample class. The `CoffeeShop` class below will use our three types of injections to showcase how WireBox works, please note that most likely we would build this class by picking one or the other, which in itself brings in pros and cons for each approach.
 
-```javascript
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class name="CoffeeShop" singleton{
+
+// define a property and tell WireBox to inject it
+property name="espressoMachine" inject="id:espressoMachine";
+
+    function init(any owner inject){
+        variables.owner = arguments.owner;
+        return this;
+    }
+
+    function openShop() onDiComplete{
+        espressoMachine.turnOn();
+        owner.nap();
+    }
+
+    function setCashRegister(cashRegister) inject="id"{
+        variables.cashRegister= arguments.cashRegister;
+    }
+
+    function makeEspresso(){
+        return espressoMachine.makeEspresso();
+    }
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
+```cfscript
 component name="CoffeeShop" singleton{
 
 // define a property and tell WireBox to inject it
@@ -33,8 +62,10 @@ property name="espressoMachine" inject="id:espressoMachine";
     }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
-So let's break this class down. First, you can see a singleton annotation on the component declaration. This tells WireBox that this class should only be created once and then cached in its internal singleton scope of the injector. In other words, this is called object life scopes. You can refer to the persistence scopes annotations later on in the guide to learn all about how to scope your classes.
+So let's break this class down. First, you can see a singleton annotation on the class declaration. This tells WireBox that this class should only be created once and then cached in its internal singleton scope of the injector. In other words, this is called object life scopes. You can refer to the persistence scopes annotations later on in the guide to learn all about how to scope your classes.
 
 Second, we built our coffee shop class with three external dependencies: 1 by cfproperty, 1 by constructor argument and 1 by setter injection. Again, you can see later on in this guide the difference between all these injection styles and choose what you prefer. In this example, we just showcase the different injection styles. Also, as you can see from the source code the three types of injection uses the inject annotation but with different content:
 
@@ -63,11 +94,48 @@ function openShop() onDIComplete{
 
 The method has a cool little annotation called `onDIComplete` that tells WireBox that after all DI dependencies have been injected, then execute the method. That is so cool, WireBox can even open the coffee shop for me so I can get my espresso fix. Not only that but you can have multiple `onDIComplete` methods declared and WireBox will call them for you (in discovered order). These are called object post processors that are discovered by annotations or can be configured via our configuration binder and we will learn about them later on. WireBox also fires a series of object life cycle events throughout an object's life span in which you can build listens to and actually perform some cool stuff on them. So now that we got all excited about opening the coffee shop let's get into something even more interesting, unit testing and mocking.
 
-Another important aspect leveraging DI concepts when building our components is that we can immediately write tests for them and leverage mocking to test for actual behaviors. This is a great advantage as it allows you to rapidly test to confirm your component is working without worrying about building or assembling objects in your tests. You have eliminated all kinds of crazy creation and assembler code and just concentrated yourself on the problem at hand. You are now focused to code the greatest piece of software you have ever imagined, thanks to WireBox!
+Another important aspect leveraging DI concepts when building our classes is that we can immediately write tests for them and leverage mocking to test for actual behaviors. This is a great advantage as it allows you to rapidly test to confirm your class is working without worrying about building or assembling objects in your tests. You have eliminated all kinds of crazy creation and assembler code and just concentrated yourself on the problem at hand. You are now focused to code the greatest piece of software you have ever imagined, thanks to WireBox!
 
 So let's build our unit test (Please note we use our base ColdBox testing classes for ease of use and [MockBox](http://wiki.coldbox.org/wiki/MockBox.cfm) integration):
 
-```javascript
+{% tabs %}
+{% tab title="BoxLang" %}
+```boxlang
+class extends="coldbox.system.testing.BaseModelTest"{
+
+    function setup(){
+        // mock some owner
+        mockOwner = getMockBox.createEmtpyMock("Owner");
+        // create our coffee shop class with mocking capabilities
+        shop = getMockBox().createMock("CoffeeShop").init(mockOwner);
+        // mock the espresso machine
+        mockMachine = getMockBox().createEmptyMock("EspressoMachine");
+        // inject to the shop's variables scope to simulate DI
+        shop.$property("espressoMachine","variables",mockMachine);
+    }
+
+    function testMakeEspresso(){
+        // mock methods
+        mockMachine.$("makeEspresso", createStub());
+         // test
+        shop.makeEspresso();
+        assertTrue( mockMachine.$once('makeEspresso') );
+    }
+
+    function testOpenShop(){
+        //mocks
+        mockMachine.$("turnOn");
+        mockOwner.$("nap");
+        // test
+        shop.openShop();
+        assertTrue( mockMachine.$once('turnOn') );
+        assertTrue( mockOwner.$once('nap') );
+    }
+}
+```
+{% endtab %}
+{% tab title="CFML" %}
+```cfscript
 component extends="coldbox.system.testing.BaseModelTest"{
 
     function setup(){
@@ -100,5 +168,7 @@ component extends="coldbox.system.testing.BaseModelTest"{
     }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 Now we can run our tests and verify that our coffee shop is operational and producing sweet sweet espresso!
