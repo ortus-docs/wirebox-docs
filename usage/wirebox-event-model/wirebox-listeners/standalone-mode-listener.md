@@ -2,7 +2,7 @@
 
 ![](../../../.gitbook/assets/standalonelistener.jpg)
 
-In standalone mode, the listener is a simple CFC with a `configure()` method and any methods that match the name of the events.  Each of these methods receive the following arguments:
+In standalone mode, the listener is a simple class with a `configure()` method and any methods that match the name of the events.  Each of these methods receive the following arguments:
 
 
 

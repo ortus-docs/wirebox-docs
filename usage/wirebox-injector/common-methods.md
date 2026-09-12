@@ -1,9 +1,9 @@
 # Common Methods
 
-The following chart shows you the most common methods when dealing with the WireBox Injector. This doesn't mean there are no other methods on the Injector that are of value, so please check out the CFC Docs for more in-depth knowledge.
+The following chart shows you the most common methods when dealing with the WireBox Injector. This doesn't mean there are no other methods on the Injector that are of value, so please check out the API Docs for more in-depth knowledge.
 
 {% embed url="https://s3.amazonaws.com/apidocs.ortussolutions.com/wirebox/current/index.html" %}
-CFC Docs
+API Docs
 {% endembed %}
 
 {% tabs %}

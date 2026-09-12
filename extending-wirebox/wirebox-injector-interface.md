@@ -13,7 +13,7 @@ Then these objects can be used as parent injectors, which are great for legacy f
  * Copyright Since 2005 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
  * www.ortussolutions.com
  * ---
- * An interface that enables any CFC to act like a parent injector within WireBox.
+ * An interface that enables any class to act like a parent injector within WireBox.
  **/
 interface {
 
@@ -37,7 +37,7 @@ interface {
 	/**
 	 * Locates, Creates, Injects and Configures an object model instance
 	 *
-	 * @name          The mapping name or CFC instance path to try to build up
+	 * @name          The mapping name or class instance path to try to build up
 	 * @initArguments The constructor structure of arguments to passthrough when initializing the instance
 	 * @dsl           The dsl string to use to retrieve the instance model object, mutually exclusive with 'name'
 	 * @targetObject  The object requesting the dependency, usually only used by DSL lookups
@@ -71,7 +71,7 @@ interface {
 
 ![](../.gitbook/assets/injectorInterface_hierarchies.jpg)
 
-Once you create this CFC that implements this interface then you can call on the injector's `setParent()` method and you are ready to roll.
+Once you create this class that implements this interface then you can call on the injector's `setParent()` method and you are ready to roll.
 
 ```javascript
 injector.setParent( myCustomInjector );

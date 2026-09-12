@@ -735,7 +735,7 @@ You can also use the `property` binder method as well to explicitly define the d
  * @dsl              The construction dsl this property references. If used, the name value must be used.
  * @value            The explicit value of the property, if passed.
  * @javaCast         The type of javaCast() to use on the value of the value. Only used if using dsl or ref arguments
- * @scope            The scope in the CFC to inject the property to. By default it will inject it to the variables scope
+ * @scope            The scope in the class to inject the property to. By default it will inject it to the variables scope
  * @required         If the property is required or not, by default we assume required DI
  * @type             The type of the property
  * @delegate         If the property is an object delegate it will be empty or the list of methods to delegate to, else null

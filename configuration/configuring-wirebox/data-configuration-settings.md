@@ -239,7 +239,7 @@ This section only shows you how to register WireBox listeners, so please refer t
 wirebox.listeners = [
     {
         // The path to the listener
-        class="path.to.CFC",
+        class="path.to.Class",
         // A unique name for the listener
         name="UniqueName",
         // A structure of name-value pairs for configuring this interceptor

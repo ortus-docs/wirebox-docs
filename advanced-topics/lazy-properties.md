@@ -65,7 +65,7 @@ We will lock, call the builder, store the property and return it.
 
 ### Explicit Builder
 
-If you want to use **ANY** method in your CFC to build the property, then use the value of the `lazy` annotation to point to the public or private method that will build your property:
+If you want to use **ANY** method in your class to build the property, then use the value of the `lazy` annotation to point to the public or private method that will build your property:
 
 {% tabs %}
 {% tab title="BoxLang" %}

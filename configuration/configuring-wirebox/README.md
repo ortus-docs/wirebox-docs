@@ -1,6 +1,6 @@
 # Configuring WireBox
 
-When using WireBox inside of ColdBox, the binder CFC is located by convention in `/config/WireBox.cfc` (or `/config/WireBox.bx` for BoxLang applications). When using WireBox outside of ColdBox, you can create a binder anywhere with any name using one of these two approaches:
+When using WireBox inside of ColdBox, the binder class is located by convention in `/config/WireBox.cfc` (or `/config/WireBox.bx` for BoxLang applications). When using WireBox outside of ColdBox, you can create a binder anywhere with any name using one of these two approaches:
 
 **1. Extend the WireBox Binder** — create a configuration class that extends `coldbox.system.ioc.config.Binder` and implements a `configure()` method:
 

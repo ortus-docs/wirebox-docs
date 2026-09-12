@@ -11,7 +11,7 @@ Instead of declaring data structures you can use the methods in the binder to co
 | **logBoxConfig**(config) | The method used to tell the injector which [LogBox](https://github.com/ortus/wirebox-documentation/tree/b9a6ae3e91f7dcb74ec7e900e27243e19824cf27/mapping_dsl/wiki/LogBox.cfm) configuration file to use for logging operations. Ignored in an application context |
 | **mapDSL**(namespace,path) | The method used to register a new DSL annotation namespace with a DSL Builder object |
 | **mapScope**(annotation,path) | The method used to register a new custom scope in this injector |
-| **parentInjector**(injector) | Register a CFC reference to be the parent injector for the configuring injector |
+| **parentInjector**(injector) | Register a class reference to be the parent injector for the configuring injector |
 | **removeScanLocations**(locations) | A method used to remove one or a list (array) of scan locations from the configuration binder |
 | **reset**() | Reset the entire configuration binder to factory defaults |
 | **scanLocations**(locations) | A method used to add one or a list (array) of scan locations to the configuration binder. If a path already exists it will not be appended again. |

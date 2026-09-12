@@ -9,7 +9,7 @@ These two classes contain static public members in the this scope that facilitat
 
 **this.TYPES**
 
-* `CFC` : Construction of a CFC
+* `CFC` : Construction of a class
 * `JAVA` : Construction of a Java class
 * `WEBSERVICE` : Construction of a webservice object
 * `RSS` : Construction of an RSS feed

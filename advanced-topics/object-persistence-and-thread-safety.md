@@ -138,7 +138,7 @@ map("MyObject").to("path.model.MyObject").asSingleton().threadSafe();
 
 > **Note** All objects are marked as non thread safe for dependency wiring by default in order to allow for circular dependencies. Please note that if you mark an object as `threadSafe`, then it will not be able to support circular dependencies unless it uses WireBox providers. ( See [Providers Section](https://github.com/ortus/wirebox-documentation/tree/b9a6ae3e91f7dcb74ec7e900e27243e19824cf27/object_persistence_&_thread_safety/providers/README.md) )
 
-Our `threadSafe` annotation and binder tagging property will allow for these objects to be completely locked and synchronized for object creation, wiring and `onDiComplete()`. However, circular dependencies will now fail as persistence cannot be guaranteed for the setter or property dependencies. However, since WireBox is so awesome, you can still use circular dependencies by wiring instead our object providers. (Please see providers section). In conclusion, constructing and designing a CFC that is thread safe is often a very arduous process. It is also very difficult to test and recreate threading issues in your objects and applications. So don't feel bad, as even the best of us can get into some nasty wormholes when dealing with concurrency and thread safety. However, always try to design for as much concurrency as possible and test test test!
+Our `threadSafe` annotation and binder tagging property will allow for these objects to be completely locked and synchronized for object creation, wiring and `onDiComplete()`. However, circular dependencies will now fail as persistence cannot be guaranteed for the setter or property dependencies. However, since WireBox is so awesome, you can still use circular dependencies by wiring instead our object providers. (Please see providers section). In conclusion, constructing and designing a class that is thread safe is often a very arduous process. It is also very difficult to test and recreate threading issues in your objects and applications. So don't feel bad, as even the best of us can get into some nasty wormholes when dealing with concurrency and thread safety. However, always try to design for as much concurrency as possible and test test test!
 
 ## Transient Request Persistence
 
@@ -158,7 +158,7 @@ wirebox = {
 binder.transientInjectionCache( false );
 ```
 
-You can also disable the cache on a per-CFC basis:
+You can also disable the cache on a per-class basis:
 
 {% tabs %}
 {% tab title="BoxLang" %}

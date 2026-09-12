@@ -1,6 +1,6 @@
 # CacheBox Annotations
 
-If you would like to use CacheBox for persistence for you objects you will need to mark your CFC with the following annotation(s)
+If you would like to use CacheBox for persistence for you objects you will need to mark your class with the following annotation(s)
 
 * `cachebox="[provider]"` - The default provider is called '**default**', so this annotation can be empty or a named cache provider
 * `cache` - Cache into the default provider, shorthand annotation, no value needed

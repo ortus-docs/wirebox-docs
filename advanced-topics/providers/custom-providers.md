@@ -11,7 +11,7 @@ property name="" inject="provider:{name or injectionDSL}";
 * The mapping DSL
 
 ```javascript
-map("MyCFC").toProvider('name or injectionDSL')
+map("MyClass").toProvider('name or injectionDSL')
 
 // or
 setter,property,methodArg,initArg(name="",dsl="provider:{name or injectionDSL}");
@@ -28,7 +28,7 @@ setter,property,methodArg,initArg(name="",dsl="provider:{name or injectionDSL}")
 </cfinterface>
 ```
 
-The CFC you build will need to be mapped so it can be retrieved by name and also so if it needs DI or any other WireBox funkiness, it can get it. So let's look at our FunkyEspressoProvider that we needed to create since we have some old legacy machines that we need to revamp:
+The class you build will need to be mapped so it can be retrieved by name and also so if it needs DI or any other WireBox funkiness, it can get it. So let's look at our FunkyEspressoProvider that we needed to create since we have some old legacy machines that we need to revamp:
 
 {% tabs %}
 {% tab title="BoxLang" %}
