@@ -3,6 +3,7 @@
 * [Introduction](README.md)
   * [Contributing Guide](readme/contributing-guide.md)
   * [Release History](readme/introduction/README.md)
+    * [What's New With 8.2.0](readme/introduction/whats-new-with-8.2.0.md)
     * [What's New With 8.1.0](readme/introduction/whats-new-with-8.1.0.md)
     * [What's New With 8.0.0](readme/introduction/whats-new-with-8.0.0.md)
   * [Upgrading to WireBox 8](readme/upgrading-to-wirebox-8.md)
