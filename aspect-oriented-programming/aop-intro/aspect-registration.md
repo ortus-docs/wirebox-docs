@@ -8,4 +8,4 @@ Now that we have built our aspect we need to register it with WireBox so it know
 mapAspect("MethodLogger").to("model.aspects.MethodLogger");
 ```
 
-This tells WireBox to register a new aspect called `MethodLogger` that points to the CFC `model.aspects.MethodLogger` that I have just built. WireBox will then mark that object as an aspect, create it once the injector loads and have it ready for building.
+This tells WireBox to register a new aspect called `MethodLogger` that points to the class `model.aspects.MethodLogger` that I have just built. WireBox will then mark that object as an aspect, create it once the injector loads and have it ready for building.

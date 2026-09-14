@@ -1,9 +1,31 @@
 # Registering a Custom DSL
 
-To register a custom namespace in WireBox, place the following configuration in the `wirebox` struct defined within the `configure()` method of your WireBox binder CFC. in a ColdBox app, this is `/config/WireBox.cfc`. Alternatively, you can use the `mapDSL()` call in the `configure()` method.
+To register a custom namespace in WireBox, place the following configuration in the `wirebox` struct defined within the `configure()` method of your WireBox binder class. in a ColdBox app, this is `/config/WireBox.bx` (or `.cfc` for CFML). Alternatively, you can use the `mapDSL()` call in the `configure()` method.
 
+{% tabs %}
+{% tab title="BoxLang" %}
 {% code title="/config/WireBox.cfc" %}
-```javascript
+```js
+class extends="coldbox.system.ioc.config.Binder" {
+
+    function configure(){
+        wirebox = {
+            // DSL Namespace registrations
+            customDSL = {
+                ortus = "path.model.dsl.MyDSL"
+            }
+        };
+
+        // Or here...        
+        mapDSL("ortus","path.model.dsl.MyDSL");        
+    }
+}
+```
+{% endcode %}
+{% endtab %}
+{% tab title="CFML" %}
+{% code title="/config/WireBox.cfc" %}
+```cfscript
 component extends="coldbox.system.ioc.config.Binder" {
 
     function configure(){
@@ -20,11 +42,26 @@ component extends="coldbox.system.ioc.config.Binder" {
 }
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
 
-If you want to register a custom DSL namespace from a module, you can make the same call via the `binder` reference that is provided to your `ModuleConfig.cfc`.
+If you want to register a custom DSL namespace from a module, you can make the same call via the `binder` reference that is provided to your `ModuleConfig.bx` (or `.cfc` for CFML).
 
+{% tabs %}
+{% tab title="BoxLang" %}
 {% code title="ModuleConfig.cfc" %}
-```javascript
+```js
+class {
+    function configure() {
+        binder.mapDSL("ortus","path.model.dsl.MyDSL");
+    }
+}
+```
+{% endcode %}
+{% endtab %}
+{% tab title="CFML" %}
+{% code title="ModuleConfig.cfc" %}
+```cfscript
 component {
     function configure() {
         binder.mapDSL("ortus","path.model.dsl.MyDSL");
@@ -32,11 +69,13 @@ component {
 }
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
 
 Now I can use the `ortus` DSL Namespace in my mappings DSL and even my annotations, isn't that cool!
 
 ```javascript
-// inject it into a CFC
+// inject it into a class
 property name="funky" inject="ortus:funkyObject";
 
 // map it in your WireBox Binder

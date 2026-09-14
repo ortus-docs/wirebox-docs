@@ -1,6 +1,6 @@
 # MethodInvocation Useful Methods
 
-Here are a list of the most useful methods in this CFC
+Here are a list of the most useful methods in this class
 
 * `getMethod()` : Get the name of the method (join point) that we are proxying and is being executed
 * `getMethodMetadata()` : Get the metadata structure of the current executing method. A great way to check for annotations on the method (join point)

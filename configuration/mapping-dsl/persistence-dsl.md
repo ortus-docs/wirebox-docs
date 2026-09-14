@@ -23,7 +23,7 @@ These classes have on themselves several public properties that are a cool short
 So just remember that these persistence DSL methods are not mandatory. If you are an annotations kinda developer, then you can easily add these persistence annotations to your classes.
 
 ```javascript
-// CFC
+// Class
 map("FunkyObject")
     .to("myapp.model.service.FunkyService")
     .asSingleton();

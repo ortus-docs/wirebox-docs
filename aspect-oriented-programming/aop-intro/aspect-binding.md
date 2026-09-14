@@ -2,7 +2,7 @@
 
 Since we have now mapped our aspect in WireBox, we now need to tell it the most important things:
 
-1. To what classes or CFCs should we apply this aspect to?
+1. To what classes should we apply this aspect to?
 2. To what methods or join points should we apply this aspect to?
 
 We do this with another binder DSL method:
@@ -22,7 +22,7 @@ What is up with that funky `match()`.... stuff? Well, the classes and methods ar
 | annotatedWith(annotation,\[value]) | true           | true            | Matches against the finding of an annotation in a cfcomponent or cffuntion or matches against the finding AND value of the annotation. |
 | mappings(mappings)                 | true           | false           | Matches to ONLY the named mapping(s) you pass to this method as a list or array.                                                       |
 | instanceOf(classPath)              | true           | false           | Matches if the target object is an instance of the classPath. This internally uses the ColdFusion isInstanceOf() method                |
-| regex(regex)                       | true           | true            | Matches against a CFC instantiation path or function name using regular expressions                                                    |
+| regex(regex)                       | true           | true            | Matches against a class instantiation path or function name using regular expressions                                                  |
 | methods(methods)                   | false          | true            | Matches against a list of explicit method names as a list or array                                                                     |
 | andMatch(matcher)                  | true           | true            | Does an AND evaluation with the current matcher and the one you pass in the method.                                                    |
 | orMatch(matcher)                   | true           | true            | Does an OR evaluation with the current matcher and the one you pass in the method.                                                     |

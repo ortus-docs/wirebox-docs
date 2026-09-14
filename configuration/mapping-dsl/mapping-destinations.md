@@ -4,7 +4,7 @@ The mapping destinations tell WireBox what type of object you are mapping to. Yo
 
 | Method Signature                  | Description                                                                                                                                                                                                                   |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `to(path)`                        | Maps a name to a CFC instantiation path                                                                                                                                                                                       |
+| `to(path)`                        | Maps a name to a class instantiation path                                                                                                                                                                                     |
 | `toDSL(dsl)`                      | Maps a name to DSL builder string. Construction is done by using this DSL string (Look at Injection DSL)                                                                                                                      |
 | `toFactoryMethod(factory,method)` | Maps a name to another mapping (factory) and its method call. If you would like to pass in parameters to this factory method call you will use the `methodArg()` DSL method concatenated to this method call                  |
 | `toJava(path)`                    | Maps a name to a Java class that can be instantiated via `createObject("java")`                                                                                                                                               |
@@ -16,7 +16,7 @@ The mapping destinations tell WireBox what type of object you are mapping to. Yo
 Here are some examples:
 
 ```javascript
-// CFC
+// Class
 map("FunkyObject").to("myapp.model.service.FunkyService");
 mapPath("myapp.model.service.FunkyService");
 mapDirectory("myapp.model");
@@ -44,5 +44,5 @@ mapPath("UserService")
 ```
 
 {% hint style="danger" %}
-**Caution** Please note that WireBox can create different types of objects for DI. However, only CFCs will be inspected for autowiring automatically unless you specifically tell WireBox that a certain mapping should not be autowired. In this case you will use the dependencies DSL to define all DI relationships.
+**Caution** Please note that WireBox can create different types of objects for DI. However, only classes will be inspected for autowiring automatically unless you specifically tell WireBox that a certain mapping should not be autowired. In this case you will use the dependencies DSL to define all DI relationships.
 {% endhint %}

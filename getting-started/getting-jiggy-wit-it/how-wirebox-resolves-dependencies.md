@@ -11,7 +11,7 @@ Most of the time we believe our DI engines should be black boxes, but we try to 
 3. We now have a guaranteed mapping so we retrieve it and we verify if the mapping's metadata has been processed or not. If the mapping is marked with no autowiring then we skip to the next step. If not, we process the mapping's metadata and prepare it for DI
 4. We verify that the scope define for the mapping exists, else we throw an invalid scope exception
 5. We ask the scope to produce the mapping object for us. The scope is in charge of persistence, locking, etc.
-6. The scope builds the instance by asking the injector to build a new instance with the correct constructor and constructor arguments and stores it in its scope once the injector builds it. The builder decides what type of construction is needed for the mapping as it can be a CFC, java object, webservice, RSS feed, factory method call, etc. Each constructor argument is processed for dependency resolution.
+6. The scope builds the instance by asking the injector to build a new instance with the correct constructor and constructor arguments and stores it in its scope once the injector builds it. The builder decides what type of construction is needed for the mapping as it can be a class, java object, webservice, RSS feed, factory method call, etc. Each constructor argument is processed for dependency resolution.
 7. The scope then sends the instance for DI wiring and process back to the injector
 8. The injector returns the instance
 

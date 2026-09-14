@@ -1,12 +1,12 @@
 # Configuring WireBox
 
-When using WireBox inside of ColdBox, the binder CFC is located by convention in `/config/WireBox.cfc` (or `/config/WireBox.bx` for BoxLang applications). When using WireBox outside of ColdBox, you can create a binder anywhere with any name using one of these two approaches:
+When using WireBox inside of ColdBox, the binder class is located by convention in `/config/WireBox.bx` (or `/config/WireBox.cfc` for CFML applications). When using WireBox outside of ColdBox, you can create a binder anywhere with any name using one of these two approaches:
 
 **1. Extend the WireBox Binder** — create a configuration class that extends `coldbox.system.ioc.config.Binder` and implements a `configure()` method:
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```java
+```js
 // config/WireBox.bx
 class extends="coldbox.system.ioc.config.Binder" {
 
@@ -26,7 +26,7 @@ class extends="coldbox.system.ioc.config.Binder" {
 ```
 {% endtab %}
 {% tab title="CFML" %}
-```javascript
+```cfscript
 // config/WireBox.cfc
 component extends="coldbox.system.ioc.config.Binder" {
 
@@ -50,7 +50,7 @@ component extends="coldbox.system.ioc.config.Binder" {
 
 {% tabs %}
 {% tab title="BoxLang" %}
-```java
+```js
 // config/WireBox.bx
 class {
 
@@ -70,7 +70,7 @@ class {
 ```
 {% endtab %}
 {% tab title="CFML" %}
-```javascript
+```cfscript
 // config/WireBox.cfc
 component {
 
